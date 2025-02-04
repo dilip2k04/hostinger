@@ -1,0 +1,39 @@
+.ourmission p{
+    width: 917.11px;
+    height: 220px;
+    font-size: 36px;
+}
+
+.ourvission p{
+    width: 938.03px;
+    height: 220px;
+
+    font-size: 36px;
+}
+h3{
+    color: linear-gradient(30deg,#F27A0A, #041D60);
+}
+
+.ourmissioncontent, .ourvissioncontent{
+    display: flex;
+    gap: 50px;
+}
+
+.ourfounder{
+    width: 1077.81px;
+    height: 424.79px;
+    font-size: 36px;
+}
+
+.c1,.c2,.c3,.c4,.c5{
+    height: 398px;
+    width: 400px;
+    font-size: 21px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.crow1,.crow2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
