@@ -1,0 +1,15 @@
+.Footer{
+    background-color:  #041D60;
+    color: white;
+    display: flex;
+    gap: 250px;
+    margin-top: 200px;
+}
+h6{
+    padding: 20px 0px 30px 10px;
+    font-size: large;
+}
+p{
+    margin-left: 10px;
+}
+
