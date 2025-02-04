@@ -1,0 +1,59 @@
+.hero_section{
+    height: 900px;
+}
+
+.row{
+    height: 100%
+}
+
+.hero_content{
+    padding-left: 80px;
+}
+
+.hero_content h1{
+    font-size: 80px;
+    margin-bottom: 50px;
+    color: #F27A0A;
+    font-weight: 700;
+}
+
+.hero_content h4{
+    font-size: 36px;
+    font-weight:500;
+    color: #041D60;
+}
+
+.hero_buttons{
+    margin-top: 60px;
+}
+
+.image_section{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image_section .main_image {
+    width: 100%;
+    height: 900px;
+    object-fit: contain;
+}
+
+
+.hero_buttons .book_button {
+    background-color: #F27A0A;
+    color: #041D60;
+    border: 0;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-right: 50px ;
+}
+
+.hero_buttons .explore_us{
+    color:#041D60;
+    font-size: 25px;
+    font-weight: 600;
+    border: 0;
+}
