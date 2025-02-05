@@ -1,17 +1,33 @@
+.about{
+    margin-top: 180px;
+    margin-left: 80px;
+}
+h5{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.ourmission, .ourvission{
+    margin-left:40px ;
+    padding-bottom: 30px;
+}
 .ourmission p{
     width: 917.11px;
     height: 220px;
     font-size: 36px;
+    margin-left: 20px;
 }
 
 .ourvission p{
     width: 938.03px;
     height: 220px;
-
+    margin-left: 20px;
     font-size: 36px;
 }
 h3{
     color: linear-gradient(30deg,#F27A0A, #041D60);
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
 .ourmissioncontent, .ourvissioncontent{
@@ -22,7 +38,9 @@ h3{
 .ourfounder{
     width: 1077.81px;
     height: 424.79px;
-    font-size: 36px;
+    font-size: 34px;
+    text-align: center;
+    margin-left: 220px;
 }
 
 .c1,.c2,.c3,.c4,.c5{
@@ -31,6 +49,9 @@ h3{
     font-size: 21px;
     border-radius: 30px;
     border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
 }
 .crow1,.crow2{
     display: flex;
