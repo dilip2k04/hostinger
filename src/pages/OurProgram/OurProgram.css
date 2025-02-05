@@ -1,0 +1,33 @@
+.ourprogram{
+    margin-left: 80px;
+}
+.ourprgm{
+    margin-left: 30px;
+}
+
+.ourprgmimageandcontent{
+    display: flex;
+}
+
+.ourprgmimageandcontent p{
+    margin: 100px;
+    width: 481px;
+    height:135px ;
+    font-size:34px ;
+}
+
+.ourprgmcontent button{
+    margin-left: 1000px;
+    background-color: #041D60;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.grade{
+    display: flex;
+    margin-left: 180px;
+    margin-top: 30px;
+    width: 70%;
+    justify-content: space-between;
+}

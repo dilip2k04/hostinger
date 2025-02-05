@@ -65,6 +65,8 @@ const aboutus = () => {
                   <p>Get Your Roadmap According to your skills and Skill Alerts</p>
             </div>
         </div>
+
+        
         
       </div>
       <hr />
