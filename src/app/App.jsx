@@ -4,14 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "./App.css";
 import Hero from "../pages/Hero/Hero";
-import Aboutus from "../pages/about us/aboutus";
+import AboutUs from "../pages/AboutUs/aboutus";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero/>
-      <Aboutus/>
+      <AboutUs/>
       <Footer />
     </>
   );
