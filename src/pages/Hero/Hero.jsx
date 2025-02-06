@@ -18,7 +18,7 @@ export default function Hero() {
             </h4>
           <div className="hero_buttons d-flex">
             <button className="book_button">Book a Demo</button>
-            <button className="explore_us d-flex justify-content-center align-items-center">Explore Us &nbsp;&nbsp;<RiArrowRightDoubleLine/></button>
+            <button className="explore_us d-flex justify-content-center align-items-center" id="button">Explore Us &nbsp;&nbsp;<RiArrowRightDoubleLine/></button>
           </div>
           </div>
 

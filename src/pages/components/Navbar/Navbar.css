@@ -1,12 +1,14 @@
 .navbar-brand{
     font-size: 20px;
+    font-weight: 500;
 }
 
 
 .navbar-nav a {
-    font-size: 32px !important;
-    font-weight: 600 !important;
+    font-size: 26px !important;
+    font-weight: 500 !important;
     background: linear-gradient(30deg,#F27A0A, #041D60);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip:"text";
 }
