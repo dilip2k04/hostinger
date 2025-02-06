@@ -12,3 +12,9 @@
     -webkit-text-fill-color: transparent;
     background-clip:"text";
 }
+
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+    margin-left: 50px;
+}

@@ -15,7 +15,6 @@ function App() {
       <AboutUs/>
       <OurProgram/>
       <Footer />
-
     </>
   );
 }
