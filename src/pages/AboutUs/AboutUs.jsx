@@ -61,6 +61,33 @@ export default function AboutUs() {
       content: "Get Your Roadmap According to your skills and Skill Alerts",
     },
   ];
+  const our_Process=[
+    {
+      img:"",
+      tittle:"Contact Us",
+      content:"Start by reaching out to us via WhatsApp or through our Contact Us form. We’ll guide you through the next steps"
+    },
+    {
+      img:"",
+      tittle:"Schedule a Trial Class",
+      content:"Book a trial class at your convenience to experience our teaching approach firsthand"
+    },
+    {
+      img:"",
+      title:"Initial Evaluation",
+      content:"During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement"
+    },
+    {
+      img:"",
+      title:"Tailored Learning Plan",
+      content:"Based on the evaluation, we create a customized program to meet your child’s unique learning needs"
+    },
+    {
+      img:"",
+      title:"Continuous Progress Updates",
+      content:"During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement"
+    },
+]
 
   return (
     <div className="about">
@@ -96,56 +123,9 @@ export default function AboutUs() {
             );
           })}
         </div>
-
-        {/* <div className="crow1">
-          <div className="c1">
-            <img src="/src/assets/about c1.jpg" alt="" />
-            <p>
-              <strong></strong>
-            </p>
-            <p>
-           
-            </p>
-          </div>
-
-          <div className="c2">
-            <img src="/src/assets/about c2.jpg" alt="" />
-            <p>
-              <strong></strong>
-            </p>
-            <p>
-              {" "}
-            </p>
-          </div>
-
-          <div className="c3">
-            <img src="/src/assets/about c3.jpg" alt="" />
-            <p>
-              <strong></strong>
-            </p>
-            <p></p>
-          </div>
+        <div className="process">
+          
         </div>
-
-        <div className="crow2">
-          <div className="c4">
-            <img src="/src/assets/about c4.jpg" alt="" />
-            <p>
-              <strong></strong>
-            </p>
-            <p>
-              
-            </p>
-          </div>
-
-          <div className="c5">
-            <img src="" alt="" />
-            <p>
-              <strong></strong>
-            </p>
-            <p></p>
-          </div>
-        </div> */}
       </div>
       <hr />
     </div>
