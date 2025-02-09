@@ -14,7 +14,6 @@ function App() {
     <>
       <Navbar />
       <Hero/>
-<<<<<<< HEAD
       <AboutUs/>
       <OurProgram/>
       <Contact />
@@ -25,7 +24,6 @@ function App() {
       {/* <AboutUs/> */}
       {/* <OurProgram/> */}
       {/* <Footer /> */}
->>>>>>> 7a609e11b9de22498e8c893d1c489ab181571f08
     </>
   );
 }
