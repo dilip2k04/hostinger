@@ -16,7 +16,7 @@ export default function Tab({
         </div>
         <div className="col-2">
           {" "}
-          <h2>{title}</h2>
+          <h2><i>{title}</i></h2>
         </div>
         <div className="col-5">
           <div className="right_line"></div>
