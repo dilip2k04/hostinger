@@ -3,7 +3,7 @@ import "./Card.css";
 
 export default function Card({ img, title, content }) {
   return (
-    <div className="card shadow-lg col-4">
+    <div className="card about_us_card shadow-lg col-4">
       <div className="card-body">
         <div className="card_img_section">
           <img src={img} alt="" />

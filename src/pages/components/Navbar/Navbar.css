@@ -18,3 +18,11 @@
     width: auto;
     margin-left: 50px;
 }
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 80px;
+        width: auto;
+        margin-left: 0px;
+    }
+}

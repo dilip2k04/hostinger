@@ -1,0 +1,22 @@
+.broad_card{
+    margin: 20px;
+    width: 80%;
+    height: auto;
+}
+
+.card_img{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.broad_title{
+    margin-bottom: 30px;
+    color: #F27A0A
+}
+
+.broad_content{
+    font-size: 20px;
+    color: #041D60
+}

@@ -1,22 +1,61 @@
-.ourprogram{
-    margin-left: 80px;
-}
-.ourprgm{
+.ourprgm {
     margin-left: 30px;
 }
 
-.ourprgmimageandcontent{
+.ourprogram_title {
+    margin-left: 40px;
+}
+
+.ourprgmimageandcontent {
     display: flex;
 }
 
-.ourprgmimageandcontent p{
-    margin: 100px;
-    width: 481px;
-    height:135px ;
-    font-size:34px ;
+.teaching_container{
+    /* padding: 0 100px */
 }
 
-.ourprgmcontent button{
+.ourprogram_img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 50px;
+    border: 0;
+}
+
+.grade_title{
+    color:#041D60;
+    margin-bottom: 15px;
+}
+
+.grade_img {
+    width: 50%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+
+.ourprogram_content {
+    padding: 30px 30px 10px 30px;
+    line-height: 40px;
+}
+
+.ourprogram_button {
+    margin-top: 30px;
+    padding: 10px 40px;
+    border: 0;
+    background-color: #041D60;
+    color: white;
+    border-radius: 10px;
+}
+
+.ourprgmimageandcontent p {
+    margin: 100px;
+    width: 481px;
+    height: 135px;
+    font-size: 34px;
+}
+
+.ourprgmcontent button {
     margin-left: 1000px;
     background-color: #041D60;
     color: white;
@@ -24,41 +63,24 @@
     padding: 10px;
 }
 
-.grade{
+.ourprogram_title {
+    color: #F27A0A;
+}
+
+.grade {
     display: flex;
     margin-left: 180px;
     margin-top: 30px;
     width: 70%;
     justify-content: space-between;
 }
-.sub_Card{
-    width: 300px;
-    height: 370px;
-    box-shadow: 0px 0px 35px 9px rgba(0, 0, 0, 0.5);
-    
-}
-.sub_Card h4{
-    font-size: 32px;
-    color: #041D60;
-}
-.sub_Card a{
-    background-color: #041D60;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    width: 150px;
-    margin-top: 15px;
-    font-weight: bold;
-}
-.sub_Card a:hover{
-    background-color: #ffffff;
-    color: #041D60;
-    border: 2px solid #041D60;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 10px;
-    width: 150px;
-    margin-top: 15px;
-    text-decoration: none;
-    transition: all 0.5s;
+
+
+
+
+@media (max-width: 768px) {
+
+    .ourprogram_title {
+        font-size: 32px;
+    }
 }
