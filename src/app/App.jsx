@@ -6,6 +6,8 @@ import "./App.css";
 import Hero from "../pages/Hero/Hero";
 import AboutUs from "../pages/AboutUs/aboutus";
 import OurProgram from "../pages/OurProgram/OurProgram";
+import Contact from "../pages/Contact/Contact";
+
 
 function App() {
   return (
@@ -14,7 +16,10 @@ function App() {
       <Hero/>
       <AboutUs/>
       <OurProgram/>
+      <Contact />
       <Footer />
+      
+      
     </>
   );
 }

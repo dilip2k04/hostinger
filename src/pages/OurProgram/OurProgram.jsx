@@ -29,9 +29,15 @@ export default function OurProgram() {
         </div>
       </div>
       <hr />
-
-      <div className="Sub">
-        <h3>Subjects we cover</h3>
+      <div className="all_sub">
+      <h3>Subjects we cover</h3>
+      <div className="Sub-1">
+        <div className="sub_Card d-inline-flex flex-column justify-content-center align-items-center gap-3 rounded-5"> 
+          <h4>English</h4>
+          <img src="/src/assets/image.png" alt="" width={185} height={185}/>
+          <a href="" className='btn '>Get Started</a>
+        </div>
+      </div>
       </div>
     </div>
   )
