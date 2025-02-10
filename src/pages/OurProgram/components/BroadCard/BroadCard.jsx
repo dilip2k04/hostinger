@@ -8,7 +8,7 @@ export default function BroadCard({
   is_right_pic = false,
 }) {
   return (
-    <div className="card broad_card shadow-lg" data-aos="fade-right">
+    <div className="card broad_card shadow-lg" >
       <div className="card-body g-0 row" >
         { !is_right_pic ? (
           <>

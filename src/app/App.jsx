@@ -14,7 +14,7 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    AOS.init(2000);
+    AOS.init();
   }, [])
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
       <AboutUs/>
       <OurProgram/>
       <Contact/>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
