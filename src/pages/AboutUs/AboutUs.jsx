@@ -110,10 +110,10 @@ export default function AboutUs() {
         <Tab title={'Why IQ Bridge ?'} is_title={true}/>
 
         <div className="about_cards ">
-          <div className="cards mt-5 row d-flex justify-content-center g-0">
+          <div className="cards mt-5 row d-flex justify-content-center g-0" >
           {about_card_contents.map((card, idx) => {
             return (
-              <div className="col-lg-4 d-flex justify-content-center">
+              <div className="col-lg-4 d-flex justify-content-center" >
                 <Card
                   img={card.img}
                   title={card.title}

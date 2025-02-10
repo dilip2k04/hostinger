@@ -7,9 +7,15 @@ import Hero from "../pages/Hero/Hero";
 import AboutUs from "../pages/AboutUs/aboutus";
 import OurProgram from "../pages/OurProgram/OurProgram";
 import Contact from "../pages/Contact/Contact";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 function App() {
+  useEffect(() => {
+    AOS.init(2000);
+  }, [])
   return (
     <>
       <Navbar />

@@ -97,8 +97,8 @@ export default function OurProgram() {
       </div>
       <Tab title="Grade Specific Online Tuition" is_title={true} />
 
-      <div className="row g-0 mb-4">
-        <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center">
+      <div className="row g-0 mb-4" >
+        <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center" data-aos="fade-right">
           <h3 className="grade_title">Grade 3 - 5</h3>
           <img
             src="/src/assets/gradec1.jpg"
@@ -106,7 +106,7 @@ export default function OurProgram() {
             alt="image"
           />
         </div>
-        <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center" data-aos="fade-left">
           <h3 className="grade_title">Grade 6 - 9</h3>
           <img
             src="/src/assets/gradec2.jpg"
@@ -123,8 +123,9 @@ export default function OurProgram() {
             <div
               key={idx}
               className="col-md-4 d-flex justify-content-center align-items-center"
+              data-aos="zoom-out"
             >
-              <Card title={sub.title} img={sub.img} link={sub.link} />
+              <Card title={sub.title} img={sub.img} link={sub.link} data-aos="flip-up" />
             </div>
           );
         })}
