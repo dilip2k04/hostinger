@@ -7,34 +7,34 @@ import Accordion from "./components/Accordion/Accordion";
 export default function Contact() {
   const accordion_data = [
     {
-      question: "What Makes IQ Bridge different ?",
+      question: "What makes IQ Bridge different ?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur ducimus molestias, veritatis perferendis obcaecati molestiae dolore dolor eveniet architecto dolorum hic voluptas quae voluptates at, et adipisci accusantium fugit?",
+        " Ans . Our institution’s elite foundation by IIT-IIM alumni, coupled with expert CBSE-certified tutors, ensures a premium learning experience. We emphasize independent thinking and bridging learning gaps, making education transformative.",
     },
     {
-      question: "How can parent monitor progress ?",
+      question: "How are your classes conducted ?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur ducimus molestias, veritatis perferendis obcaecati molestiae dolore dolor eveniet architecto dolorum hic voluptas quae voluptates at, et adipisci accusantium fugit?",
+        " Ans . Our online sessions use state-of-the-art technology to deliver interactive, live lessons that engage students and promote active learning.",
     },
     {
-      question: "Is there flexibility in scheduling classes? ",
+      question: "How can parents monitor progress ? ",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur ducimus molestias, veritatis perferendis obcaecati molestiae dolore dolor eveniet architecto dolorum hic voluptas quae voluptates at, et adipisci accusantium fugit?",
-    },
-    {
-      question: "How are your classes conducted",
-      answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur ducimus molestias, veritatis perferendis obcaecati molestiae dolore dolor eveniet architecto dolorum hic voluptas quae voluptates at, et adipisci accusantium fugit?",
+        " Ans . We provide detailed progress reports, conduct regular assessments, and offer parent-teacher meetings to keep you informed about your child’s performance.",
     },
     {
       question: "What are the qualifications of your tutors ?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur ducimus molestias, veritatis perferendis obcaecati molestiae dolore dolor eveniet architecto dolorum hic voluptas quae voluptates at, et adipisci accusantium fugit?",
+        " Ans . Our tutors are experienced educators with expertise in the CBSE curriculum and a passion for teaching",
+    },
+    {
+      question: "Is there flexibility in scheduling classes ?",
+      answer:
+        "Ans . Yes, we offer flexible class timings to accommodate the diverse schedules of families across the GCC region.",
     },
     {
       question: "Is there a trial class ?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur ducimus molestias, veritatis perferendis obcaecati molestiae dolore dolor eveniet architecto dolorum hic voluptas quae voluptates at, et adipisci accusantium fugit?",
+        " Ans . Yes, we offer a free demo class to help you experience our teaching methods and see how we can make a difference in your child’s education.",
     },
   ];
 
