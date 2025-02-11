@@ -1,0 +1,51 @@
+.blue{
+    color: #041D60;
+}
+.Title{
+    font-size: 48px;
+    color:#041D60;
+}
+.Title span{
+    color:#F27A0A;
+}
+.content .para{
+    color: #041D60 !important;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align:center;
+    text-indent: 50%;
+}
+.NavTitle{
+    font-size: 50px;
+    color:#F27A0A;
+}
+
+.circle {
+    position: absolute;
+    bottom: -580px; /* Moves to the bottom of the page */
+    right: 115px; /* Adjust right position */
+    width: 120px; /* Adjust size */
+    height: 120px;
+    background-color: #F27A0A; /* Change as needed */
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circle-Blue {
+    position: absolute;
+    overflow: hidden;
+    
+    bottom: -800px; /* Moves to the bottom of the page */
+    right: -200px; /* Adjust right position */
+    width: 400px; /* Adjust size */
+    height: 400px;
+    background-color: #041D60; /* Change as needed */
+    border-radius: 50%;
+    z-index: -1;
+}
+.card{
+    height: 337px;
+}
+.card p{
+    font-weight: bold;
+}

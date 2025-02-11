@@ -10,6 +10,7 @@ import Contact from "../pages/Contact/Contact";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Home from "../pages/Home/Home";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <>
       <Navbar />
       <Hero/>
+      <Home />
       <AboutUs/>
       <OurProgram/>
       <Contact/>
