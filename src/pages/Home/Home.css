@@ -24,31 +24,22 @@
     color:#F27A0A;
 }
 
-.circle {
-    position: absolute;
-    bottom: -580px; /* Moves to the bottom of the page */
-    right: 0px; /* Adjust right position */
-    width: 120px; /* Adjust size */
-    height: 120px;
-    background-color: #F27A0A; /* Change as needed */
-    border-radius: 50%;
-    overflow: hidden;
+.content{
+    margin-bottom: 40px;
 }
-.circle-Blue {
-    position: absolute;
-    overflow: hidden;
-    bottom: -800px; /* Moves to the bottom of the page */
-    right: -50px; /* Adjust right position */
-    width: 400px; /* Adjust size */
-    height: 400px;
-    background-color: #041D60; /* Change as needed */
-    border-radius: 50%;
-    z-index: -1;
-    clip-path: inset(0 50% 0 0); 
+.Home_card{
+    width: 350px;
+    margin-top: 40px;
+    box-shadow: 0px 18px 50px 0px #00000080;
+    position: relative;
+    left: 100px;
+    height: 377px;
 }
-.card{
-    height: 337px;
+.Home_card:nth-child(2n){
+    left: 1100px;
 }
-.card p{
-    font-weight: bold;
+.Home_card img{
+    width: 66px;
+    height: 66px;
+    object-fit: cover;
 }

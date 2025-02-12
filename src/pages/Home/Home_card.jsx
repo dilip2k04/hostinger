@@ -1,13 +1,12 @@
 import React from 'react'
 
-const Home_card = (img,title,para) => {
+
+export default function Home_card ({img,title,para}) {
   return (
-    <div className="card w-25 text-center d-flex flex-column justify-content-center align-items-center gap-3">
-      <img src={img} alt="" />
+    <div className="text-center d-flex flex-column justify-content-center align-items-center gap-5">
+      <img src={img} alt="" width={185} height={185}/>
       <h2>{title}</h2>
       <p>{para}</p>
     </div>
   )
 }
-
-export default Home_card
