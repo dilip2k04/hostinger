@@ -11,18 +11,18 @@ export default function Home() {
   },
   {
     img:'/src/assets/Card_img_3.jpg',
-    title:'Elite Mentorship',
-    para:'Mentoring from IIT-IIM Alumni Founders'
+    title:'One - On - One Sessions',
+    para:'One-on-One interactive live online sessions'
   },
   {
     img:'/src/assets/Card_img_4.jpg',
-    title:'Elite Mentorship',
-    para:'Mentoring from IIT-IIM Alumni Founders'
+    title:'Personalized study plans',
+    para:'Personalized Study Plans tailored to each student'
   },
   {
     img:'/src/assets/Card_img_1.jpg',
-    title:'Elite Mentorship',
-    para:'Mentoring from IIT-IIM Alumni Founders'
+    title:'Certified Mentors',
+    para:'Experienced and certified CBSE educators'
   }
 ]
   return (
