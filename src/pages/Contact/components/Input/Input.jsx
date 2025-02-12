@@ -8,7 +8,7 @@ export default function Input({ label, handleInput, id, value }) {
   return (
     <div className="d-flex flex-column input_container">
       <label htmlFor="name" className="label">{label_splitted[0]} <span className="label_second">{label_splitted[1]}</span></label>
-      <input type="text" onChange={handleInput} value={value} id={id} className="input_field" />
+      <input type="text" onChange={handleInput} value={value} id={id} placeholder={`Enter ${label}`} className="input_field" />
     </div>
   );
 }

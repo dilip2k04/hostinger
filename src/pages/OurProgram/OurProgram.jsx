@@ -3,6 +3,7 @@ import "./OurProgram.css";
 import Tab from "../AboutUs/components/Tab/Tab";
 import Card from "./components/Card/Card";
 import BroadCard from "./components/BroadCard/BroadCard";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 export default function OurProgram() {
   const subject_data = [
@@ -70,7 +71,7 @@ export default function OurProgram() {
   ];
 
   return (
-    <div className="ourprogram mt-4">
+    <div className="ourprogram mt-4" id="our_program_content">
       <h5 className="ourprogram_title mb-5">
         <i>Our Program </i>
       </h5>
@@ -97,8 +98,8 @@ export default function OurProgram() {
       </div>
       <Tab title="Grade Specific Online Tuition" is_title={true} />
 
-      <div className="row g-0 mb-4" >
-        <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center" >
+      <div className="row g-0 mb-4">
+        <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center">
           <h3 className="grade_title">Grade 3 - 5</h3>
           <img
             src="/src/assets/gradec1.jpg"
@@ -106,7 +107,7 @@ export default function OurProgram() {
             alt="image"
           />
         </div>
-        <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center" >
+        <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center">
           <h3 className="grade_title">Grade 6 - 9</h3>
           <img
             src="/src/assets/gradec2.jpg"
@@ -124,7 +125,7 @@ export default function OurProgram() {
               key={idx}
               className="col-md-4 d-flex justify-content-center align-items-center"
             >
-              <Card title={sub.title} img={sub.img} link={sub.link}  />
+              <Card title={sub.title} img={sub.img} link={sub.link} />
             </div>
           );
         })}
@@ -144,14 +145,64 @@ export default function OurProgram() {
         })}
       </div>
       <Tab title="Testimonials" is_title={true} />
-      <div className="testimonials_container d-flex flex-column justify-content-center align-items-center p-5">
-        <div className="img_content d-flex justify-content-center align-items-center gap-5">
-          <img src="/src/assets/TestimonialPic.png" alt="" width={175} height={185} />
-          <div className="cotent">
-            <h2>“ IQ Bridge Has Transformed My Childs Academic Percentage ”</h2>
-            <p className="aling-content-right">-Mrs.Fatima , Dubai</p>
-          </div>
+      <div className="testimonial_wrapper">
+      <div className="testimonial_container row g-0 d-flex justify-content-center align-items-center">
+        <div className="col-md-3">
+          <Testimonial />
         </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+        <div className="col-md-3">
+          <Testimonial />
+        </div>
+      </div>
       </div>
     </div>
   );

@@ -74,7 +74,7 @@ export default function Tab({
           )
         ) : (
           <div className="col-12 p-3">
-            <div>
+            <div >
               <h3>{content}</h3>
             </div>
           </div>

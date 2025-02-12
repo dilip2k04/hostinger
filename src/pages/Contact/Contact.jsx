@@ -118,19 +118,19 @@ export default function Contact() {
   ];
 
   return (
-    <div className="contact_container">
+    <div className="contact_container" id="contact_us_content">
       <h5 className="contact_title mb-5">
         <i>Contact Us</i>
       </h5>
-      <div className="form_tab row g-0">
+      <div className="form_tab row g-0" style={{height: '900px'}}>
         <div className="col-5 d-none d-md-block d-lg-block d-xl-block">
           <img
             src="/imgs/form.png"
-            style={{ height: "60%", width: "100%", objectFit: "contain" }}
+            style={{ height: "50%", maxHeight: '60%', width: "90%", objectFit: "contain" }}
             alt=""
           />
         </div>
-        <div className="col-md-7 col-12 d-flex flex-column">
+        <div className="col-md-7 col-12 mt-3">
           <form onSubmit={handleSubmit}>
             <Input
               label={"Your Name"}

@@ -3,7 +3,7 @@ import "./Accordion.css";
 
 export default function Accordion({ question, answer, id }) {
   return (
-    <div className="accordion p-2 shadow-none" id="accordionExample">
+    <div className="accordion p-3 shadow-none" id="accordionExample">
       <div className="accordion-item">
         <h2 className="accordion-header">
           <button

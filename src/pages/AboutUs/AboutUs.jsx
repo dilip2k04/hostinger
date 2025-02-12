@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutUs.css";
 import Card from "./components/Card/Card";
 import Tab from "./components/Tab/Tab";
+import CircularCard from "./components/CircularCard/CircularCard";
 
 export default function AboutUs() {
   const about_contents = [
@@ -61,36 +62,36 @@ export default function AboutUs() {
       content: "Get Your Roadmap According to your skills and Skill Alerts",
     },
   ];
-  const our_Process=[
+  const our_process_data=[
     {
-      img:"",
-      tittle:"Contact Us",
-      content:"Start by reaching out to us via WhatsApp or through our Contact Us form. We’ll guide you through the next steps"
+      img:"/imgs/circular_card1.jpeg",
+      title:"Contact Us",
+      content:"Start by reaching out to us via WhatsApp or through our Contact Us form."
     },
     {
-      img:"",
-      tittle:"Schedule a Trial Class",
+      img:"/imgs/circular_card2.jpeg",
+      title:"Schedule a Trial Class",
       content:"Book a trial class at your convenience to experience our teaching approach firsthand"
     },
     {
-      img:"",
+      img:"/imgs/circular_card3.jpeg",
       title:"Initial Evaluation",
       content:"During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement"
     },
     {
-      img:"",
+      img:"/imgs/circular_card4.jpeg",
       title:"Tailored Learning Plan",
       content:"Based on the evaluation, we create a customized program to meet your child’s unique learning needs"
     },
     {
-      img:"",
-      title:"Continuous Progress Updates",
+      img:"/imgs/circular_car5.jpeg",
+      title:"Continuous Updates",
       content:"During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement"
     },
 ]
 
   return (
-    <div className="about" id="about">
+    <div className="about" id="about_content">
       <h5 className="about_title"><i>About Us</i></h5>
 
       {about_contents.map((about, idx) => {
@@ -125,9 +126,19 @@ export default function AboutUs() {
           })}
           </div>
         </div>
-        <div className="process">
-          
+        <Tab title={'Our Process'} is_title={true}/>
+        <div className="process my-3">
+  <div className="row g-0 circular_cards d-flex justify-content-around align-items-center">
+    {our_process_data.map((card, idx) => {
+      return (
+        <div className="col-md-2 d-flex flex-column align-items-center">
+          <CircularCard img={card.img} content={card.content} title={card.title} />
         </div>
+      );
+    })}
+  </div>
+</div>
+
       </div>
     </div>
   );

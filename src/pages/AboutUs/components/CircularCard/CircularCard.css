@@ -1,0 +1,59 @@
+.circular_card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+}
+
+/* Ensuring uniform card size */
+.circular_card {
+    border: 0;
+    height: 280px; /* Adjusted to maintain consistency */
+    width: 280px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Body - Ensuring Proper Image Alignment */
+.circular_card .card-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Styling to maintain consistency */
+.circular_card_img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* Keeping the same color gradient for text */
+.circular_card_container h3, 
+.circular_card_container p {
+    background: linear-gradient(30deg, #F27A0A, #041D60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Title Styling */
+.circular_card_container h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.circular_card_container p {
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    margin-top: 10px;
+    font-weight: 400;
+}

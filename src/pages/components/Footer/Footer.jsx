@@ -1,9 +1,10 @@
 import React from 'react';
 import './Footer.css';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <div className='Footer'>
+    <div className='Footer d-flex flex-column flex-md-row justify-content-around gap-5 py-5'>
       <div className="About_Us">
         <h6>About Us</h6>
         <p>How it Works</p>
@@ -27,9 +28,9 @@ export default function Footer() {
 
       <div className="Follow_Us">
         <h6>Follow Us</h6>
-        <p>Facebook</p>
-        <p>Instagram</p>
-        <p>LinkedIn</p>
+        <p>Facebook <span className='ms-2'><FaFacebook/></span></p>
+        <p>Instagram <span className='ms-2'><FaInstagram/></span></p>
+        <p>LinkedIn <span className='ms-2'><FaLinkedin/></span></p>
       </div>
 
       <div className="Contact_Us">

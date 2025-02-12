@@ -1,13 +1,12 @@
 .Footer{
     background-color:  #041D60;
     color: white;
-    display: flex;
-    gap: 250px;
-    margin-top: 200px;
+    font-size: 20px;
+
 }
-h6{
+.Footer h6{
     padding: 20px 0px 30px 10px;
-    font-size: large;
+    font-size: 24px
 }
 p{
     margin-left: 10px;

@@ -1,33 +1,39 @@
-
-.home{
+.home {
     position: relative;
-}.blue{
+}
+
+.blue {
     color: #041D60;
 }
-.Title{
+
+.Title {
     font-size: 48px;
-    color:#041D60;
+    color: #041D60;
 }
-.Title span{
-    color:#F27A0A;
+
+.Title span {
+    color: #F27A0A;
 }
-.content .para{
+
+.content .para {
     color: #041D60 !important;
     font-size: 32px;
     font-weight: 500;
     line-height: 20px;
-    text-align:center;
+    text-align: center;
     text-indent: 50%;
 }
-.NavTitle{
+
+.NavTitle {
     font-size: 50px;
-    color:#F27A0A;
+    color: #F27A0A;
 }
 
-.content{
+.content {
     margin-bottom: 40px;
 }
-.Home_card{
+
+.Home_card {
     width: 350px;
     margin-top: 40px;
     box-shadow: 0px 18px 50px 0px #00000080;
@@ -35,11 +41,18 @@
     left: 100px;
     height: 377px;
 }
-.Home_card:nth-child(2n){
+
+.Home_card:nth-child(2n) {
     left: 1100px;
 }
-.Home_card img{
+
+.Home_card img {
     width: 66px;
     height: 66px;
     object-fit: cover;
+}
+
+.vertical{
+    height: 2px;
+    background-color: black;
 }
