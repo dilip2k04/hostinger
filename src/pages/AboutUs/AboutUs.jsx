@@ -91,7 +91,7 @@ export default function AboutUs() {
 
   return (
     <div className="about" id="about">
-      <h5 className="about_title"><i>About Us </i></h5>
+      <h5 className="about_title"><i>About Us</i></h5>
 
       {about_contents.map((about, idx) => {
         return (
