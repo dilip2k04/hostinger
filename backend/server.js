@@ -5,7 +5,11 @@ const app = express();
 
 app.use(express.json());
 
-const dbUrl =  process.env.DB_URL || 'mongodb://localhost:27017/student_db';
+const cors = require("cors");
+app.use(cors({ origin: "http://localhost:5174" })); // Adjust to your frontend port
+
+
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/student_db';
 
 mongoose.connect(dbUrl);
 
@@ -22,20 +26,28 @@ app.get('/hello', (req, res) => {
     });
 });
 
-app.post('/register', async(req, res) => {
-    try{
-        const student = new Student(req.body);
+app.post('/register', async (req, res) => {
+    try {
+        console.log(req.body);
+        const student = new Student({
+            student_name: req.body.student_name,
+            contact_number: req.body.contact_number,
+            email: req.body.email,
+            child_grade: req.body.child_grade,
+            prefered_subjects: req.body.prefered_subjects.split(',').map(subject => subject.trim())
+        });
         await student.save();
-        res.status(200).json({
+        console.log(student)
+        res.json({
             message: 'Student Registered Successfully!'
         });
-    }catch(err){
+    } catch (e) {
         res.status(500).json({
             message: e.message
         });
     }
 })
 
-  app.listen( 3000,  () => {
+app.listen(3000, () => {
     console.log('Server running on port 3000');
-  });
+});

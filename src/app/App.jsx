@@ -11,6 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Home from "../pages/Home/Home";
+import { ToastContainer } from "react-toastify";
 
 
 function App() {
@@ -19,6 +20,18 @@ function App() {
   }, [])
   return (
     <>
+    <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
       <Navbar />
       <Hero/>
       <Home />

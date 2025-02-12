@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const student_schema = new mongoose.Schema({
-    name: {
+    student_name: {
         type: String,
         required: true,
     },
@@ -17,7 +17,7 @@ const student_schema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    prefered_subject: [
+    prefered_subjects: [
         {
             type: String,
             required: true,

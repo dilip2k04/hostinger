@@ -1,10 +1,89 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import Input from "./components/Input/Input";
 import Tab from "../AboutUs/components/Tab/Tab";
 import Accordion from "./components/Accordion/Accordion";
+import { toast } from "react-toastify";
+import axios from "axios";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    student_name: "",
+    contact_number: "",
+    email: "",
+    child_grade: "",
+    prefered_subjects: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const checkTheForm = (formData) => {
+    let checked = true;
+    let errors = {};
+
+    for (let key in formData) {
+      if (
+        formData[key] === "" ||
+        formData[key] === null ||
+        formData[key] === false
+      ) {
+        errors[key] = `${capitalize(key)} is missing.`;
+        checked = false;
+      }
+    }
+
+    if (isNaN(parseInt(formData.contact_number))) {
+      toast.error("Phone number must be a number.");
+      checked = false;
+    }
+
+    if (formData.contact_number.length != 10) {
+      toast.error("Mobile Number should contain 10 numbers.");
+      checked = false;
+    }
+
+    return { checked, errors };
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { checked, errors } = checkTheForm(formData);
+    console.log({ checked, errors });
+    if (checked) {
+      try {
+        console.log(formData);
+        const response = await axios.post(
+          "http://localhost:3000/register",
+          formData
+        );
+        toast.success(response.data.message);
+        setFormData({
+          student_name: "",
+          contact_number: "",
+          email: "",
+          child_grade: "",
+          prefered_subjects: "",
+        });
+      } catch (e) {
+        toast.error(e.message);
+      }
+    } else {
+      console.log(errors);
+      Object.values(errors).forEach((err) => toast.error(capitalize(err)));
+    }
+  };
+
+  const capitalize = (s) => {
+    return s[0].toUpperCase() + s.slice(1).split("_").join(" ");
+  };
+
   const accordion_data = [
     {
       question: "What makes IQ Bridge different ?",
@@ -52,14 +131,41 @@ export default function Contact() {
           />
         </div>
         <div className="col-md-7 col-12 d-flex flex-column">
-          <form>
-            <Input label={"Your Name"} />
-            <Input label={"Contact Number"} />
-            <Input label={"Email"} />
-            <Input label={"Child Grade"} />
-            <Input label={"Prefered Subject"} />
+          <form onSubmit={handleSubmit}>
+            <Input
+              label={"Your Name"}
+              id={"student_name"}
+              handleInput={handleInputChange}
+              value={formData.student_name}
+            />
+            <Input
+              label={"Contact Number"}
+              id={"contact_number"}
+              handleInput={handleInputChange}
+              value={formData.contact_number}
+            />
+            <Input
+              label={"Email"}
+              id={"email"}
+              handleInput={handleInputChange}
+              value={formData.email}
+            />
+            <Input
+              label={"Child Grade"}
+              id={"child_grade"}
+              handleInput={handleInputChange}
+              value={formData.child_grade}
+            />
+            <Input
+              label={"Prefered Subjects"}
+              id={"prefered_subjects"}
+              handleInput={handleInputChange}
+              value={formData.prefered_subjects}
+            />
             <div className="d-flex justify-content-center align-items-center">
-              <button className="form_button">Book A Demo</button>
+              <button onClick={handleSubmit} className="form_button">
+                Book A Demo
+              </button>
             </div>
           </form>
         </div>
@@ -71,11 +177,11 @@ export default function Contact() {
             return (
               <div className="col-md-6">
                 <Accordion
-                question={acc.question}
-                answer={acc.answer}
-                key={idx}
-                id={idx}
-              />
+                  question={acc.question}
+                  answer={acc.answer}
+                  key={idx}
+                  id={idx}
+                />
               </div>
             );
           })}
