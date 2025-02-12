@@ -28,19 +28,19 @@ export default function Home() {
 ]
   return (
     
-    <>
+    <div className='Home'>
     <h2 className=' mx-5 NavTitle'>Home</h2>
     <div className="content d-flex justify-content-center align-items-center flex-column gap-5">
       <h2 className='Title'>"Personalised <span>Learning</span>  Experience"</h2>
       <h2 className='Para blue text-wrap'>Helping students think independently, bridge learning gaps, and achieve academic<br/> excellence through expert-led,personalized education</h2>
     </div>
+    {/* <div className="circle-Blue"></div>
+    <div className="circle"></div> */}
     
-    <div className="circle"></div>
-    <div className="circle-Blue"></div>
     
     
 
-    </>
+    </div>
     
   )
 }

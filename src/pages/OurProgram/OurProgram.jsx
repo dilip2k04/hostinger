@@ -123,7 +123,6 @@ export default function OurProgram() {
             <div
               key={idx}
               className="col-md-4 d-flex justify-content-center align-items-center"
-              
             >
               <Card title={sub.title} img={sub.img} link={sub.link}  />
             </div>

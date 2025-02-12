@@ -1,4 +1,7 @@
-.blue{
+
+.home{
+    position: relative;
+}.blue{
     color: #041D60;
 }
 .Title{
@@ -24,7 +27,7 @@
 .circle {
     position: absolute;
     bottom: -580px; /* Moves to the bottom of the page */
-    right: 115px; /* Adjust right position */
+    right: 0px; /* Adjust right position */
     width: 120px; /* Adjust size */
     height: 120px;
     background-color: #F27A0A; /* Change as needed */
@@ -34,14 +37,14 @@
 .circle-Blue {
     position: absolute;
     overflow: hidden;
-    
     bottom: -800px; /* Moves to the bottom of the page */
-    right: -200px; /* Adjust right position */
+    right: -50px; /* Adjust right position */
     width: 400px; /* Adjust size */
     height: 400px;
     background-color: #041D60; /* Change as needed */
     border-radius: 50%;
     z-index: -1;
+    clip-path: inset(0 50% 0 0); 
 }
 .card{
     height: 337px;
