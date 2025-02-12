@@ -144,7 +144,15 @@ export default function OurProgram() {
         })}
       </div>
       <Tab title="Testimonials" is_title={true} />
-      <div className="testimonials_container"></div>
+      <div className="testimonials_container d-flex flex-column justify-content-center align-items-center p-5">
+        <div className="img_content d-flex justify-content-center align-items-center gap-5">
+          <img src="/src/assets/TestimonialPic.png" alt="" width={175} height={185} />
+          <div className="cotent">
+            <h2>“ IQ Bridge Has Transformed My Childs Academic Percentage ”</h2>
+            <p className="aling-content-right">-Mrs.Fatima , Dubai</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
