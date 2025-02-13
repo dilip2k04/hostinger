@@ -15,6 +15,10 @@
     border-radius: 60px;
     border: 1px solid #ccc;
     margin-left: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.about_us_card:hover{
+        transform: scale(1.1);
 }
 
 .card_content h3 {
