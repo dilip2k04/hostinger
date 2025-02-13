@@ -10,32 +10,32 @@ export default function OurProgram() {
     {
       title: "English",
       img: "/imgs/sub2.png",
-      link: "#",
+      link: "#contact_us_content",
     },
     {
       title: "Hindi",
       img: "/imgs/sub1.png",
-      link: "#",
+      link: "#contact_us_content",
     },
     {
       title: "Mathematics",
       img: "/imgs/sub6.png",
-      link: "#",
+      link: "#contact_us_content",
     },
     {
       title: "Science",
       img: "/imgs/sub5.png",
-      link: "#",
+      link: "#contact_us_content",
     },
     {
       title: "Social Science",
       img: "/imgs/sub4.png",
-      link: "#",
+      link: "#contact_us_content",
     },
     {
       title: "Computer Science",
       img: "/imgs/sub3.png",
-      link: "#",
+      link: "#contact_us_content",
     },
   ];
 
@@ -92,7 +92,7 @@ export default function OurProgram() {
             unique learning style and pace, ensuring effective understanding and
             retention of concepts.
           </h4>
-          <button className="ourprogram_button">Book a Demo</button>
+          <a className="ourprogram_button btn hover-border-primary" href="#contact_us_content">Book a Demo</a>
           <hr />
         </div>
       </div>

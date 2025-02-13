@@ -18,14 +18,15 @@ export default function Hero() {
               Grades 3-9 in the GSC
             </h4>
             <div className="hero_buttons d-flex">
-              <button className="book_button">Book a Demo</button>
-              <button
-                className="explore_us d-flex justify-content-center align-items-center"
+              <a className="book_button btn" href="#contact_us_content">Book a Demo</a>
+              <a
+                className="explore_us btn d-flex justify-content-center align-items-center"
                 id="button"
+                href="#about_content"
               >
                 Explore Us &nbsp;&nbsp;
                 <RiArrowRightDoubleLine />
-              </button>
+              </a>
             </div>
           </div>
         </div>
