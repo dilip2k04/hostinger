@@ -33,14 +33,14 @@ export default function Hero() {
           </div>
         </div>
         <div className="col-md-6 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center">
-        <div className="d-flex justify-content-center align-items-center" style={{ width: "768px", height: "738px" }}>
-      <Carousel controls={false} indicators={false} interval={2000} fade>
+        <div className="d-flex justify-content-center align-items-center" style={{ width: "768px", height: "830px" }}>
+      <Carousel controls={false} indicators={false} interval={1000} fade>
         <Carousel.Item>
           <img
             src="/imgs/hero_main_pic2.png"
             alt="Image 1"
             className="d-block w-100"
-            style={{ height: "738px", objectFit: "cover" }}
+            style={{ height: "600px", objectFit: "cover" }}
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -48,7 +48,7 @@ export default function Hero() {
             src="/imgs/Hero_img2.png"
             alt="Image 2"
             className="d-block w-100"
-            style={{ height: "738px", objectFit: "cover" }}
+            style={{ height: "600px", objectFit: "cover" }}
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -56,7 +56,7 @@ export default function Hero() {
             src="/imgs/Hero_img_3.png"
             alt="Image 3"
             className="d-block w-100"
-            style={{ height: "738px", objectFit: "cover" }}
+            style={{ height: "600px", objectFit: "cover" }}
           />
         </Carousel.Item>
       </Carousel>
