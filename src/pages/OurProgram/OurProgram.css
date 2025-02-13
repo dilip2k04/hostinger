@@ -66,6 +66,7 @@
 
 .ourprogram_title {
     color: #F27A0A;
+    margin-left: 100px;
 }
 
 .grade {
@@ -83,6 +84,7 @@
 
     .ourprogram_title {
         font-size: 32px;
+        margin-left: 0;
     }
 }
 .c1 {

@@ -5,7 +5,7 @@ import './Navbar.css'
 
 export default function Navbar() {
   return (
-<nav className="navbar navbar-expand-lg shadow p-3">
+<nav className="navbar navbar-expand-lg shadow p-3 fixed-top" style={{backgroundColor: 'white'}}>
   <div className="container-fluid d-flex">
     <a className="navbar-brand" href="#"><img src="/src/assets/Logo.png" style={{height: '80px', width: '100%', objectFit: 'contain'}} alt="" /></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

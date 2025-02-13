@@ -29,7 +29,7 @@ export default function Home() {
   ];
   return (
     <div className="Home" id="home_content">
-      <h2 className=" mx-5 NavTitle">Home</h2>
+      <h2 className="NavTitle">Home</h2>
       <div className="content text-center  d-flex justify-content-center align-items-center flex-column gap-5">
         <h2 className="Title">
           "Personalised <span>Learning</span> Experience"

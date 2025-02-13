@@ -1,5 +1,5 @@
 .contact_title {
-    margin-left: 40px;
+    margin-left: 100px;
     color: #F27A0A
 }
 
@@ -13,6 +13,10 @@
         padding: 0 25px;
         margin-bottom: 30px;
     }
+    .contact_title{
+        margin-left: 40px;
+    }
+
 }
 
 

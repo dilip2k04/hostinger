@@ -2,6 +2,7 @@
     position: relative;
 }
 
+
 .blue {
     color: #041D60;
 }
@@ -27,6 +28,7 @@
 .NavTitle {
     font-size: 50px;
     color: #F27A0A;
+    margin-left: 120px;
 }
 
 .content {
@@ -55,4 +57,13 @@
 .vertical{
     height: 2px;
     background-color: black;
+}
+@media (max-width: 768px) {
+    .NavTitle{
+        font-size: 36px;
+        margin-left: 25px;
+    }
+    .Title {
+        font-size: 40px;
+    }
 }

@@ -9,11 +9,12 @@
 
 .about_us_card {
     width: 80%;
-    max-width: 500px;
+    max-width: 450px;
     padding: 30px;
     margin: 20px;
     border-radius: 60px;
-    border: 1px solid #ccc
+    border: 1px solid #ccc;
+    margin-left: 30px;
 }
 
 .card_content h3 {
