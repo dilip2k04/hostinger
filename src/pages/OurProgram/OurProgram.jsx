@@ -102,7 +102,7 @@ export default function OurProgram() {
         <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center">
           <h3 className="grade_title">Grade 3 - 5</h3>
           <img
-            src="/src/assets/gradec1.jpg"
+            src="/src/assets/gradec1.png"
             className="grade_img shadow-lg"
             alt="image"
           />
@@ -110,7 +110,7 @@ export default function OurProgram() {
         <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center">
           <h3 className="grade_title">Grade 6 - 9</h3>
           <img
-            src="/src/assets/gradec2.jpg"
+            src="/src/assets/gradec2.png"
             className="grade_img shadow-lg"
             alt="image"
           />
