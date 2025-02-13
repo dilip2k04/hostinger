@@ -118,7 +118,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="contact_container" id="contact_us_content">
+    <div className="contact_container" id="contact_us">
       <h5 className="contact_title mb-5">
         <i>Contact Us</i>
       </h5>

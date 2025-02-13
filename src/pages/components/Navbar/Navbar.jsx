@@ -13,10 +13,10 @@ export default function Navbar() {
     </button>
     <div className="collapse navbar-collapse" htmlFor="navbarNavAltMarkup">
       <div className="navbar-nav ms-auto">
-        <a className="nav-link mx-3" aria-current="page" href="#home_content">Home</a>
-        <a className="nav-link mx-3" href="#about_content">About Us</a>
-        <a className="nav-link mx-3" href="#our_program_content">Our Programs</a>
-        <a className="nav-link mx-3" href='#contact_us_content'>Contact Us</a>
+        <a className="nav-link mx-3" aria-current="page" href="#home">Home</a>
+        <a className="nav-link mx-3" href="#about_Us">About Us</a>
+        <a className="nav-link mx-3" href="#our_program">Our Programs</a>
+        <a className="nav-link mx-3" href='#contact_us'>Contact Us</a>
       </div>
     </div>
   </div>

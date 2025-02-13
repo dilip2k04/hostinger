@@ -71,7 +71,7 @@ export default function OurProgram() {
   ];
 
   return (
-    <div className="ourprogram mt-4" id="our_program_content">
+    <div className="ourprogram mt-4" id="our_program">
       <h5 className="ourprogram_title mb-5">
         <i>Our Program </i>
       </h5>
@@ -92,7 +92,7 @@ export default function OurProgram() {
             unique learning style and pace, ensuring effective understanding and
             retention of concepts.
           </h4>
-          <a className="ourprogram_button btn hover-border-primary" href="#contact_us_content">Book a Demo</a>
+          <a className="ourprogram_button btn hover-border-primary" href="#contact_us">Book a Demo</a>
           <hr />
         </div>
       </div>
