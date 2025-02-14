@@ -15,12 +15,9 @@ const CrossCards = () => {
           <div className="card cross_card p-3" style={{width: '300px', height: 'auto', bottom: '100px'}}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
             <img src="/imgs/cross_card1.png" className="crosscard_img" alt="" />
-            <h3>Elite Mentorship</h3>
-              <div className="cross_card_content text-center text-muted p-3">
-                
-              
-
-                Mentoring from IIT-IIM Alumni Founders              </div>
+            <h3 >Elite Mentorship</h3>
+            <div className="cross_card_content text-center text-muted p-3">
+                Mentoring from IIT-IIM Alumni Founders</div>
             </div>
           </div>
         </div>

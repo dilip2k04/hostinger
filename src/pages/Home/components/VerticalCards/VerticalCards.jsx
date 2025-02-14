@@ -7,7 +7,7 @@ export default function VerticalCards() {
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
               <div className="cross_card_content text-center text-muted p-3">
               <img src="/imgs/cross_card1.png" className="crosscard_img" alt="" />
-                <h5>Elite Mentorship</h5>
+                <h3 style={{fontSize: '24px',color:'black'}}>Elite Mentorship</h3>
                 Mentoring from IIT-IIM Alumni Founders              </div>
             </div>
           </div>
