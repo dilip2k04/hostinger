@@ -7,7 +7,7 @@ import CircularCard from "./components/CircularCard/CircularCard";
 export default function AboutUs() {
   const about_contents = [
     {
-      img: "/src/assets/our mission.jpg",
+      img: "/imgs/our mission.jpg",
       title: "Our Mission",
       content:
         "To deliver an online education experience for CBSE students currently in Grades 3-9 across the GCC region, fostering independent thinking[, bridging learning gaps, and nurturing a love for knowledge.",
@@ -15,7 +15,7 @@ export default function AboutUs() {
       is_content: false,
     },
     {
-      img: "/src/assets/oru vission.jpg",
+      img: "/imgs/oru vission.jpg",
       title: "Our Vision",
       content:
         "To deliver an online education experience for CBSE students currently in Grades 3-9 across the GCC region, fostering independent thinking, bridging learning gaps, and nurturing a love for knowledge.",
@@ -34,30 +34,30 @@ export default function AboutUs() {
 
   const about_card_contents = [
     {
-      img: "/src/assets/about c1.jpg",
+      img: "/imgs/about c1.jpg",
       title: "Elite Educators",
       content:
         "   Choose your Mentor from 1000+ Mentors From Skill Link Community",
     },
     {
-      img: "/src/assets/about c2.jpg",
+      img: "/imgs/about c2.jpg",
       title: "State-of-the-Art",
       content:
         "Get Certified from Skill Link For Every Course you Finish on Skill Link",
     },
     {
-      img: "/src/assets/about c3.jpg",
+      img: "/imgs/about c3.jpg",
       title: "Affordable Pricing",
       content: "Track your Progress and Gain Your Skill Accordingly",
     },
     {
-      img: "/src/assets/about c4.jpg",
+      img: "/imgs/about c4.jpg",
       title: "Flexible Schedules",
       content:
         "Get Notification Alerts for Every Unfinished Courses to Keep You Motivated",
     },
     {
-      img: "/src/assets/about c5.jpg",
+      img: "/imgs/about c5.jpg",
       title: "Personalized Learning Approach",
       content: "Get Your Roadmap According to your skills and Skill Alerts",
     },

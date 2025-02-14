@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
 <nav className="navbar navbar-expand-lg py-3 shadow fixed-top" style={{backgroundColor: 'white', width: '100%'}}>
   <div className="container-fluid d-flex">
-    <a className="navbar-brand" href="#"><img src="/src/assets/Logo.png" style={{height: '60px', width: '100%', objectFit: 'contain'}} alt="" /></a>
+    <a className="navbar-brand" href="#"><img src="/imgs/Logo.png" style={{height: '60px', width: '100%', objectFit: 'contain'}} alt="" /></a>
     <button className="navbar-toggler shadow-none border-none" style={{border: '0', backgroundColor: 'transparent'}} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

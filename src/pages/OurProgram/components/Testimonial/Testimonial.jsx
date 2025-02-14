@@ -9,7 +9,7 @@ export default function Testimonial() {
       <div className="card-body row g-2 p-2">
         <div className="col-3">
           <img
-            src="../src/assets/TestimonialPic.png"
+            src="/imgs/TestimonialPic.png"
             style={{ height: "80px", width: "80px", borderRadius: "0", marginTop: '20px' }}
             alt=""
           />
