@@ -98,7 +98,7 @@ export default function OurProgram() {
       </div>
       <Tab title="Grade Specific Online Tuition" is_title={true} />
 
-      <div className="row g-0 mb-4">
+      <div className="row g-0 mb-4" id="Courses">
         <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center">
           <h3 className="grade_title">Grade 3 - 5</h3>
           <img

@@ -14,10 +14,10 @@ export default function Footer() {
 
       <div className="Explore">
         <h6>Explore</h6>
-        <p>Home</p>
-        <p>About</p>
-        <p>Course</p>
-        <p>Contact</p>
+        <a  href='#home'>Home</a>
+        <a href='#about_Us'>About</a>
+        <a href='#Courses'>Course</a>
+        <a href='#contact_us'>Contact</a>
       </div>
 
       <div className="Support">
