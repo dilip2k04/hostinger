@@ -28,7 +28,8 @@ export default function Home() {
     },
   ];
   return (
-    <div className="Home" id="home">
+    <div className="Home home_page" id="home">
+      <div className="text-center">
       <h2 className="NavTitle">Home</h2>
       <div className="content text-center  d-flex justify-content-center align-items-center flex-column gap-5">
         <h2 className="Title">
@@ -39,6 +40,7 @@ export default function Home() {
           achieve academic
           <br /> excellence through expert-led,personalized education
         </h2>
+      </div>
       </div>
 
       <div className="pt-5 d-md-block d-lg-block d-xl-block d-md-block d-none position-relative">

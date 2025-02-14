@@ -10,32 +10,32 @@ export default function OurProgram() {
     {
       title: "English",
       img: "/imgs/sub2.png",
-      link: "#contact_us_content",
+      link: "#contact_us",
     },
     {
       title: "Hindi",
       img: "/imgs/sub1.png",
-      link: "#contact_us_content",
+      link: "#contact_us",
     },
     {
       title: "Mathematics",
       img: "/imgs/sub6.png",
-      link: "#contact_us_content",
+      link: "#contact_us",
     },
     {
       title: "Science",
       img: "/imgs/sub5.png",
-      link: "#contact_us_content",
+      link: "#contact_us",
     },
     {
       title: "Social Science",
       img: "/imgs/sub4.png",
-      link: "#contact_us_content",
+      link: "#contact_us",
     },
     {
       title: "Computer Science",
       img: "/imgs/sub3.png",
-      link: "#contact_us_content",
+      link: "#contact_us",
     },
   ];
 

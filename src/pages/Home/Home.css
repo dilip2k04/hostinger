@@ -1,5 +1,5 @@
-.home {
-    position: relative;
+.home_page {
+    padding-top: 120px;
 }
 
 
@@ -28,7 +28,6 @@
 .NavTitle {
     font-size: 50px;
     color: #F27A0A;
-    margin-left: 120px;
 }
 
 .content {
@@ -41,7 +40,7 @@
     box-shadow: 0px 18px 50px 0px #00000080;
     position: relative;
     left: 100px;
-    height: 377px;
+    height: auto;
 }
 
 .Home_card:nth-child(2n) {

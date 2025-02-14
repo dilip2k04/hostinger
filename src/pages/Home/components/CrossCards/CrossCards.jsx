@@ -12,17 +12,20 @@ const CrossCards = () => {
           </div>
         </div>
         <div className="position-absolute top-0 start-0">
-          <div className="card cross_card" style={{width: '400px', bottom: '100px', height: '500px'}}>
+          <div className="card cross_card p-3" style={{width: '300px', height: 'auto', bottom: '100px'}}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
+            <img src="/imgs/cross_card1.png" className="crosscard_img" alt="" />
+            <h3>Elite Mentorship</h3>
               <div className="cross_card_content text-center text-muted p-3">
-              <img src="/imgs/cross_card1.png" className="crosscard_img" alt="" />
-                <h5>Elite Mentorship</h5>
+                
+              
+
                 Mentoring from IIT-IIM Alumni Founders              </div>
             </div>
           </div>
         </div>
         <div className="position-absolute bottom-0 end-0">
-          <div className="card cross_card" style={{width: '400px', height: '500px',left: '100px',top: '200px' ,zIndex: '1'}}>
+          <div className="card cross_card p-3" style={{width: '300px', height: 'auto',left: '100px',top: '200px' ,zIndex: '1'}}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
             <img src="/imgs/cross_card2.png"  className="crosscard_img" alt="" />
 
@@ -41,7 +44,7 @@ const CrossCards = () => {
           </div>
         </div>
         <div className="position-absolute bottom-0 start-0">
-          <div className="card cross_card" style={{right: '150px',top: '100px', zIndex: '1', width: '400px', height: '500px'}}>
+          <div className="card cross_card p-3" style={{right: '150px',top: '100px', zIndex: '1', width: '300px', height: 'auto'}}>
             <div className="card-body  d-flex justify-content-center align-items-center flex-column">
             <img src="/imgs/cross_card3.png" className="crosscard_img" alt="" />
 
@@ -64,7 +67,7 @@ const CrossCards = () => {
           
         </div>
         <div className="position-absolute bottom-0 end-0">
-          <div className="card cross_card" style={{left: '150px',top: '100px' ,zIndex: '1', width: '400px', height: '500px'}}>
+          <div className="card cross_card p-3" style={{left: '150px',top: '100px' ,zIndex: '1', width: '300px', height: 'auto'}}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
             <img src="/imgs/cross_card4.png" className="crosscard_img" alt="" />
 
