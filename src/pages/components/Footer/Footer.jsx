@@ -7,9 +7,9 @@ export default function Footer() {
     <div className='Footer d-flex flex-column flex-md-row justify-content-around gap-5 py-5'>
       <div className="About_Us">
         <h6>About Us</h6>
-        <a href='#Teaching'>How it Works</a>
-        <a href='#our_program'>Our Programms</a>
-        <a href=''>Education Patners</a>
+        <a href='#our_process'>How it Works</a>
+        <a href='#our_program'>Our Programs</a>
+        <a href='#'>Education Partners</a>
       </div>
 
       <div className="Explore">
@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="Support">
         <h6>Support</h6>
         <p>Need any help ?</p>
-        <p>info@iqbridge.com</p>
+        <p><a className='m-0' href="mailto:info@iqbridge.com">info@iqbridge.com</a></p>
       </div>
 
       <div className="Follow_Us">
@@ -35,8 +35,8 @@ export default function Footer() {
 
       <div className="Contact_Us">
         <h6>Contact Us</h6>
-        <p><strong>Email : </strong>contact@iqbridge.com</p>
-        <p><strong>Phone : </strong>+91-9990467544</p>
+        <p className='d-flex gap-2'><strong>Email : </strong><a href="mailto:contact@iqbridge.com" className="m-0">contact@iqbridge.com</a></p>
+        <p className='d-flex gap-2'><strong>Phone : </strong><a href="tel:+91-9990467544" className="m-0">+91-9990467544</a></p>
       </div>
     </div>
   )

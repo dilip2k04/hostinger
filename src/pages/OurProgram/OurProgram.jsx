@@ -92,7 +92,12 @@ export default function OurProgram() {
             unique learning style and pace, ensuring effective understanding and
             retention of concepts.
           </h4>
-          <a className="ourprogram_button btn hover-border-primary" href="#contact_us">Book a Demo</a>
+          <a
+            className="ourprogram_button btn hover-border-primary"
+            href="#contact_us"
+          >
+            Book a Demo
+          </a>
           <hr />
         </div>
       </div>
@@ -101,19 +106,35 @@ export default function OurProgram() {
       <div className="row g-0 mb-4" id="Courses">
         <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center">
           <h3 className="grade_title">Grade 3 - 5</h3>
-          <img
-            src="/imgs/gradec2.png"
-            className="grade_img shadow-lg"
-            alt="image"
-          />
+          <div className="card text-bg-dark grade_card">
+            <img src="/imgs/gradec2.png" className="card-img" alt="..." />
+            <div className="card-img-overlay overlay-text">
+              <p className="card-text p-3 pt-5 fs-5">
+                This content hightlights the importance of building a strong foundation in Mathematics, Science and Engligh through activities that encourage curiosity and the ability to solve the problems independently.
+              </p>
+              
+            </div>
+          </div>
         </div>
         <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center">
           <h3 className="grade_title">Grade 6 - 9</h3>
-          <img
+          <div className="card text-bg-dark grade_card">
+            <img src="/imgs/gradec1.png" className="card-img" alt="..." />
+            <div className="card-img-overlay overlay-text">
+              <p className="card-text p-3 pt-5 fs-5">
+               The content emphasizes teaching advanced concepts in core subjects to help the students tackle academic challenges while providing comprehensive guidance to develop critical thinking and analytical skills.
+              </p>
+             
+            </div>
+          </div>
+          {/* <div className="position-relative">
+         <img
             src="/imgs/gradec1.png"
             className="grade_img shadow-lg"
             alt="image"
           />
+          <p className="position-absolute top-50 start-50">Hii bro</p>
+         </div> */}
         </div>
       </div>
       <Tab title="Subjects We Cover" is_title={true} />
@@ -131,7 +152,10 @@ export default function OurProgram() {
         })}
       </div>
       <Tab title="Teaching Methodology" is_title={true} />
-      <div className="teaching_container w-100 d-flex flex-column justify-content-center align-items-center" id="Teaching">
+      <div
+        className="teaching_container w-100 d-flex flex-column justify-content-center align-items-center"
+        id="Teaching"
+      >
         {teaching_data.map((d, idx) => {
           return (
             <BroadCard
@@ -146,81 +170,81 @@ export default function OurProgram() {
       </div>
       <Tab title="Testimonials" is_title={true} />
       <div className="testimonial_wrapper">
-      <div className="testimonial_container row g-0 d-flex justify-content-center align-items-center">
-        <div className="col-md-4 g-2">
-          <Testimonial />
+        <div className="testimonial_container row g-0 d-flex justify-content-center align-items-center">
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
+          <div className="col-md-4 g-2">
+            <Testimonial />
+          </div>
         </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-        <div className="col-md-4 g-2">
-          <Testimonial />
-        </div>
-      </div>
       </div>
     </div>
   );

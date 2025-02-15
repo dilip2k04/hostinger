@@ -3,6 +3,7 @@ import "./AboutUs.css";
 import Card from "./components/Card/Card";
 import Tab from "./components/Tab/Tab";
 import CircularCard from "./components/CircularCard/CircularCard";
+import { FaLongArrowAltDown, FaLongArrowAltRight } from "react-icons/fa";
 
 export default function AboutUs() {
   const about_contents = [
@@ -62,37 +63,44 @@ export default function AboutUs() {
       content: "Get Your Roadmap According to your skills and Skill Alerts",
     },
   ];
-  const our_process_data=[
+  const our_process_data = [
     {
-      img:"/imgs/circular_card1.jpeg",
-      title:"Contact Us",
-      content:"Start by reaching out to us via WhatsApp or through our Contact Us form."
+      img: "/imgs/circular_card1.jpeg",
+      title: "Contact Us",
+      content:
+        "Start by reaching out to us via WhatsApp or through our Contact Us form.",
     },
     {
-      img:"/imgs/circular_card2.jpeg",
-      title:"Schedule a Trial Class",
-      content:"Book a trial class at your convenience to experience our teaching approach firsthand"
+      img: "/imgs/circular_card2.jpeg",
+      title: "Schedule a Trial Class",
+      content:
+        "Book a trial class at your convenience to experience our teaching approach firsthand",
     },
     {
-      img:"/imgs/circular_card3.jpeg",
-      title:"Initial Evaluation",
-      content:"During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement"
+      img: "/imgs/circular_card3.jpeg",
+      title: "Initial Evaluation",
+      content:
+        "During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement",
     },
     {
-      img:"/imgs/circular_card4.jpeg",
-      title:"Tailored Learning Plan",
-      content:"Based on the evaluation, we create a customized program to meet your child’s unique learning needs"
+      img: "/imgs/circular_card4.jpeg",
+      title: "Tailored Learning Plan",
+      content:
+        "Based on the evaluation, we create a customized program to meet your child’s unique learning needs",
     },
     {
-      img:"/imgs/circular_car5.jpeg",
-      title:"Continuous Updates",
-      content:"During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement"
+      img: "/imgs/circular_car5.jpeg",
+      title: "Continuous Updates",
+      content:
+        "During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement",
     },
-]
+  ];
 
   return (
     <div className="about" id="about_Us">
-      <h5 className="about_title"><i>About Us</i></h5>
+      <h5 className="about_title">
+        <i>About Us</i>
+      </h5>
 
       {about_contents.map((about, idx) => {
         return (
@@ -108,37 +116,55 @@ export default function AboutUs() {
       })}
 
       <div className="whyiq">
-        <Tab title={'Why IQ Bridge ?'} is_title={true}/>
+        <Tab title={"Why IQ Bridge ?"} is_title={true} />
 
         <div className="about_cards ">
-          <div className="cards mt-5 row d-flex justify-content-center g-0" >
-          {about_card_contents.map((card, idx) => {
-            return (
-              <div className="col-lg-4 d-flex justify-content-center" >
-                <Card
-                  img={card.img}
-                  title={card.title}
-                  content={card.content}
-                  key={idx}
-                />
-              </div>
-            );
-          })}
+          <div className="cards mt-5 row d-flex justify-content-center g-0">
+            {about_card_contents.map((card, idx) => {
+              return (
+                <div className="col-lg-4 d-flex justify-content-center">
+                  <Card
+                    img={card.img}
+                    title={card.title}
+                    content={card.content}
+                    key={idx}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
-        <Tab title={'Our Process'} is_title={true}/>
-        <div className="process my-3">
-  <div className="row g-0 circular_cards d-flex justify-content-around align-items-center">
-    {our_process_data.map((card, idx) => {
-      return (
-        <div className="col-md-2 d-flex flex-column align-items-center">
-          <CircularCard img={card.img} content={card.content} title={card.title} />
-        </div>
-      );
-    })}
-  </div>
-</div>
+        <Tab title={"Our Process"} is_title={true} />
+        <div className="process my-3" id='our_process'>
+          <div className="row g-0 circular_cards d-flex justify-content-around align-items-center">
+            {our_process_data.map((card, idx) => {
+              return (
+                <div className="col-xl-3 d-flex flex-sm-column flex-xl-row justify-content-center align-items-center">
+                  <CircularCard
+                    img={card.img}
+                    content={card.content}
+                    title={card.title}
+                  />
+                  <div className="fs-1 mb-5" style={{ color: "#041D60" }}>
+                    {idx < our_process_data.length - 1 ? (
+                      <>
+                        <div className="d-none d-xl-block">
+                          <FaLongArrowAltRight />
+                        </div>
 
+                        <div className="d-none d-xl-none d-xxl-none d-lg-block d-md-block d-sm-block">
+                          <FaLongArrowAltDown />
+                        </div>
+                      </>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

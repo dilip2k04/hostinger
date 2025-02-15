@@ -26,4 +26,8 @@
     .label {
         font-size: 18px;
     }
+
+    .input_field{
+        padding: 10px
+    }
 }

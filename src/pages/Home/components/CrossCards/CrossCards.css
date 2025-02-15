@@ -12,6 +12,7 @@
 .lower-card {
     position: absolute;
     z-index: 0;
+    background-color: transparent;
 }
 
 /* Left Card */
@@ -55,6 +56,8 @@
     border-bottom: 0 !important;
     border-right: 4px solid #041D60;
     border-top: 4px solid #041D60;
+    background-color: transparent;
+
 }
 
 .left_top_card{
@@ -64,6 +67,8 @@
     border-bottom: 0 !important;
     border-left: 4px solid #041D60;
     border-top: 4px solid #041D60;
+    background-color: transparent;
+
 }
 
 .crosscard_img{
