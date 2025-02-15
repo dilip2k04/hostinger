@@ -115,13 +115,13 @@
     }
 
  .explore_us{
-        color:#041D60;
+        color:#041D60 !important;
         height: 50px;
         background-color: transparent;
         font-size:14px;
         padding: 5px 10px  !important;
         font-weight: 500;
-        border: 2px transparent;
+        border: 2px solid #041D60 !important;
         border-radius: 30px;
         margin-top: 0 !important;
         width: 105px;
