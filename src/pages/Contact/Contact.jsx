@@ -60,7 +60,7 @@ export default function Contact() {
       try {
         console.log(formData);
         const response = await axios.post(
-          "http://localhost:3000/register",
+          "https://iq-bridge-backend.onrender.com",
           formData
         );
         toast.success(response.data.message);

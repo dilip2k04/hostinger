@@ -1,12 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Student = require('./models/Student');
+const dotenv = require('dotenv')
 const app = express();
 
 app.use(express.json());
 
+dotenv.config();
+
 const cors = require("cors");
-app.use(cors({ origin: "http://localhost:5173" })); // Adjust to your frontend port
+app.use(cors({ origin: process.env.FRONTEND_URL })); // Adjust to your frontend port
 
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/student_db';
