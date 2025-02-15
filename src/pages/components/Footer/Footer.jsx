@@ -7,9 +7,9 @@ export default function Footer() {
     <div className='Footer d-flex flex-column flex-md-row justify-content-around gap-5 py-5'>
       <div className="About_Us">
         <h6>About Us</h6>
-        <p>How it Works</p>
-        <p>Our Programms</p>
-        <p>Education Patners</p>
+        <a href='#Teaching'>How it Works</a>
+        <a href='#our_program'>Our Programms</a>
+        <a href=''>Education Patners</a>
       </div>
 
       <div className="Explore">

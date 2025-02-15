@@ -131,7 +131,7 @@ export default function OurProgram() {
         })}
       </div>
       <Tab title="Teaching Methodology" is_title={true} />
-      <div className="teaching_container w-100 d-flex flex-column justify-content-center align-items-center">
+      <div className="teaching_container w-100 d-flex flex-column justify-content-center align-items-center" id="Teaching">
         {teaching_data.map((d, idx) => {
           return (
             <BroadCard

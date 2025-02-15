@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
         <div className="col-lg-6 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center">
         <div className="d-flex justify-content-center align-items-center">
-      <Carousel controls={false} indicators={false} interval={1000} className="carousel slide carousel-fade" style={{ borderRadius: '50%',transition: '2s ease'}}>
+      <Carousel controls={false} indicators={false} interval={2000} className="carousel slide carousel-fade" style={{ borderRadius: '50%',transition: '2s ease'}}>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
           <img
             src="/imgs/hero_main_pic2.png"

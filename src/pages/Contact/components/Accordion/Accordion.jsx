@@ -22,7 +22,7 @@ export default function Accordion({ question, answer, id }) {
         </h2>
         <div
           id={id}
-          className="accordion-collapse collapse show"
+          className="accordion-collapse collapse"
           data-bs-parent="#accordionExample" 
         >
           <div className="accordion-body">

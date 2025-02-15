@@ -1,6 +1,6 @@
 .accordion-button{
     border: 1px solid #041D60 !important;
-    border: 0;
+    border-radius: 10px;
     color:#041D60;
     font-weight: 500;
     height: 100px;

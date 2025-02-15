@@ -2,7 +2,6 @@
     background-color:  #041D60;
     color: white;
     font-size: 20px;
-
 }
 .Footer h6{
     padding: 20px 0px 30px 10px;
@@ -10,5 +9,13 @@
 }
 p{
     margin-left: 10px;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-decoration: none !important;
+    color: white !important;
 }
 
