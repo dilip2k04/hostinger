@@ -32,6 +32,7 @@
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
+    border-radius:50%;
 }
 
 /* Keeping the same color gradient for text */
