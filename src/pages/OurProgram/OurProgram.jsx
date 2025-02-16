@@ -77,12 +77,13 @@ export default function OurProgram() {
       </h5>
 
       <div className="ourprogram_tab row g-0">
-        <div className="col-md-7">
-          {" "}
+        <div className="col-md-7" id="ourprogram_img_Tab">
+          
           <img
             className="ourprogram_img"
             src="/imgs/our program 1.jpg"
             alt="image"
+            
           />
         </div>
         <div className="col-md-5 p-2 d-flex justify-content-center align-items-center flex-column">
