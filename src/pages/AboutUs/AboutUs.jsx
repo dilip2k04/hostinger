@@ -139,7 +139,7 @@ export default function AboutUs() {
           <div className="row g-0 circular_cards d-flex justify-content-around align-items-center">
             {our_process_data.map((card, idx) => {
               return (
-                <div className="col-xl-3 d-flex flex-sm-column flex-xl-row justify-content-center align-items-center">
+                <div className="col-xl-2 d-flex flex-sm-column flex-xl-row justify-content-center align-items-center">
                   <CircularCard
                     img={card.img}
                     content={card.content}
