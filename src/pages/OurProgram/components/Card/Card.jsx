@@ -8,7 +8,7 @@ export default function Card({ title, img, link }) {
       <div className="sub_Card d-inline-flex flex-column justify-content-center align-items-center gap-3 rounded-5">
         <h4>{title}</h4>
         <img src={img} alt="" width={185} height={185} />
-        <a href={link} className="btn">
+        <a href={link} className="sub_button">
           Get Started
         </a>
       </div>

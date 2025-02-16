@@ -22,7 +22,17 @@
     }
 }
 
+.privacy_btn{
+    color:#041D60 !important;
+    font-size: 20px;
+margin-right: 10px;
+}
 
+.terms_btn{
+    color:#041D60 !important;
+    font-size: 20px;
+margin-right: 10px;
+}
 .form_button{
     padding: 20px 60px;
     border: 0;
