@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Hero() {
   return (
-    <div className="hero_section" style={{height: '100vh'}}>
+    <div className="hero_section" style={{height: 'calc(100vh+100px)', paddingBottom: '30px'}}>
       <div className="row g-0" style={{height: '100%'}}>
         <div className="col-lg-6 order-2 order-md-1 d-flex flex-column justify-content-center">
           {" "}

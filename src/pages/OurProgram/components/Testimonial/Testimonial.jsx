@@ -16,6 +16,7 @@ export default function Testimonial() {
         </div>
         <div className="col-9 ps-4 text-start" id="Testimonial_Card">
           <div className="review_content my-3">
+            {/* <h3 style={{color: 'black'}}>{id}</h3> */}
           “ IQ Bridge Has Transformed My Childs Academic Percentage ”
           </div>
           <strong className="h5">-Mrs.Fatima , Dubai</strong>

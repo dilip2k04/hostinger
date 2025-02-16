@@ -1,6 +1,7 @@
 .home_page {
     padding-top: 120px;
-    background-color: #e6e6fa;
+    /* background-color: #e6e6fa; */
+    height: calc(100%+500px);
 }
 
 

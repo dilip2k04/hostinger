@@ -171,80 +171,14 @@ export default function OurProgram() {
       </div>
       <Tab title="Testimonials" is_title={true} />
       <div className="testimonial_wrapper">
-        <div className="testimonial_container row g-0 d-flex justify-content-center align-items-center">
-          <div className="col-md-4 g-2">
-            <Testimonial />
+        <div className="testimonial_container row g-0 d-flex flex-column justify-content-center align-items-center">
+          {[...Array(20)].map((_, idx) => {
+            return           <div className="col-md-4 g-2" key={idx}>
+            <Testimonial/>
           </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
+          })}
 
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
-          <div className="col-md-4 g-2">
-            <Testimonial />
-          </div>
+
         </div>
       </div>
     </div>
