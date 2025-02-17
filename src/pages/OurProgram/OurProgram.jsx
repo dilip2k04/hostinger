@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./OurProgram.css";
 import Tab from "../AboutUs/components/Tab/Tab";
 import Card from "./components/Card/Card";
 import BroadCard from "./components/BroadCard/BroadCard";
 import Testimonial from "./components/Testimonial/Testimonial";
+import axios from "axios";
 
 export default function OurProgram() {
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    const fetch_testimonials = async () => {
+      const response = await axios.get("https://iq-bridge-backend.onrender.com/get-feedbacks");
+      console.log(response);
+      setTestimonials(response.data.testimonials)
+    };
+    fetch_testimonials();
+  }, []);
+
   const subject_data = [
     {
       title: "English",
@@ -78,12 +90,10 @@ export default function OurProgram() {
 
       <div className="ourprogram_tab row g-0">
         <div className="col-md-7" id="ourprogram_img_Tab">
-          
           <img
             className="ourprogram_img"
             src="/imgs/our program 1.jpg"
             alt="image"
-            
           />
         </div>
         <div className="col-md-5 p-2 d-flex justify-content-center align-items-center flex-column">
@@ -111,9 +121,11 @@ export default function OurProgram() {
             <img src="/imgs/gradec2.png" className="card-img" alt="..." />
             <div className="card-img-overlay overlay-text">
               <p className="card-text p-3 pt-5 fs-5">
-                This content hightlights the importance of building a strong foundation in Mathematics, Science and Engligh through activities that encourage curiosity and the ability to solve the problems independently.
+                This content hightlights the importance of building a strong
+                foundation in Mathematics, Science and Engligh through
+                activities that encourage curiosity and the ability to solve the
+                problems independently.
               </p>
-              
             </div>
           </div>
         </div>
@@ -123,9 +135,11 @@ export default function OurProgram() {
             <img src="/imgs/gradec1.png" className="card-img" alt="..." />
             <div className="card-img-overlay overlay-text">
               <p className="card-text p-3 pt-5 fs-5">
-               The content emphasizes teaching advanced concepts in core subjects to help the students tackle academic challenges while providing comprehensive guidance to develop critical thinking and analytical skills.
+                The content emphasizes teaching advanced concepts in core
+                subjects to help the students tackle academic challenges while
+                providing comprehensive guidance to develop critical thinking
+                and analytical skills.
               </p>
-             
             </div>
           </div>
           {/* <div className="position-relative">
@@ -172,13 +186,13 @@ export default function OurProgram() {
       <Tab title="Testimonials" is_title={true} />
       <div className="testimonial_wrapper">
         <div className="testimonial_container row g-0 d-flex flex-column justify-content-center align-items-center">
-          {[...Array(20)].map((_, idx) => {
-            return           <div className="col-md-4 g-2" key={idx}>
-            <Testimonial/>
-          </div>
+          {testimonials.map((testimonial, idx) => {
+            return (
+              <div className="col-md-4 g-2" key={idx}>
+                <Testimonial testimonial={testimonial} />
+              </div>
+            );
           })}
-
-
         </div>
       </div>
     </div>
