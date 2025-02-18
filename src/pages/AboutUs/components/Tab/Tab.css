@@ -13,8 +13,9 @@
 .title_tag h2{
     text-align: center;
     background: linear-gradient(30deg,#F27A0A, #041D60);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
+    
 }
 
 .tab_contents{
@@ -25,6 +26,8 @@
     width: 90%;
     height: 400px;
     object-fit: contain;
+    border-radius: 30px !important;
+    border: 1px transparent !important;
 }
 .tab_container{
     padding: 40px
@@ -53,14 +56,16 @@
         width: 90%;
         height: 200px;
         object-fit: contain;
+        border-radius: 30px;
+        border: 1px transparent;
     }
     
     .tab_contents h3{
-        text-align: start !important;
+        text-align: justify !important;
         line-height: 35px;
         font-weight: 400;
         font-size: 24px;
-        color:#041D60
+        color:#041D60;
     }
 
     .tab_container{
