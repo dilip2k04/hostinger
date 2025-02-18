@@ -33,6 +33,7 @@
   width: 50%;
   border-radius: 20px;
   object-fit: contain;
+  height: auto;
 }
 
 
@@ -94,6 +95,10 @@
   .ourprogram_title {
     font-size: 32px;
     margin-left: 0;
+  }
+  .ourprogram_img{
+   
+    border-radius: 0 !important;
   }
 }
 
