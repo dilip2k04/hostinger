@@ -126,7 +126,7 @@ export default function Contact() {
         <div className="col-5 d-none d-md-block d-lg-block d-xl-block">
           <img
             src="/imgs/form.png"
-            style={{ height: "75%", width: "80%", objectFit: "contain", marginTop:"18px" }}
+            style={{ height: "78%", width: "80%", objectFit: "contain", marginTop:"18px"}}
             alt=""
           />
         </div>
@@ -166,7 +166,7 @@ export default function Contact() {
             <a className="privacy_btn" href="#">Privacy Policy</a> || <a href="#" className="terms_btn">Terms & Conditions</a>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-              <button onClick={handleSubmit} className="form_button">
+              <button onClick={handleSubmit} className="form_button fw-bolder">
                 Book A Demo
               </button>
             </div>
