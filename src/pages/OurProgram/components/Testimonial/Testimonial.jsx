@@ -3,11 +3,12 @@ import React from "react";
 export default function Testimonial({ testimonial }) {
   return (
     <div
-      className="card p-3 pb-0 mt-3"
+      className="card testimonial_card p-3 pb-0 mt-3"
       style={{
         width: "auto",
-        maxWidth: "600px",
-        height: "auto",
+        maxWidth: "100%",
+        height: "100%",
+        maxHeight: 'auto',
         boxShadow: "2px 2px 4px 2px rgba(0, 0, 0, 0.3)",
         border: "0px solid black",
         borderRadius: "15px",
@@ -15,7 +16,7 @@ export default function Testimonial({ testimonial }) {
         marginLeft: "5px",
       }}
     >
-      <div className="card-body row g-0 p-2">
+      <div className="card-body row g-0 p-2 w-100">
         <div className="col-3 d-flex justify-content-center align-items-center">
           <img
             src="/imgs/TestimonialPic.png"

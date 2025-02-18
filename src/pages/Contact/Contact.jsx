@@ -178,7 +178,7 @@ export default function Contact() {
         <div className="accordions_tab d-flex  row g-0">
           {accordion_data.map((acc, idx) => {
             return (
-              <div className="col-md-6">
+              <div className="col-md-6" key={idx}>
                 <Accordion
                   question={acc.question}
                   answer={acc.answer}

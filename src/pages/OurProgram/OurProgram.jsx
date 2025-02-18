@@ -8,12 +8,11 @@ import axios from "axios";
 
 export default function OurProgram() {
   const [testimonials, setTestimonials] = useState([]);
-
   useEffect(() => {
     const fetch_testimonials = async () => {
       const response = await axios.get("https://iq-bridge-backend.onrender.com/get-feedbacks");
       console.log(response);
-      setTestimonials(response.data.testimonials)
+      setTestimonials(response.data.testimonials);
     };
     fetch_testimonials();
   }, []);
@@ -81,6 +80,9 @@ export default function OurProgram() {
       is_right_pic: true,
     },
   ];
+
+
+  
 
   return (
     <div className="ourprogram mt-4" id="our_program">
@@ -184,17 +186,16 @@ export default function OurProgram() {
         })}
       </div>
       <Tab title="Testimonials" is_title={true} />
-      <div className="testimonial_wrapper">
-        <div className="testimonial_container row g-0 d-flex flex-column justify-content-center align-items-center">
-          {testimonials.map((testimonial, idx) => {
-            return (
-              <div className="col-md-4 g-2" key={idx}>
-                <Testimonial testimonial={testimonial} />
-              </div>
-            );
-          })}
-        </div>
+      <div className="testimonial-container ">
+  <div className="testimonial-wrapper row g-1">
+    {testimonials.map((testimonial, idx) => (
+      <div className="testimonial-item col-md-3" key={idx}>
+        <Testimonial testimonial={testimonial} />
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 }
