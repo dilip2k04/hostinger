@@ -19,7 +19,7 @@ export default function Testimonial({ testimonial }) {
       <div className="card-body row g-0 p-2 w-100">
         <div className="col-3 d-flex justify-content-center align-items-center">
           <img
-            src="/imgs/TestimonialPic.png"
+            src="/imgs/google_logo.png"
             style={{
               height: "80px",
               width: "80px",
