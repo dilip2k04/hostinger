@@ -157,7 +157,7 @@ export default function Contact() {
               value={formData.child_grade}
             />
             <Input
-              label={"Prefered_Subjects"}
+              label={"Prefered Subjects"}
               id={"prefered_subjects"}
               handleInput={handleInputChange}
               value={formData.prefered_subjects}
