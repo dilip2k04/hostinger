@@ -119,7 +119,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap; 
-  animation: scrollUp 60s linear infinite;
+  animation: scrollUp 250s linear infinite;
 }
 
 @keyframes scrollUp {
@@ -136,7 +136,11 @@
 }
 
 
-
+@media (max-width: 768px) {
+  .testimonial-wrapper{
+    animation: scrollUp 2000s lineaer infinite !important
+  }
+}
 
 
 

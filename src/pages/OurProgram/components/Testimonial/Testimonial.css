@@ -24,7 +24,6 @@
     gap: 20px;
     margin-right: 20px;
     flex-wrap: wrap;
-    
     animation: lineScroll 3s ease-in-out infinite; /* Controls each row's movement */
   }
   
@@ -61,6 +60,5 @@
     align-items: center;
     padding: 10px;
     text-align: center;
-    
   }
   
