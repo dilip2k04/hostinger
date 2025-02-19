@@ -11,7 +11,7 @@ export default function AboutUs() {
       img: "/imgs/our mission.jpg",
       title: "Our Mission",
       content:
-        "To deliver an online education experience for CBSE students currently in Grades 3-9 across the GCC region, fostering independent thinking[, bridging learning gaps, and nurturing a love for knowledge.",
+        "To deliver an online education experience for CBSE students currently in Grades 3-9 across the GCC region, fostering independent thinking, bridging learning gaps, and nurturing a love for knowledge.",
       right_pic: false,
       is_content: false,
     },

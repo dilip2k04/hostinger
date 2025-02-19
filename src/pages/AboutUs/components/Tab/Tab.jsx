@@ -57,13 +57,13 @@ export default function Tab({
                 </div>
               </div>
               <div className="col-md-5 order-1 order-md-2 d-flex justify-content-center align-items-center">
-                <img src={img} className="tab_img" alt=""  />
+                <img src={img} className="tab_img rounded" alt=""  />
               </div>
             </>
           ) : (
             <>
               <div className="col-md-5 order-1 order-md-1 d-flex justify-content-center align-items-center">
-                <img src={img} className="tab_img" alt="" />
+                <img src={img} className="tab_img rounded" alt="" />
               </div>
               <div className="col-md-7 order-2 order-md-2 d-flex justify-content-center align-items-center flex-column p-3">
                 <div className="content">
