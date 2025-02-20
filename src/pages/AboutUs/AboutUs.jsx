@@ -39,61 +39,61 @@ export default function AboutUs({is_main_page}) {
       img: "/imgs/about c1.jpg",
       title: "Elite Educators",
       content:
-        "   Choose your Mentor from 1000+ Mentors From Skill Link Community",
+        "   All our tutors are experienced professionals with a deep understanding of the CBSE curriculum, with a passion for teaching",
     },
     {
       img: "/imgs/about c2.jpg",
-      title: "State-of-the-Art",
+      title: "Personalized Learning Approach",
       content:
-        "Get Certified from Skill Link For Every Course you Finish on Skill Link",
+        "Each student’s learning journey is uniquely tailored to maximize understanding, retention, and academic performance",
     },
     {
       img: "/imgs/about c3.jpg",
-      title: "Affordable Pricing",
-      content: "Track your Progress and Gain Your Skill Accordingly",
+      title: "Flexible Schedules",
+      content: "Designed to fit into the routines of families across the GCC, ensuring convenience and consistency",
     },
     {
       img: "/imgs/about c4.jpg",
-      title: "Flexible Schedules",
+      title: "Affordable Pricing",
       content:
-        "Get Notification Alerts for Every Unfinished Courses to Keep You Motivated",
+        "Quality education should be accessible. We provide top-notch tutoring services at competitive rates, ensuring value for your investment",
     },
     {
       img: "/imgs/about c5.jpg",
-      title: "Personalized Learning Approach",
-      content: "Get Your Roadmap According to your skills and Skill Alerts",
+      title: "State-of-the-Art Technology",
+      content: "Our interactive virtual classrooms provide an immersive and engaging learning experience",
     },
   ];
   const our_process_data = [
     {
       img: "/imgs/circular_card1.jpeg",
-      title: "Contact Us",
+      title: "1. Contact Us",
       content:
-        "Start by reaching out to us via WhatsApp or through our Contact Us form.",
+        "Start by reaching out to us via WhatsApp or through our Contact Us form. We’ll guide you through the next steps",
     },
     {
       img: "/imgs/circular_card2.jpeg",
-      title: "Schedule a Trial Class",
+      title: "2. Schedule a Trial Class",
       content:
-        "Book a trial class at your convenience to experience our teaching approach firsthand.",
+        "Book a trial class at your convenience to experience our teaching approach firsthand",
     },
     {
       img: "/imgs/circular_card3.jpeg",
-      title: "Initial Evaluation",
+      title: "3. Initial Evaluation",
       content:
-        "During the first few sessions, we assess the student's strengths, weaknesses.",
+        "During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement",
     },
     {
       img: "/imgs/circular_card4.jpeg",
-      title: "Tailored Learning Plan",
+      title: "4. Tailored Learning Plan",
       content:
-        "We create a customized program to meet your child’s unique learning needs.",
+        "Based on the evaluation, we create a customized program to meet your child’s unique learning needs",
     },
     {
       img: "/imgs/circular_car5.jpeg",
-      title: "Continuous Updates",
+      title: "5. Continuous Updates",
       content:
-        "Our interactive virtual classrooms provide an immersive and engaging learning experience.",
+        "Stay informed with bi-weekly performance reports to track your child’s progress and development",
     },
   ];
 
@@ -138,7 +138,7 @@ export default function AboutUs({is_main_page}) {
         <Tab title={"Why IQ Bridge ?"} is_title={true} />
 
         <div className="about_cards ">
-          <div className="cards mt-5 row d-flex justify-content-center g-0">
+          <div className="cards row d-flex justify-content-center g-0">
             {about_card_contents.map((card, idx) => {
               return (
                 <div className="col-lg-4 d-flex justify-content-center">

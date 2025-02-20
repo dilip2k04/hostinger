@@ -2,6 +2,9 @@
     background-color:#e1d6cb74;
     height: 100vh;
 }
+#Total-Div{
+    margin-top:-30px ;
+}
 
 .row{
     height: 90%;
@@ -55,15 +58,20 @@
     border: 0;
     padding: 20px 40px;
     font-size: 18px;
-    font-weight: 450;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-right: 40px ;
     align-items: center;
     justify-content: center;
+    transition: all 0.25s ease-in-out;
+    font-weight: bolder;
 }
-
+.book_button:hover{
+    background-color: #041D60;
+    color:#F27A0A;
+}
 .explore_us{
-    color:#041D60;
+    background-color:#041D60;
+    color: white;
     display: flex;
     height: 80px;
     width: calc(100% - 70%);
@@ -75,9 +83,14 @@
     /* margin-left: 30px; */
     font-weight: 500;
     border: 2px transparent !important;
-    border-radius: 20px 
+    border-radius: 20px ;
+    transition: all 0.25s ease-in-out;
 }
-
+.explore_us:hover{
+    transform: scale(1.1);
+    color:#F27A0A !important;
+    font-weight: bolder;
+}
 /* 
 .hero_buttons .explore_us:hover{
     border: 1px solid #041D60;

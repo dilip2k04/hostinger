@@ -1,5 +1,5 @@
 .home_page {
-    padding: 120px 0 120px 0;
+    padding: 20px 0 20px 0;
     /* background-color: #e6e6fa; */
     height: calc(100%+500px);
 }
@@ -10,6 +10,7 @@
 }
 
 .Title {
+    margin-top: 0;
     font-size: 48px;
     color: #041D60;
 }
@@ -20,7 +21,8 @@
 
 .para {
 
-    padding: 30px
+    margin-top: -20px;
+    font-size: 24px;
 }
 
 .NavTitle {
