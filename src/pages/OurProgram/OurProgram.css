@@ -1,5 +1,5 @@
 .ourprogram {
-  padding-top: 120px;
+  padding-top: 10px;
 
 }
 
@@ -19,7 +19,7 @@
   width: 100%;
   height: auto;
   object-fit: co;
-  padding: 50px;
+  padding:  0px 50px 50px 50px;
   border: 0 20px 20px 0 !important;
   border-radius: 0px 165px 0px 165px !important;
 }
@@ -124,7 +124,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap; 
-  animation: scrollUp 250s linear infinite;
 }
 
 @keyframes scrollUp {
@@ -137,14 +136,12 @@
 }
 
 .testimonial-item {
-  margin-bottom: 20px; /* Adjust spacing */
+  animation: scrollUp 10s linear infinite;
 }
 
 
 @media (max-width: 768px) {
-  .testimonial-wrapper{
-    animation: scrollUp 2000s lineaer infinite !important
-  }
+
 }
 
 

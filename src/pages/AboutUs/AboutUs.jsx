@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutUs.css";
 import Card from "./components/Card/Card";
 import Tab from "./components/Tab/Tab";
 import CircularCard from "./components/CircularCard/CircularCard";
 import { FaLongArrowAltDown, FaLongArrowAltRight } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
-export default function AboutUs() {
+export default function AboutUs({is_main_page}) {
   const about_contents = [
     {
       img: "/imgs/our mission.jpg",
@@ -74,30 +75,47 @@ export default function AboutUs() {
       img: "/imgs/circular_card2.jpeg",
       title: "Schedule a Trial Class",
       content:
-        "Book a trial class at your convenience to experience our teaching approach firsthand",
+        "Book a trial class at your convenience to experience our teaching approach firsthand.",
     },
     {
       img: "/imgs/circular_card3.jpeg",
       title: "Initial Evaluation",
       content:
-        "During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement",
+        "During the first few sessions, we assess the student's strengths, weaknesses.",
     },
     {
       img: "/imgs/circular_card4.jpeg",
       title: "Tailored Learning Plan",
       content:
-        "Based on the evaluation, we create a customized program to meet your child’s unique learning needs",
+        "We create a customized program to meet your child’s unique learning needs.",
     },
     {
       img: "/imgs/circular_car5.jpeg",
       title: "Continuous Updates",
       content:
-        "During the first few sessions, we assess the student's strengths, weaknesses, and areas of improvement",
+        "Our interactive virtual classrooms provide an immersive and engaging learning experience.",
     },
   ];
 
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollToSection = params.get("scrollTo");
+
+    if (scrollToSection) {
+      const targetElement = document.getElementById(scrollToSection);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80, 
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
+
   return (
-    <div className="about" id="about_Us">
+    <div className="about" id="about_section">
       <h5 className="about_title">
         <i>About Us</i>
       </h5>
@@ -105,6 +123,7 @@ export default function AboutUs() {
       {about_contents.map((about, idx) => {
         return (
           <Tab
+          is_main_page={is_main_page}
             title={about.title}
             content={about.content}
             img={about.img}
@@ -136,7 +155,7 @@ export default function AboutUs() {
         </div>
         <Tab title={"Our Process"} is_title={true} />
         <div className="process my-3" id='our_process'>
-          <div className="row g-0 circular_cards d-flex justify-content-around align-items-center">
+          <div className="row g-0 circular_cards d-flex justify-content-around align-items-center pb-5">
             {our_process_data.map((card, idx) => {
               return (
                 <div className="col-xl-2 d-flex flex-sm-column flex-xl-row justify-content-center align-items-center">

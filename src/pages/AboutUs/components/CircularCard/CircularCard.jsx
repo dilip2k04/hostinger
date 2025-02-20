@@ -1,5 +1,6 @@
 import React from "react";
 import "./CircularCard.css";
+
 export default function CircularCard({ img, title, content }) {
   return (
     <div className="circular_card_container">

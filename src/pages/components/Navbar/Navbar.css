@@ -3,9 +3,19 @@
     font-weight: 500;
 }
 
+.navbar-img{
+    height: 40px !important;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar{
+    width: 100vh;
+}
 
 .navbar-nav a {
-    font-size: 26px !important;
+    margin: 0px;
+    font-size: 18px !important;
     font-weight: 500 !important;
     background: linear-gradient(30deg,#F27A0A, #041D60);
     -webkit-background-clip: text;

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import Home_card from "./Home_card";
 import CrossCards from "./components/CrossCards/CrossCards";
 import VerticalCards from "./components/VerticalCards/VerticalCards";
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
   const card_data = [
@@ -27,23 +28,44 @@ export default function Home() {
       para: "Experienced and certified CBSE educators",
     },
   ];
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollToSection = params.get("scrollTo");
+
+    if (scrollToSection) {
+      const targetElement = document.getElementById(scrollToSection);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80, // Adjust based on navbar height
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
+
+
+
+
+
   return (
-    <div className="Home home_page" id="home">
+    <div className="Home home_page" id="home_section">
       <div className="text-center">
-      <h2 className="NavTitle">Home</h2>
       <div className="content text-center  d-flex justify-content-center align-items-center flex-column gap-5">
         <h2 className="Title">
-          "Personalised <span>Learning</span> Experience"
+          Personalised <span>Learning</span> Experience
         </h2>
-        <h2 className="Para blue text-wrap mb-5">
+        <h2 className="para">
           Helping students think independently, bridge learning gaps, and
           achieve academic
-          <br /> excellence through expert-led,personalized education
+          <br /> excellence through expert-led, personalized education
         </h2>
       </div>
       </div>
 
-      <div className="pt-5 d-md-block d-lg-block d-xl-block d-md-block d-none position-relative">
+      <div className="pt-5 d-md-none d-lg-block d-xl-block d-md-block d-none position-relative">
         <div className="circle position-absolute top-0 end-0">
         <div className="circle position-absolute top-50 start-0">
           <div
@@ -91,7 +113,7 @@ export default function Home() {
         <CrossCards />
       </div>
 
-      <div className="pt-5 d-md-none d-lg-noned-xl-none d-block">
+      <div className="pt-5 d-md-block d-lg-none d-xl-none d-block">
         <VerticalCards />
       </div>
 

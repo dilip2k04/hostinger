@@ -5,6 +5,7 @@ import Card from "./components/Card/Card";
 import BroadCard from "./components/BroadCard/BroadCard";
 import Testimonial from "./components/Testimonial/Testimonial";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 
 export default function OurProgram() {
   const [testimonials, setTestimonials] = useState([]);
@@ -83,12 +84,28 @@ export default function OurProgram() {
   ];
 
 
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollToSection = params.get("scrollTo");
+
+    if (scrollToSection) {
+      const targetElement = document.getElementById(scrollToSection);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
   
 
   return (
-    <div className="ourprogram mt-4" id="our_program">
+    <div className="ourprogram" id="our_program_section">
       <h5 className="ourprogram_title mb-5">
-        <i>Our Program </i>
+        <i>Our Programs </i>
       </h5>
 
       <div className="ourprogram_tab row g-0">
@@ -157,7 +174,7 @@ export default function OurProgram() {
       </div>
       <Tab title="Subjects We Cover" is_title={true} />
 
-      <div className="all_sub p-5 row d-flex g-0">
+      <div className="all_sub p-5 pt-0 row d-flex g-0">
         {subject_data.map((sub, idx) => {
           return (
             <div

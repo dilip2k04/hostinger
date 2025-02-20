@@ -15,11 +15,21 @@
     background: linear-gradient(30deg,#F27A0A, #041D60);
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
-    
+    margin: 0;
 }
 
 .tab_contents{
-    padding: 50px;
+    padding:  0px 30px 0px 30px;
+
+    margin: 0;
+}
+
+.tab_content_paragraph{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 45px;
+    color:#041D60;
+    padding: 20px 0;
 }
 
 .tab_img{
@@ -30,7 +40,7 @@
     border: 1px transparent !important;
 }
 .tab_container{
-    padding: 40px
+    padding: 5px 40px 0 5px
 }
 
 

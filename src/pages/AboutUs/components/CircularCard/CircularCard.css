@@ -1,24 +1,39 @@
 .circular_card_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 550px;
+    min-height: 400px; 
     width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
 
-/* Ensuring uniform card size */
+.circular_card_container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(30deg,#F27A0A, #041D60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:"text";
+}
+
 .circular_card {
     border: 0;
-    height: 280px; /* Adjusted to maintain consistency */
+    height: 280px; 
     width: 280px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
-/* Card Body - Ensuring Proper Image Alignment */
 .circular_card .card-body {
     height: 100%;
     width: 100%;
@@ -27,34 +42,36 @@
     align-items: center;
 }
 
-/* Image Styling to maintain consistency */
+.circular_card{
+    background-color: transparent;
+}
+
 .circular_card_img {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
-/* Keeping the same color gradient for text */
-.circular_card_container h3, 
+.circular_card_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+
 .circular_card_container p {
-    background: linear-gradient(30deg, #F27A0A, #041D60);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-/* Title Styling */
-.circular_card_container h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-/* Description Styling */
-.circular_card_container p {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     width: 90%;
-    margin-top: 10px;
-    font-weight: 400;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(30deg,#F27A0A, #041D60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:"text";
 }

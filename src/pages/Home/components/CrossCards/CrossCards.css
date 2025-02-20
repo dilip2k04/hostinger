@@ -72,8 +72,16 @@
 }
 
 .crosscard_img{
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 50px;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.vertical_card_img{
+    height: auto;
+    width: 50px;
+    object-fit: contain;
     margin-bottom: 30px;
 }
 

@@ -1,8 +1,6 @@
 .hero_section{
-    padding-top: 120px;
     background-color:#e1d6cb74;
-    padding-bottom: 50px;
-
+    height: 100vh;
 }
 
 .row{

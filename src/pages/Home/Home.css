@@ -1,12 +1,12 @@
 .home_page {
-    padding-top: 120px;
+    padding: 120px 0 120px 0;
     /* background-color: #e6e6fa; */
     height: calc(100%+500px);
 }
 
 
-.blue {
-    color: #041D60;
+.para {
+
 }
 
 .Title {
@@ -18,13 +18,9 @@
     color: #F27A0A;
 }
 
-.content .para {
-    color: #041D60 !important;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: center;
-    text-indent: 50%;
+.para {
+
+    padding: 30px
 }
 
 .NavTitle {
