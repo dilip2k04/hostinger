@@ -141,10 +141,8 @@ export default function OurProgram() {
             <img src="/imgs/gradec2.png" className="card-img" alt="..." />
             <div className="card-img-overlay overlay-text">
               <p className="card-text p-3 pt-5 fs-5">
-                This content hightlights the importance of building a strong
-                foundation in Mathematics, Science and Engligh through
-                activities that encourage curiosity and the ability to solve the
-                problems independently.
+              Strong focus on foundational skills in Mathematics, Science, and English.
+              Activities that stimulate curiosity and independent problem-solving
               </p>
             </div>
           </div>
@@ -155,10 +153,9 @@ export default function OurProgram() {
             <img src="/imgs/gradec1.png" className="card-img" alt="..." />
             <div className="card-img-overlay overlay-text">
               <p className="card-text p-3 pt-5 fs-5">
-                The content emphasizes teaching advanced concepts in core
-                subjects to help the students tackle academic challenges while
-                providing comprehensive guidance to develop critical thinking
-                and analytical skills.
+              Advanced concepts in core subjects to prepare students for academic challenges.
+Comprehensive guidance to build critical thinking and analytical skills.
+
               </p>
             </div>
           </div>

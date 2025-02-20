@@ -17,7 +17,7 @@ export default function Hero() {
             </h1>
             <h4>
               Personalized Online CBSE Tuition for <br />
-              Grades 3-9 in the GSC
+              Grades 2-9 in the GCC Region
             </h4>
             <div className="hero_buttons d-flex">
               <a className="book_button " href="#contact_us">Book a Demo</a>
@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-lg-6 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center" id="Total-Div">
         <div className="d-flex justify-content-center align-items-center">
       <Carousel controls={false} indicators={false} interval={2000} className="carousel slide carousel-fade" style={{ borderRadius: '50%',transition: '2s ease'}}>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
@@ -40,7 +40,7 @@ export default function Hero() {
             src="/imgs/hero_main_pic2.png"
             alt="Image 1"
             className="d-block"
-            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '80%', objectFit: "cover", borderRadius: '50%' }}
           />
         </Carousel.Item>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
@@ -48,7 +48,7 @@ export default function Hero() {
             src="/imgs/Hero_img2.png"
             alt="Image 2"
             className="d-block"
-            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '80%', objectFit: "cover", borderRadius: '50%' }}
           />
         </Carousel.Item>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
@@ -56,7 +56,7 @@ export default function Hero() {
             src="/imgs/Hero_img_3.png"
             alt="Image 3"
             className="d-block"
-            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '80%', objectFit: "cover", borderRadius: '50%' }}
           />
         </Carousel.Item>
       </Carousel>

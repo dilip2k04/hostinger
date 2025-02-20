@@ -7,10 +7,13 @@
     height: 40px !important;
     width: auto;
     object-fit: contain;
+    align-items: center;
+    margin-top:-10px;
 }
 
 .navbar{
     width: 100vh;
+    height: 10vh;
 }
 
 .navbar-nav a {
@@ -21,6 +24,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip:"text";
+    margin: 0px 10px;
 }
 
 .navbar-brand img {

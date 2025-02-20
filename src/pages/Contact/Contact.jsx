@@ -88,32 +88,32 @@ export default function Contact() {
     {
       question: "What makes IQ Bridge different ?",
       answer:
-        " Ans . Our institution’s elite foundation by IIT-IIM alumni, coupled with expert CBSE-certified tutors, ensures a premium learning experience. We emphasize independent thinking and bridging learning gaps, making education transformative.",
+        " Our institution’s elite foundation by IIT-IIM alumni, coupled with expert CBSE-certified tutors, ensures a premium learning experience. We emphasize independent thinking and bridging learning gaps, making education transformative.",
     },
     {
       question: "How are your classes conducted ?",
       answer:
-        " Ans . Our online sessions use state-of-the-art technology to deliver interactive, live lessons that engage students and promote active learning.",
+        " Our online sessions use state-of-the-art technology to deliver interactive, live lessons that engage students and promote active learning.",
     },
     {
       question: "How can parents monitor progress ? ",
       answer:
-        " Ans . We provide detailed progress reports, conduct regular assessments, and offer parent-teacher meetings to keep you informed about your child’s performance.",
+        " We provide detailed progress reports, conduct regular assessments, and offer parent-teacher meetings to keep you informed about your child’s performance.",
     },
     {
       question: "What are the qualifications of your tutors ?",
       answer:
-        " Ans . Our tutors are experienced educators with expertise in the CBSE curriculum and a passion for teaching",
+        " Our tutors are experienced educators with expertise in the CBSE curriculum and a passion for teaching",
     },
     {
       question: "Is there flexibility in scheduling classes ?",
       answer:
-        "Ans . Yes, we offer flexible class timings to accommodate the diverse schedules of families across the GCC region.",
+         " Yes, we offer flexible class timings to accommodate the diverse schedules of families across the GCC region.",
     },
     {
       question: "Is there a trial class ?",
       answer:
-        " Ans . Yes, we offer a free demo class to help you experience our teaching methods and see how we can make a difference in your child’s education.",
+        " Yes, we offer a free demo class to help you experience our teaching methods and see how we can make a difference in your child’s education.",
     },
   ];
 

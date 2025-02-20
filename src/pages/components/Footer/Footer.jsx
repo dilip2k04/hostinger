@@ -16,7 +16,7 @@ export default function Footer() {
         <h6>Explore</h6>
         <a  href='#home'>Home</a>
         <a href='#about_Us'>About</a>
-        <a href='#Courses'>Course</a>
+        <a href='#our_program_section'>Our Programs</a>
         <a href='#contact_us'>Contact</a>
       </div>
 
