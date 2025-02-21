@@ -1,10 +1,12 @@
 .contact_title {
     margin-left: 100px;
     color: #F27A0A;
+    margin-top: -20px;
 }
 
 .contact_container{
     padding-top: 40px;
+    margin-top: -20px;
     background-color:#e1d6cb74;
 
 }
@@ -12,6 +14,10 @@
 .form_tab, .accordions_tab{
     padding: 0 50px;
     margin-bottom: 30px;
+}
+.faq_section{
+    margin-top: -120px;
+    padding-bottom: 30px;
 }
 
 @media (max-width: 768px) {
@@ -41,6 +47,6 @@ margin-right: 10px;
     border-radius: 10px;
     background-color: #041D60;
     color: white;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 20px;
 }

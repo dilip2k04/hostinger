@@ -1,18 +1,22 @@
 .ourprogram {
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  margin-top: -10px;
 
 }
 
 .ourprogram_title {
   margin-left: 40px;
 }
+.ourprogram_tab{
+  margin-bottom: -5px;
+}
 
 .ourprgmimageandcontent {
   display: flex;
 }
 
-.teaching_container {
-  /* padding: 0 100px */
+.teaching_container{
+  margin-bottom: 35px;
 }
 
 .ourprogram_img {
@@ -36,6 +40,10 @@
   height: auto;
 }
 
+.all_sub{
+  margin-top: -15px;
+  margin-bottom: -20px;
+}
 
 .ourprogram_content {
   padding: 30px 30px 10px 30px;

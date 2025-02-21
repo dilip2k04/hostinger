@@ -68,7 +68,8 @@
     font-size: 16px;
     text-align: center;
     width: 90%;
-    height: 100px; 
+    margin-top: -10px;
+    height: 120px; 
     display: flex;
     align-items: center;
     justify-content: center;

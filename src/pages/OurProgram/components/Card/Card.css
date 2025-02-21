@@ -1,11 +1,15 @@
 .sub_Card {
-    width: 300px;
-    height: 300px;
-    padding: 10px 0;
-    margin: 30px;
+    width: 280px;
+    height: 250px;
+    padding: 5px 0;
+    margin: 5px 30px 30px 30px;
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.5);
     transition: ease-in-out 0.2s;
 
+}
+
+.sub_Card:hover{
+    transform: scale(1.1);
 }
 
 .sub_Card h4 {
@@ -13,7 +17,7 @@
     color: #041D60;
 }
 
-.sub_Card a {
+/* .sub_Card a {
     background-color: #041D60;
     color: white;
     border-radius: 5px;
@@ -36,7 +40,7 @@
     width: 150px;
     margin-top: 15px;
     text-decoration: none;
-}
+} */
 
 @media (max-width: 768px) {
     .sub_Card{

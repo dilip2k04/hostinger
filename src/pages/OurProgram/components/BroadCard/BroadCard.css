@@ -1,12 +1,12 @@
 .broad_card{
     margin: 20px;
     width: 80%;
-    height: auto;
+    height: 200px;
 }
 
 .card_img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     object-fit: contain;
     border-radius: 50%;
 }
