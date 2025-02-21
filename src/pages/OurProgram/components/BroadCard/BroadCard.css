@@ -1,7 +1,7 @@
 .broad_card{
     margin: 20px;
     width: 80%;
-    height: 200px;
+    height: 240px;
 }
 
 .card_img{
@@ -9,15 +9,29 @@
     width: 150px;
     object-fit: contain;
     border-radius: 50%;
+    align-items: center;
 }
 
 .broad_title{
     margin-bottom: 30px;
     color: #F27A0A;
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .broad_content{
     font-size: 24px;
     color: #041D60
+}
+@media screen and (max-width: 768px){
+    .broad_card{
+        width: 80%;
+        height: auto;
+    }
+    .broad_title{
+        font-size: 24px;
+    }
+    .broad_content{
+        font-size: 18px;
+    }
+    
 }

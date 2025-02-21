@@ -99,14 +99,25 @@
 
 
 @media (max-width: 768px) {
+  .ourprogram{
+    margin-top: 25px;
+  }
 
   .ourprogram_title {
     font-size: 32px;
     margin-left: 30px;
   }
   .ourprogram_img{
-   
+    padding-bottom: 10px;
     border-radius: 0 !important;
+  }
+  .ourprogram_button{
+    padding: 18px 30px;
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .ourprgmcontent{
+    padding-bottom: 0;
   }
 }
 

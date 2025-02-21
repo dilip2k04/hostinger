@@ -104,7 +104,7 @@ export default function OurProgram() {
 
   return (
     <div className="ourprogram" id="our_program_section">
-      <h5 className="ourprogram_title mb-5">
+      <h5 className="ourprogram_title ">
         <i>Our Programs </i>
       </h5>
 
