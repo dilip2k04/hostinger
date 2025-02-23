@@ -1,19 +1,13 @@
 .home_page {
     padding: 20px 0 20px 0;
-    /* background-color: #e6e6fa; */
     height: calc(100%+500px);
 }
-
-
 .para {
-<<<<<<< Updated upstream
     text-wrap: pretty;
     width: 70%;
     margin-bottom: 20px;
     line-height: 40px;
-=======
-text-wrap: pretty;
->>>>>>> Stashed changes
+    text-wrap: pretty;
 }
 
 .Title {
