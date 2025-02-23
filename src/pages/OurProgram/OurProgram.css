@@ -160,7 +160,9 @@
 
 
 @media (max-width: 768px) {
-
+  .testimonial-item {
+    animation: scrollUp 3s linear infinite;
+  }
 }
 
 

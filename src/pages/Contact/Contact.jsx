@@ -162,9 +162,13 @@ export default function Contact() {
               handleInput={handleInputChange}
               value={formData.prefered_subjects}
             />
+<<<<<<< Updated upstream
             {/* <div className="d-flex fs-1" style={{color: '#041D60'}}>
             <a className="privacy_btn" href="#">Privacy Policy</a> || <a href="#" className="terms_btn">Terms & Conditions</a>
             </div> */}
+=======
+            
+>>>>>>> Stashed changes
             <div className="d-flex justify-content-center align-items-center">
               <button onClick={handleSubmit} className="form_button fw-bolder">
                 Book A Demo

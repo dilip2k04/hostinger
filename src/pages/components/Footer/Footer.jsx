@@ -20,11 +20,12 @@ export default function Footer() {
         <a href='#contact_us'>Contact</a>
       </div>
 
-      {/* <div className="Support">
+      <div className="Support">
         <h6>Support</h6>
-        <p>Need any help ?</p>
-        <p><a className='m-0' href="mailto:info@iqbridge.com">info@iqbridge.com</a></p>
-      </div> */}
+        <div className="d-flex">
+            <a className="" href="#">Privacy Policy</a><a href="#" className="">Terms & Conditions</a>
+            </div>
+      </div>
 
       <div className="Follow_Us">
         <h6>Follow Us</h6>
