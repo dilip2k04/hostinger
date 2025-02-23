@@ -141,12 +141,12 @@ export default function AboutUs({is_main_page}) {
           <div className="cards row d-flex justify-content-center g-0">
             {about_card_contents.map((card, idx) => {
               return (
-                <div className="col-lg-4 d-flex justify-content-center">
+                <div  key={idx} className="col-lg-4 d-flex justify-content-center">
                   <Card
                     img={card.img}
                     title={card.title}
                     content={card.content}
-                    key={idx}
+                   
                   />
                 </div>
               );
@@ -158,7 +158,7 @@ export default function AboutUs({is_main_page}) {
           <div className="row g-0 circular_cards d-flex justify-content-around align-items-center pb-5">
             {our_process_data.map((card, idx) => {
               return (
-                <div className="col-xl-2 d-flex flex-sm-column flex-xl-row justify-content-center align-items-center">
+                <div key={idx} className="col-xl-2 d-flex flex-sm-column flex-xl-row justify-content-center align-items-center">
                   <CircularCard
                     img={card.img}
                     content={card.content}

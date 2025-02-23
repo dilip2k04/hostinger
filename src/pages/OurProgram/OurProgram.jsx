@@ -8,7 +8,7 @@ import axios from "axios";
 import { useLocation } from "react-router-dom";
 import AboutUs from "../AboutUs/AboutUs";
 
-export default function OurProgram() {
+export default function OurProgram({is_main_page}) {
   const [testimonials, setTestimonials] = useState([]);
   useEffect(() => {
     const fetch_testimonials = async () => {
