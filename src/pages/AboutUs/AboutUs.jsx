@@ -116,9 +116,9 @@ export default function AboutUs({is_main_page}) {
 
   return (
     <div className="about" id="about_section">
-      <h5 className="about_title">
+      {/* <h5 className="about_title">
         <i>About Us</i>
-      </h5>
+      </h5> */}
 
       {about_contents.map((about, idx) => {
         return (
