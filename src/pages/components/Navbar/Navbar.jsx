@@ -22,7 +22,7 @@ export default function Navbar() {
         </Link>
         <button
           className="navbar-toggler shadow-none border-none"
-          style={{ border: "0", backgroundColor: "transparent" }}
+          style={{ border: "0", backgroundColor: "transperent" }}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -32,7 +32,8 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon me-4"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup" 
+        style={{ backgroundColor: "white", width: "100%" , textAlign: "center"}}>
           <div className="navbar-nav ms-auto px-4">
             <Link
               className="nav-link "
