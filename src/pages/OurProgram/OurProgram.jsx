@@ -6,6 +6,7 @@ import BroadCard from "./components/BroadCard/BroadCard";
 import Testimonial from "./components/Testimonial/Testimonial";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import AboutUs from "../AboutUs/AboutUs";
 
 export default function OurProgram() {
   const [testimonials, setTestimonials] = useState([]);
