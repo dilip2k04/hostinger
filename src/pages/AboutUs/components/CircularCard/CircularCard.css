@@ -79,3 +79,19 @@
     background-clip:"text";
     z-index: 10;
 }
+@media screen and (max-width: 768px) {
+    .circular_card_container {
+        min-height: 300px;
+    }
+    .circular_card_container h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .circular_card_container p {
+        font-size: 18px;
+        padding-top: 0;
+    }
+    .card-body{
+        padding: 0;
+    }
+}

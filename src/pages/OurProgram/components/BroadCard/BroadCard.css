@@ -24,14 +24,21 @@
 }
 @media screen and (max-width: 768px){
     .broad_card{
-        width: 80%;
+        width: 85%;
+        padding: 10px;
         height: auto;
+        justify-content: center;
     }
     .broad_title{
         font-size: 24px;
     }
     .broad_content{
         font-size: 18px;
+        text-align: center;
+       
     }
-    
+    .card_img{
+        height: 100px;
+        width: 100px;
+    }
 }
