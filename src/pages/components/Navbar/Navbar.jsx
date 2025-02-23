@@ -33,7 +33,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon me-4"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup" 
-        style={{ backgroundColor: "white", width: "100%" , textAlign: "center"}}>
+        style={{ backgroundColor: "white", width: "100%" , textAlign: "start"}}>
           <div className="navbar-nav ms-auto px-4">
             <Link
               className="nav-link "
