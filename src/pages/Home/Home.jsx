@@ -60,7 +60,7 @@ export default function Home() {
         <h2 className="para">
           Helping students think independently, bridge learning gaps, and
           achieve academic
-          <br /> excellence through expert-led personalized education
+        excellence through expert-led personalized education
         </h2>
       </div>
       </div>

@@ -100,4 +100,19 @@
     #Elite{
         font-size: 20px;
     }
+    #cross_card1{
+        max-height: 250px;
+        min-height: 250px;
+        max-width: 200px;
+        min-width: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cross_card{
+        justify-content: center;
+        align-items: center;
+    }
+    .card-body img{
+        margin-bottom: 0;
+    }
 }

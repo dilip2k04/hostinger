@@ -13,7 +13,7 @@ const CrossCards = () => {
         </div>
         <div className="position-absolute top-0 start-0">
           <div className="card cross_card p-1" style={{width: '300px', height: 'auto', bottom: '100px'}}>
-            <div className="card-body d-flex justify-content-center align-items-center flex-column">
+            <div className="card-body d-flex justify-content-center align-items-center flex-column" id="cross_card1">
             <img src="/imgs/cross_card1.png" className="crosscard_img" alt="" />
             <h3 className='mb-3'>Elite Mentorship</h3>
             <div className="cross_card_content text-center text-muted p-3">
