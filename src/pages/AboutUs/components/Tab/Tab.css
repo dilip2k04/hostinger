@@ -82,4 +82,13 @@
     .tab_container{
         padding: 10px
     }
+    .tab_content_paragraph{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        color:#041D60;
+        padding: 10px 0;
+        width: 400px;
+        text-align: justify;
+    }
 }

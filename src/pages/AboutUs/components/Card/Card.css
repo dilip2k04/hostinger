@@ -57,7 +57,8 @@
     }
 
     .card_paragraph h6{
-        font-size: 16px;
+        font-size: 12px;
+        margin-top: 10px;
         font-weight: 500;
         color: #041D60
     }

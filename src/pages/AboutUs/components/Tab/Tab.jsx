@@ -76,7 +76,7 @@ export default function Tab({
             )
           ) : (
             <div className="col-12 p-3 d-flex justify-content-center align-items-center  ">
-              <div className="w-75 text-center tab_content_paragraph">
+              <div className=" tab_content_paragraph">
                 {content}
               </div>
             </div>
