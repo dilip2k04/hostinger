@@ -14,8 +14,8 @@ export default function AppRoutes() {
       <>
         <Hero />
         <Home />
-        <AboutUs is_main_page={true}/>
-        <OurProgram />
+        <OurProgram is_main_page={true}/>
+        {/* <AboutUs is_main_page={true}/> */}
         <Contact />
         <Footer />
       </>
