@@ -22,12 +22,12 @@ export default function Tab({
 
             <div className="col ">
               {" "}
-              <h2>
+              <h2 className="tab_title">
                 <i>{title}</i>
               </h2>
             </div>
 
-            <div className="col ">
+            <div className="col d-flex justify-content-end">
               <div className="right_line"></div>
             </div>
           </div>
@@ -43,11 +43,11 @@ export default function Tab({
           </div>
           <div className="col-md-2 col-6">
             {" "}
-            <h2>
+            <h2 className="tab_title">
               <i>{title}</i>
             </h2>
           </div>
-          <div className="col-md-5 col-3">
+          <div className="col-md-5 col-3 d-flex justify-content-end">
             <div className="right_line"></div>
           </div>
         </div>

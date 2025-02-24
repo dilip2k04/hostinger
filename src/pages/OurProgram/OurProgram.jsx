@@ -5,7 +5,7 @@ import Card from "./components/Card/Card";
 import BroadCard from "./components/BroadCard/BroadCard";
 import Testimonial from "./components/Testimonial/Testimonial";
 import axios from "axios";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import AboutUs from "../AboutUs/AboutUs";
 
 export default function OurProgram({is_main_page}) {
@@ -84,23 +84,12 @@ export default function OurProgram({is_main_page}) {
     },
   ];
 
+  const navigate = useNavigate();
 
-  const location = useLocation();
 
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const scrollToSection = params.get("scrollTo");
-
-    if (scrollToSection) {
-      const targetElement = document.getElementById(scrollToSection);
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 80,
-          behavior: "smooth",
-        });
-      }
-    }
-  }, [location]);
+  const handleNavLinkClick = (path, sectionId) => {
+    navigate(`${path}?scrollTo=${sectionId}`);
+  }
 
   const OurProgramTab1 = () => {
     return (
@@ -126,7 +115,7 @@ export default function OurProgram({is_main_page}) {
             </h4>
             <a
               className="ourprogram_button btn hover-border-primary"
-              href="#contact_us"
+              onClick={() => handleNavLinkClick('/contact-us')}
             >
               Book a Demo
             </a>

@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import "./Hero.css";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
+
+
+
 
 export default function Hero() {
+
+
+  const navigate = useNavigate();
+
+  const handleNavLinkClick = (path, sectionId) => {
+    navigate(`${path}?scrollTo=${sectionId}`);
+  }
+
+
+
   return (
     <div className="hero_section" id="hero_section">
       <div className="row g-0" style={{height: '100%'}}>
@@ -12,19 +27,23 @@ export default function Hero() {
           {" "}
           <div className="hero_content">
             <h1>
-              Empowering <br />
-              Excellence
+            <Typewriter
+              words={[" Empowering Excellence", "Unlock Your Child's Potential", 'Your Pathway To Academic Success']}
+              cursorBlinking={true}
+              loop={false}
+            />
+             
             </h1>
             <h4>
               Personalized Online CBSE Tuition for <br />
-              Grades 2-9 in the GCC Region
+              Grades 3-9 in the GSC
             </h4>
             <div className="hero_buttons d-flex">
-              <a className="book_button " href="#contact_us">Book a Demo</a>
+              <a className="book_button" onClick={() => handleNavLinkClick('/contact-us')}>Book a Demo</a>
               <a
                 className="explore_us d-flex justify-content-center align-items-center"
                 id="button"
-                href="#our_program"
+                onClick={() => handleNavLinkClick('/our-programs')}
               >
                 Explore Us
               
@@ -32,7 +51,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center" id="Total-Div">
+        <div className="col-lg-6 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center">
         <div className="d-flex justify-content-center align-items-center">
       <Carousel controls={false} indicators={false} interval={2000} className="carousel slide carousel-fade" style={{ borderRadius: '50%',transition: '2s ease'}}>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
@@ -40,7 +59,7 @@ export default function Hero() {
             src="/imgs/hero_main_pic2.png"
             alt="Image 1"
             className="d-block"
-            style={{ width: '80%', height: '80%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
           />
         </Carousel.Item>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
@@ -48,7 +67,7 @@ export default function Hero() {
             src="/imgs/Hero_img2.png"
             alt="Image 2"
             className="d-block"
-            style={{ width: '80%', height: '80%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
           />
         </Carousel.Item>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
@@ -56,7 +75,7 @@ export default function Hero() {
             src="/imgs/Hero_img_3.png"
             alt="Image 3"
             className="d-block"
-            style={{ width: '80%', height: '80%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
           />
         </Carousel.Item>
       </Carousel>

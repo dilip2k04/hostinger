@@ -3,7 +3,6 @@ import "./Home.css";
 import Home_card from "./Home_card";
 import CrossCards from "./components/CrossCards/CrossCards";
 import VerticalCards from "./components/VerticalCards/VerticalCards";
-import { useLocation } from "react-router-dom";
 
 export default function Home() {
   const card_data = [
@@ -29,22 +28,8 @@ export default function Home() {
     },
   ];
 
-  const location = useLocation();
 
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const scrollToSection = params.get("scrollTo");
 
-    if (scrollToSection) {
-      const targetElement = document.getElementById(scrollToSection);
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 80, // Adjust based on navbar height
-          behavior: "smooth",
-        });
-      }
-    }
-  }, [location]);
 
 
 

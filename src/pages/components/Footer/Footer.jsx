@@ -1,8 +1,18 @@
 import React from 'react';
 import './Footer.css';
 import { FaFacebook, FaInstagram, FaLinkedin ,FaEnvelope,FaPhone  } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+
+  const navigate = useNavigate();
+
+  const handleNavLinkClick = (path, sectionId) => {
+    navigate(`${path}?scrollTo=${sectionId}`);
+  }
+
+
+
   return (
     <div className='Footer d-flex flex-column flex-md-row justify-content-around gap-5 py-5'>
       {/* <div className="About_Us">
@@ -14,10 +24,10 @@ export default function Footer() {
 
       <div className="Explore">
         <h6>Explore</h6>
-        <a  href='#home'>Home</a>
-        <a href='#about_Us'>About</a>
-        <a href='#our_program_section'>Our Programs</a>
-        <a href='#contact_us'>Contact</a>
+        <Link onClick={() => handleNavLinkClick('/', '')}>Home</Link>
+        <Link onClick={() => handleNavLinkClick('/about', '')}>About</Link>
+        <Link onClick={() => handleNavLinkClick('/our-programs', '')}>Our Programs</Link>
+        <Link onClick={() => handleNavLinkClick('/contact-us', '')}>Contact</Link>
       </div>
 
       <div className="Support">

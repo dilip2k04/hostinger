@@ -7,6 +7,7 @@ import OurProgram from "../pages/OurProgram/OurProgram";
 import Contact from "../pages/Contact/Contact";
 import Footer from "../pages/components/Footer/Footer";
 import Home from "../pages/Home/Home";
+import ScrollToTop from "../pages/components/ScrollToTop/ScrollToTop";
 
 export default function AppRoutes() {
   const MainPageComponent = () => {
@@ -23,6 +24,7 @@ export default function AppRoutes() {
   };
   return (
     <>
+<ScrollToTop/>
       {/* <Navbar /> */}
       <Navbar />
 
