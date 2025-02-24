@@ -136,7 +136,7 @@ export default function OurProgram({is_main_page}) {
         <Tab title="Grade Specific Online Tuition" is_title={true} />
 
         <div className="row g-0 mb-4" id="Courses">
-          <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center">
+          <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center" data-aos="fade-left" data-aos-duration="1000">
             <h3 className="grade_title">Grade 3 - 5</h3>
             <div className="card text-bg-dark grade_card">
               <img src="/imgs/gradec2.png" className="card-img" alt="..." />
@@ -149,7 +149,7 @@ export default function OurProgram({is_main_page}) {
               </div>
             </div>
           </div>
-          <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center">
+          <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1500">
             <h3 className="grade_title">Grade 6 - 9</h3>
             <div className="card text-bg-dark grade_card">
               <img src="/imgs/gradec1.png" className="card-img" alt="..." />
