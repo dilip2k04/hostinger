@@ -171,7 +171,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      <div className="faq_section" style={{height:'auto'}}>
+      <div className="faq_section">
         <Tab title="Frequently asked Questions (FAQ)" is_title={true} />
         <div className="accordions_tab d-flex  row g-0">
           {accordion_data.map((acc, idx) => {
