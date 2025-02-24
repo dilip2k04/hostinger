@@ -122,7 +122,7 @@ export default function Contact() {
       <h5 className="contact_title ">
         <i>Contact Us</i>
       </h5>
-      <div className="form_tab row g-0" style={{height: '900px'}}>
+      <div className="form_tab row g-0" style={{height: '780px'}}>
         <div className="col-5 d-none d-md-block d-lg-block d-xl-block">
           <img
             src="/imgs/form.png"
