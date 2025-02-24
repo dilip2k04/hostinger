@@ -303,7 +303,7 @@ Comprehensive guidance to build critical thinking and analytical skills.
       </div>
       <Tab title="Subjects We Cover" is_title={true} />
 
-      <div className="all_sub p-5 pt-0 row d-flex g-0">
+      <div className="all_sub p-5 pt-0 row d-flex g-0 align-items-center justify-content-center">
         {subject_data.map((sub, idx) => {
           return (
             <div
