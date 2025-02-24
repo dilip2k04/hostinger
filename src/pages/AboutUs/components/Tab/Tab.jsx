@@ -19,12 +19,14 @@ export default function Tab({
             <div className="col ">
               <div className="left_line"></div>
             </div>
+
             <div className="col ">
               {" "}
               <h2>
                 <i>{title}</i>
               </h2>
             </div>
+
             <div className="col ">
               <div className="right_line"></div>
             </div>

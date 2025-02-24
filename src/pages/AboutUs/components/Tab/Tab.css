@@ -7,7 +7,8 @@
 .left_line, .right_line {
     height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: #041D60;
+    margin-left: 15px;
 }
 
 .title_tag h2{
@@ -91,4 +92,5 @@
         width: 400px;
         text-align: justify;
     }
+
 }
