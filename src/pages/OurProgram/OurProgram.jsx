@@ -5,7 +5,7 @@ import Card from "./components/Card/Card";
 import BroadCard from "./components/BroadCard/BroadCard";
 import Testimonial from "./components/Testimonial/Testimonial";
 import axios from "axios";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import AboutUs from "../AboutUs/AboutUs";
 
 export default function OurProgram({is_main_page}) {
@@ -113,12 +113,12 @@ export default function OurProgram({is_main_page}) {
               unique learning style and pace, ensuring effective understanding
               and retention of concepts.
             </h4>
-            <a
+            <Link
               className="ourprogram_button btn hover-border-primary"
-              onClick={() => handleNavLinkClick('/contact-us')}
+              to='/contact-us'
             >
               Book a Demo
-            </a>
+            </Link>
             <hr />
           </div>
         </div>
