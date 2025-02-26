@@ -13,8 +13,20 @@
 
 .navbar{
     width: 100vh;
-    height: 10vh;
 }
+
+.toggle-icon {
+    font-size: 24px;
+    transition: transform 0.4s ease-in-out; /* Smooth rotation */
+    display: flex;
+    align-items: center;
+  }
+  
+  .rotate {
+    transform: rotate(180deg); /* Rotate when active */
+  }
+  
+
 
 .navbar-nav a {
     margin: 0px;

@@ -24,10 +24,10 @@ export default function Footer() {
 
       <div className="Explore">
         <h6>Explore</h6>
-        <Link onClick={() => handleNavLinkClick('/', '')}>Home</Link>
-        <Link onClick={() => handleNavLinkClick('/about', '')}>About</Link>
-        <Link onClick={() => handleNavLinkClick('/our-programs', '')}>Our Programs</Link>
-        <Link onClick={() => handleNavLinkClick('/contact-us', '')}>Contact</Link>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/our-programs'>Our Programs</Link>
+        <Link to='/contact-us'>Contact</Link>
       </div>
 
       <div className="Support">

@@ -18,7 +18,6 @@ export default function AppRoutes() {
         <OurProgram is_main_page={true}/>
         {/* <AboutUs is_main_page={true}/> */}
         <Contact />
-        <Footer />
       </>
     );
   };
@@ -27,7 +26,7 @@ export default function AppRoutes() {
 <ScrollToTop/>
       {/* <Navbar /> */}
       <Navbar />
-
+<ScrollToTop/>
       <Routes>
         <Route path="/" element={<MainPageComponent />} />
         <Route path="/about-us" element={<AboutUs />} />
@@ -35,6 +34,8 @@ export default function AppRoutes() {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="*" element={<MainPageComponent />} />
       </Routes>
+      <Footer />
+
     </>
   );
 }

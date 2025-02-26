@@ -10,6 +10,10 @@
 
 }
 
+.accordions_tab {
+    transition: all 3s ease-in-out;
+}
+
 .form_tab, .accordions_tab{
     padding: 0 50px;
     margin-bottom: 30px;
