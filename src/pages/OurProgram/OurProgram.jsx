@@ -12,8 +12,7 @@ export default function OurProgram({is_main_page}) {
   const [testimonials, setTestimonials] = useState([]);
   useEffect(() => {
     const fetch_testimonials = async () => {
-      //https://iq-bridge-backend.onrender.com
-      const response = await axios.get("http://localhost:3000/get-feedbacks");
+      const response = await axios.get("https://iq-bridge-backend.onrender.com/get-feedbacks");
       console.log(response);
       setTestimonials(response.data.testimonials);
     };
