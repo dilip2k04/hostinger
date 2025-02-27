@@ -36,7 +36,7 @@ export default function Hero() {
             </h1>
             <h4>
               Personalized Online CBSE Tuition for <br />
-              Grades 3-9 in the GSC
+              Grades 2-9 in the GCC Region
             </h4>
             <div className="hero_buttons d-flex">
               <a className="book_button" onClick={() => handleNavLinkClick('/contact-us')}>Book a Demo</a>

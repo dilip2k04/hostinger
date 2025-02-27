@@ -21,10 +21,13 @@ export default function Testimonial({ testimonial }) {
           <img
             src="/imgs/google_logo.png"
             style={{
-              height: "80px",
-              width: "80px",
+              height: "40px",
+              width: "40px",
               borderRadius: "0",
               marginTop: "20px",
+              position:"absolute",
+              top:'4px',
+              right:"4px"
             }}
             alt=""
           />
