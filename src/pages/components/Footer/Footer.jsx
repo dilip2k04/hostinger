@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="Explore">
         <h6>Explore</h6>
         <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
+        <Link to='/about-us'>About</Link>
         <Link to='/our-programs'>Our Programs</Link>
         <Link to='/contact-us'>Contact</Link>
       </div>
