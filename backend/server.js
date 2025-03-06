@@ -10,11 +10,10 @@ app.use(express.json());
 dotenv.config();
 
 const cors = require("cors");
-// process.env.FRONTEND_URL
-app.use(cors({ origin: '*' })); // Adjust to your frontend port
+app.use(cors({ origin: process.env.FRONTEND_URL})); // Adjust to your frontend port
 
-// process.env.DB_URL ||
-const dbUrl =   'mongodb://localhost:27017/student_db';
+// 
+const dbUrl =  process.env.DB_URL || 'mongodb://localhost:27017/student_db';
 
 mongoose.connect(dbUrl);
 
