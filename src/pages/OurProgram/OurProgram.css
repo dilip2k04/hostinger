@@ -153,26 +153,16 @@
 
 @keyframes scrollUp {
   from {
-    transform: translateY(0);
+    transform: translateY(10%);
   }
   to {
     transform: translateY(-100%);
   }
 }
 
-.testimonial-item {
-  animation: scrollUp 10s linear infinite;
+.testimonial-wrapper {
+  animation: scrollUp 40s linear infinite;
 }
-
-
-@media (max-width: 768px) {
-  .testimonial-item {
-    animation: scrollUp 3s linear infinite;
-  }
-}
-
-
-
 
 
 .grade_card:hover .card-img {

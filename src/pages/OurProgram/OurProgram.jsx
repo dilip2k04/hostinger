@@ -199,9 +199,9 @@ export default function OurProgram({is_main_page}) {
         </div>
         <Tab title="Testimonials" is_title={true} />
         <div className="testimonial-container ">
-          <div className="testimonial-wrapper row g-1">
+          <div className="testimonial-wrapper row g-2 d-flex flex-row">
             {testimonials.map((testimonial, idx) => (
-              <div className="testimonial-item col-md-3" key={idx}>
+              <div className="testimonial-item col-md-4" key={idx}>
                 <Testimonial testimonial={testimonial} />
               </div>
             ))}
@@ -320,17 +320,17 @@ Comprehensive guidance to build critical thinking and analytical skills.
           );
         })}
       </div>
+
       <Tab title="Testimonials" is_title={true} />
       <div className="testimonial-container ">
-  <div className="testimonial-wrapper row g-1">
-    {testimonials.map((testimonial, idx) => (
-      <div className="testimonial-item col-md-3" key={idx}>
-        <Testimonial testimonial={testimonial} />
-      </div>
-    ))}
-  </div>
-</div>
-
+          <div className="testimonial-wrapper row g-2 d-flex flex-row">
+            {testimonials.map((testimonial, idx) => (
+              <div className="testimonial-item col-md-4" key={idx}>
+                <Testimonial testimonial={testimonial} />
+              </div>
+            ))}
+          </div>
+        </div>
     </div>
   );
 }
