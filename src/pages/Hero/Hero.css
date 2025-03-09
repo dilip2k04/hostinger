@@ -1,3 +1,7 @@
+*:hover{
+  cursor:default;
+}
+
 .hero_section{
     height: 100vh;
 }
@@ -67,6 +71,7 @@
 .book_button:hover{
     background-color: #041D60;
     color:#F27A0A;
+    cursor: pointer;
 }
 .explore_us{
     background-color:#041D60;
@@ -89,7 +94,9 @@
     transform: scale(1.1);
     color:#F27A0A !important;
     font-weight: bolder;
+    cursor: pointer;
 }
+
 /* 
 .hero_buttons .explore_us:hover{
     border: 1px solid #041D60;
@@ -100,13 +107,17 @@
 /* ======== Media Queries for All Devices ======== */
 
 /* Large Desktops (1200px and above) */
-@media (min-width: 1200px) {
+ @media (min-width: 1200px) {
     .hero_content {
       padding-left: 100px;
     }
   
     .hero_content h1 {
-      font-size: 80px;
+      font-size: 75px;
+      min-height: 200px;
+      max-height: 200px;
+      min-width: 700px;
+      margin-bottom: 20px;
     }
   
     .hero_content h4 {
@@ -117,10 +128,10 @@
       width: 70%;
       height: 70%;
     }
-  }
+  } 
   
   /* Laptops & Tablets (992px - 1199px) */
-  @media (max-width: 1199px) {
+   @media (max-width: 1199px) {
     .hero_content {
       padding-left: 60px;
     }
@@ -128,7 +139,12 @@
     margin-right: 10px;
    }
     .hero_content h1 {
-      font-size: 65px;
+      font-size: 45px;
+      min-height: 100px;
+      max-height: 100px;
+      min-width: 90%;
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
   
     .hero_content h4 {
@@ -145,10 +161,10 @@
       width: 65%;
       height: 65%;
     }
-  }
+  } 
   
   /* Tablets (768px - 991px) */
-  @media (max-width: 991px) {
+   @media (max-width: 991px) {
     .hero_section {
       height: auto;
       padding: 40px 20px;
@@ -169,8 +185,9 @@
     }
   
     .hero_content h1 {
-      font-size: 50px;
+      font-size: 35px;
       margin-bottom: 30px;
+      
     }
   
     .hero_content h4 {
@@ -189,5 +206,48 @@
       text-align: center;
     }
   
+    @media (max-width: 576px) {
+      .hero_section {
+          height: auto;
+          padding: 30px 15px;
+      }
   
-}
+      .book_button {
+          margin-right: 5px;
+      }
+  
+      .row {
+          flex-direction: column;
+          height: auto;
+          margin-bottom: 0;
+      }
+  
+      .hero_content {
+          padding-left: 0;
+          text-align: center;
+      }
+  
+      .hero_content h1 {
+          font-size: 28px;
+          margin-bottom: 10px;
+          min-height: 70px;
+      }
+  
+      .hero_content h4 {
+          font-size: 18px;
+      }
+  
+      .hero_buttons {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+      }
+  
+      .book_button,
+      .explore_us {
+          width: 80%;
+          text-align: center;
+      }
+  }
+  
+  }

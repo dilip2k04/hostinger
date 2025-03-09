@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./CrossCards.css";
 
 const CrossCards = () => {
@@ -7,7 +7,7 @@ const CrossCards = () => {
 
       <div className="col-7 position-relative">
         <div className="back_card">
-          <div className="card w-100 right_top_card" height='700' style={{height: '600px'}}>
+          <div className="card w-100 right_top_card" height='700' style={{minHeight: '620px'}}>
             <div className="card-body"></div>
           </div>
         </div>
