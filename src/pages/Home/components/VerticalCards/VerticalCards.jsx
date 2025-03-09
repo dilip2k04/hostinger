@@ -23,7 +23,7 @@ export default function VerticalCards() {
             <img src="/imgs/cross_card2.png"  className="vertical_card_img" alt="" style={{marginBottom:'10px',marginTop:'20px'}}/>
 
                 <h3 className='mb-3'>One-on-One <br />Sessions</h3>
-              <div className="cross_card_content text-center text-muted p-3 mt-2">
+              <div className="cross_card_content text-center text-muted p-3 mb-1">
               <span  style={{fontSize: '16px'}}> One-on-One interactive live online sessions</span>              </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function VerticalCards() {
             <img src="/imgs/cross_card3.png" className="vertical_card_img" alt="" style={{marginBottom:'10px',marginTop:'20px' , height:'50px'}} />
 
                 <h3 className='mb-3'>Personalized study plans</h3>
-              <div className="content cross_card_content text-center text-muted p-3 mt-1">
+              <div className="content cross_card_content text-center text-muted p-3 mb-1">
               <span  style={{fontSize: '16px'}}>Personalized Study Plans tailored to each student</span>              </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function VerticalCards() {
             <img src="/imgs/cross_card4.png" className="vertical_card_img" alt="" style={{marginBottom:'10px',marginTop:'10px'}}/>
 
                 <h3 className='mb-3'>Certified Mentors</h3>
-              <div className="cross_card_content text-center text-muted p-3 mt-2">
+              <div className="cross_card_content text-center text-muted p-3 mb-1">
               <span  style={{fontSize: '16px'}}>  Experienced and certified CBSE educators</span>              </div>
             </div>
           </div>
