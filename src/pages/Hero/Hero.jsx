@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { RiArrowRightDoubleLine } from "react-icons/ri";
+
 import "./Hero.css";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -21,9 +20,9 @@ export default function Hero() {
 
 
   return (
-    <div className="hero_section" id="hero_section">
-      <div className="row g-0" style={{height: '100%'}}>
-        <div className="col-lg-6 order-2 order-md-1 d-flex flex-column justify-md-content-center justify-content-center">
+    <div className="hero_section" id="hero_section" >
+      <div className="row g-0" style={{height: '100vh'}}>
+        <div className="col-lg-6 order-2 order-md-1 d-flex flex-column justify-md-content-center justify-content-center" >
           {" "}
           <div className="hero_content">
             <h1>
@@ -59,7 +58,7 @@ export default function Hero() {
             src="/imgs/hero_main_pic2.png"
             alt="Image 1"
             className="d-block"
-            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%', marginBottom:'15px' }}
           />
         </Carousel.Item>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
