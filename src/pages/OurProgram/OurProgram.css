@@ -13,6 +13,7 @@
 
 .ourprgmimageandcontent {
   display: flex;
+  
 }
 
 .teaching_container{
@@ -48,6 +49,8 @@
 .ourprogram_content {
   padding: 30px 30px 10px 30px;
   line-height: 40px;
+  /* min-width: 450px;
+  max-width: 330px; */
 }
 
 .ourprogram_button {
@@ -118,6 +121,9 @@
   }
   .ourprgmcontent{
     padding-bottom: 0;
+    text-align: justify !important;
+    min-width: 400px;
+    max-width: 450px;
   }
 }
 
