@@ -13,7 +13,7 @@ export default function BroadCard({
         { !is_right_pic ? (
           <>
             <div className="col-md-3 order-1 order-md-1 d-flex justify-content-center align-items-center">
-              <img src={img} className='card_img mb-4' alt="" />
+              <img src={img} className='card_img mb-0' alt="" />
             </div>
             <div className="col-md-9 order-2 order-md-2 d-flex justify-content-center align-items-center flex-column"><h4 className="broad_title">{title}</h4><p className="broad_content">{content}</p></div>
           </>
@@ -21,7 +21,7 @@ export default function BroadCard({
           <>
             <div className="col-md-9 order-2 order-md-1 d-flex justify-content-center align-items-center  flex-column"><h4 className="broad_title">{title}</h4><p className="broad_content">{content}</p></div>
             <div className="col-md-3 order-1 order-md-2 d-flex justify-content-center align-items-center">
-              <img src={img} className='card_img mb-4' alt="" />
+              <img src={img} className='card_img mb-0' alt="" />
             </div>
           </>
         )}

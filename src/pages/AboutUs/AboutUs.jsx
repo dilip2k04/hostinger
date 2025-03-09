@@ -155,7 +155,7 @@ export default function AboutUs({is_main_page}) {
         </div>
         <Tab title={"Our Process"} is_title={true} />
         <div className="process my-3" id='our_process'>
-          <div className="row g-0 circular_cards d-flex justify-content-around align-items-center pb-5">
+          <div className="row g-0 circular_cards d-flex justify-content-around align-items-center pb-0">
             {our_process_data.map((card, idx) => {
               return (
                 <div key={idx} className="col-xl-2 d-flex flex-sm-column flex-xl-row justify-content-center align-items-center">

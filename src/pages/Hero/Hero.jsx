@@ -21,7 +21,7 @@ export default function Hero() {
 
   return (
     <div className="hero_section" id="hero_section" >
-      <div className="row g-0" style={{height: '100vh'}}>
+      <div className="row g-0" id="HeroPage" style={{height: '100%'}}>
         <div className="col-lg-6 order-2 order-md-1 d-flex flex-column justify-md-content-center justify-content-center" >
           {" "}
           <div className="hero_content">
@@ -58,7 +58,7 @@ export default function Hero() {
             src="/imgs/hero_main_pic2.png"
             alt="Image 1"
             className="d-block"
-            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%', marginBottom:'15px' }}
+            style={{ width: '80%', height: '95%', objectFit: "cover", borderRadius: '50%', marginBottom:'15px' }}
           />
         </Carousel.Item>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
@@ -66,7 +66,7 @@ export default function Hero() {
             src="/imgs/Hero_img2.png"
             alt="Image 2"
             className="d-block"
-            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '95%', objectFit: "cover", borderRadius: '50%' }}
           />
         </Carousel.Item>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
@@ -74,7 +74,7 @@ export default function Hero() {
             src="/imgs/Hero_img_3.png"
             alt="Image 3"
             className="d-block"
-            style={{ width: '80%', height: '100%', objectFit: "cover", borderRadius: '50%' }}
+            style={{ width: '80%', height: '95%', objectFit: "cover", borderRadius: '50%' }}
           />
         </Carousel.Item>
       </Carousel>
