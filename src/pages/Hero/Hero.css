@@ -96,6 +96,9 @@
     font-weight: bolder;
     cursor: pointer;
 }
+#HeroPage{
+  
+}
 
 /* 
 .hero_buttons .explore_us:hover{
@@ -208,7 +211,7 @@
   
     @media (max-width: 576px) {
       .hero_section {
-          height: auto;
+          height: 100% !important;
           padding: 30px 15px;
       }
   

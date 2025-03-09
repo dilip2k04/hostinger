@@ -122,7 +122,7 @@ export default function Contact() {
       <h5 className="contact_title ">
         <i>Contact Us</i>
       </h5>
-      <div className="form_tab row g-0" style={{height: '800px'}}>
+      <div className="form_tab row g-0" style={{height: '700px'}}>
         <div className="col-5 d-none d-md-block d-lg-block d-xl-block">
           <img
             src="/imgs/form.png"
@@ -130,7 +130,7 @@ export default function Contact() {
             alt=""
           />
         </div>
-        <div className="col-md-7 col-12 mt-3">
+        <div className="col-md-7 col-12" style={{height:"700px"}}>
           <form onSubmit={handleSubmit}>
             <Input
               label={"Your Name"}
@@ -171,7 +171,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      <div className="faq_section">
+      <div className="faq_section"style={{marginTop:"50px"}} >
         <Tab title="Frequently asked Questions (FAQ)" is_title={true} />
         <div className="accordions_tab d-flex  row g-0">
           {accordion_data.map((acc, idx) => {

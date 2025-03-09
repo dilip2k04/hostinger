@@ -7,7 +7,7 @@ const CrossCards = () => {
 
       <div className="col-7 position-relative">
         <div className="back_card">
-          <div className="card w-100 right_top_card" height='700' style={{minHeight: '620px'}}>
+          <div className="card w-100 right_top_card" height='700' style={{minHeight: '600px',paddingBottom:'15px'}}>
             <div className="card-body"></div>
           </div>
         </div>
@@ -16,19 +16,19 @@ const CrossCards = () => {
           <div className="card cross_card p-1" style={{width: '300px', height: '316px', bottom: '100px'}}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column" id="cross_card1">
             <img src="/imgs/cross_card1.png" className="crosscard_img" alt="" />
-            <h3 className='mb-3'>Elite Mentorship</h3>
-            <div className="cross_card_content text-center text-muted p-3">
+            <h3 className='mb-1'>Elite Mentorship</h3>
+            <div className="cross_card_content text-center text-muted p-3 pb-4">
             <span  style={{fontSize: '20px'}}> Mentoring from IIT-IIM Alumni Founders </span> </div>
             </div>
           </div>
         </div>
         <div className="position-absolute bottom-0 end-0">
-          <div className="card cross_card p-1" style={{width: '300px', height: 'auto',left: '100px',top: '200px' ,zIndex: '1'}}>
+          <div className="card cross_card p-1" style={{width: '300px', height: '316px',left: '100px',top: '200px' ,zIndex: '1'}}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
             <img src="/imgs/cross_card2.png"  className="crosscard_img" alt="" />
 
-                <h3 className='mb-3'>One-on-One Sessions</h3>
-              <div className="cross_card_content text-center text-muted p-3">
+                <h3 className='mb-1'>One-on-One Sessions</h3>
+              <div className="cross_card_content text-center text-muted p-2">
               <span  style={{fontSize: '20px'}}>  One-on-One interactive live online sessions  </span>              </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ const CrossCards = () => {
             <img src="/imgs/cross_card3.png" className="crosscard_img" alt="" />
 
                 <h3 className='mb-3'>Personalized study plans</h3>
-              <div className="content cross_card_content text-center text-muted p-3">
+              <div className="content cross_card_content text-center text-muted p-1" style={{marginBottom:'5px',paddingBottom:'10px'}}>
               <span  style={{fontSize: '20px'}}>  Personalized Study Plans tailored to each student    </span>            </div>
             </div>
           </div>
@@ -65,12 +65,12 @@ const CrossCards = () => {
           
         </div>
         <div className="position-absolute bottom-0 end-0">
-          <div className="card cross_card p-1" style={{left: '150px',top: '100px', bottom: '300px' ,zIndex: '1', width: '300px', height: 'auto'}}>
+          <div className="card cross_card p-1" style={{left: '150px',top: '100px', bottom: '300px' ,zIndex: '1', width: '300px', height: '316px'}}>
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
             <img src="/imgs/cross_card4.png" className="crosscard_img" alt="" />
 
-                <h3 className='mb-3'>Certified Mentors</h3>
-              <div className="cross_card_content text-center text-muted p-3">
+                <h3 className='mb-2'>Certified Mentors</h3>
+              <div className="cross_card_content text-center text-muted p-1">
               <span  style={{fontSize: '20px'}}>      Experienced and certified CBSE educators     </span>          </div>
             </div>
           </div>
