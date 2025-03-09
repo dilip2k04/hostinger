@@ -243,12 +243,12 @@ export default function OurProgram({is_main_page}) {
             unique learning style and pace, ensuring effective understanding and
             retention of concepts.
           </h4>
-          <a
+          <Link
             className="ourprogram_button btn hover-border-primary"
-            href="#contact_us"
+            to="/contact-us"
           >
             Book a Demo
-          </a>
+          </Link>
           <hr />
         </div>
       </div>

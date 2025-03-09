@@ -2,7 +2,7 @@
 import "./Hero.css";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 
@@ -38,15 +38,15 @@ export default function Hero() {
               Grades 2-9 in the GCC Region
             </h4>
             <div className="hero_buttons d-flex">
-              <a className="book_button" onClick={() => handleNavLinkClick('/contact-us')}>Book a Demo</a>
-              <a
+              <Link className="book_button" to='/contact-us'>Book a Demo</Link>
+              <Link
                 className="explore_us d-flex justify-content-center align-items-center"
                 id="button"
-                onClick={() => handleNavLinkClick('/our-programs')}
+                to='/our-program'
               >
                 Explore Us
               
-              </a>
+              </Link>
             </div>
           </div>
         </div>
