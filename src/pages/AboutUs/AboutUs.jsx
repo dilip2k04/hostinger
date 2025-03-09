@@ -20,7 +20,7 @@ export default function AboutUs({is_main_page}) {
       img: "/imgs/oru vission.jpg",
       title: "Our Vision",
       content:
-        "To deliver an online education experience for CBSE students currently in Grades 3-9 across the GCC region, fostering independent thinking, bridging learning gaps, and nurturing a love for knowledge.",
+        "To become the premier platform for academic excellence, empowering students to achieve their highest potential augmented through innovative and personalized help with their school curriculum.",
       right_pic: true,
       is_content: false,
     },
