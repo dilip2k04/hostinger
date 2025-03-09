@@ -20,7 +20,7 @@ export default function VerticalCards() {
           </div>
           <div className="card cross_card"  style={{width: '60%', height:'227px'}}>
             <div className="card-body-2 d-flex justify-content-center align-items-center flex-column">
-            <img src="/imgs/cross_card2.png"  className="vertical_card_img" alt="" style={{marginBottom:'10px',marginTop:'10px'}}/>
+            <img src="/imgs/cross_card2.png"  className="vertical_card_img" alt="" style={{marginBottom:'10px',marginTop:'20px'}}/>
 
                 <h3 className='mb-3'>One-on-One <br />Sessions</h3>
               <div className="cross_card_content text-center text-muted p-3">
@@ -32,7 +32,7 @@ export default function VerticalCards() {
           </div>
           <div className="card cross_card"  style={{width: '60%' , height:'227px'}}>
             <div className="card-body-2  d-flex justify-content-center align-items-center flex-column">
-            <img src="/imgs/cross_card3.png" className="vertical_card_img" alt="" style={{marginBottom:'10px',marginTop:'10px' , height:'50px'}} />
+            <img src="/imgs/cross_card3.png" className="vertical_card_img" alt="" style={{marginBottom:'10px',marginTop:'20px' , height:'50px'}} />
 
                 <h3 className='mb-3'>Personalized study plans</h3>
               <div className="content cross_card_content text-center text-muted p-3">
