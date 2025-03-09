@@ -1,12 +1,12 @@
 .contact_title {
     margin-left: 100px;
     color: #F27A0A;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 .contact_container{
     padding-top: 40px;
-    margin-top: -20px;
+    margin-top: 20px;
 
 }
 
@@ -25,7 +25,7 @@
 
 @media (max-width: 768px) {
     .form_tab, .accordions_tab{
-        padding: 0 25px;
+        padding: 0 10px;
         margin-bottom: 30px;
     }
     .contact_title{
