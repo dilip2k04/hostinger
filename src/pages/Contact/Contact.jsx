@@ -126,7 +126,7 @@ export default function Contact() {
         <div className="col-5 d-none d-md-block d-lg-block d-xl-block">
           <img
             src="/imgs/form.png"
-            style={{ height: "78%", width: "80%", objectFit: "contain", marginTop:"18px"}}
+            style={{ height: "71%", width: "80%", objectFit: "contain", marginTop:"10px"}}
             alt=""
           />
         </div>
