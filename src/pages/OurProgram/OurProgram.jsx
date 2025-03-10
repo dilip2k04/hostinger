@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "./OurProgram.css";
 import Tab from "../AboutUs/components/Tab/Tab";
 import Card from "./components/Card/Card";
 import BroadCard from "./components/BroadCard/BroadCard";
 import Testimonial from "./components/Testimonial/Testimonial";
 import axios from "axios";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 import AboutUs from "../AboutUs/AboutUs";
 
 export default function OurProgram({is_main_page}) {
