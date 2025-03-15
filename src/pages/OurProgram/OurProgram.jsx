@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "./OurProgram.css";
 import Tab from "../AboutUs/components/Tab/Tab";
 import Card from "./components/Card/Card";

@@ -50,10 +50,10 @@ export default function Footer() {
         <p className='d-flex gap-2'><strong><FaPhone /></strong><a href="tel:+91-9990467544" className="m-0">+91-9990467544</a></p>
       </div>
 
-      <div className="Privacy_and_Policy">
+      {/* <div className="Privacy_and_Policy">
         <h6>Privacy and Policy</h6>
         <p className='d-flex gap-2'><a href="" className="m-0">Terms and Conditions</a></p>
-      </div>
+      </div> */}
     </div>
   )
 }

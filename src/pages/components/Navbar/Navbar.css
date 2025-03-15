@@ -5,7 +5,7 @@
 }
 
 .navbar-img{
-    height: 40px !important;
+    height: 50px !important;
     width: auto;
     object-fit: contain;
     align-items: center;
@@ -27,11 +27,11 @@
     transform: rotate(180deg); /* Rotate when active */
   }
   
-
+ 
 
 .navbar-nav a {
     margin: 0px;
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-weight: 500 !important;
     background: linear-gradient(30deg,#F27A0A, #041D60);
     -webkit-background-clip: text;

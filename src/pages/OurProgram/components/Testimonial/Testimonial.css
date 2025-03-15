@@ -54,7 +54,9 @@
     height: auto; /* Adjust height */
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 37px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 37px -5px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 37px -5px rgba(0,0,0,0.75);
     display: flex;
     justify-content: center;
     align-items: center;
