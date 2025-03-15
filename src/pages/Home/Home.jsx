@@ -28,13 +28,6 @@ export default function Home() {
     },
   ];
 
-
-
-
-
-
-
-
   return (
     <div className="Home home_page" id="home_section">
       <div className="text-center">
@@ -51,28 +44,31 @@ export default function Home() {
       </div>
 
       <div className="pt-5 d-md-none d-lg-block d-xl-block d-md-block d-none position-relative">
-        <div className="circle position-absolute top-0 end-0">
-        <div className="circle position-absolute top-50 start-0">
+        <div className="position-absolute end-0 d-flex flex-column align-items-end" style={{ right: "20px" }}>
+          {/* Large Circle */}
           <div
             style={{
-              height: "600px",
-              width: "600px",
+              height: "200px",
+              width: "200px",
               backgroundColor: "#041D60",
               borderRadius: "50%",
-              right: "500px",
+              // marginBottom: "0px",
+              marginRight:"50px",
             }}
           ></div>
-        </div>
+          
+          {/* Small Circle */}
           <div
             style={{
-              height: "300px",
-              width: "300px",
+              height: "100px",
+              width: "100px",
               backgroundColor: "#F27A0A",
               borderRadius: "50%",
-              right: "500px",
+              marginRight: "20px", 
             }}
           ></div>
         </div>
+
         <div className="circle position-absolute top-50 start-0">
           <div
             style={{

@@ -69,7 +69,7 @@ const CrossCards = () => {
             <div className="card-body d-flex justify-content-center align-items-center flex-column">
             <img src="/imgs/cross_card4.png" className="crosscard_img" alt="" />
 
-                <h3 className='mb-2'>Certified Mentors</h3>
+                <h3 className='mb-2 px-cus'>Certified Mentors</h3>
               <div className="cross_card_content text-center text-muted p-1">
               <span  style={{fontSize: '20px'}}>      Experienced and certified CBSE educators     </span>          </div>
             </div>

@@ -10,7 +10,7 @@ export default function CircularCard({ img, title, content }) {
           <img src={img} className="circular_card_img" alt="" />
         </div>
       </div>
-      <p>{content}</p>
+      <p id="card_content">{content}</p>
     </div>
   );
 }
