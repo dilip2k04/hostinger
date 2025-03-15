@@ -44,7 +44,7 @@ export default function Contact() {
       checked = false;
     }
 
-    if (formData.contact_number.length != 10) {
+    if (formData.contact_number.length !== 10) {
       toast.error("Mobile Number should contain 10 numbers.");
       checked = false;
     }
@@ -122,70 +122,35 @@ export default function Contact() {
       <h5 className="contact_title ">
         <i>Contact Us</i>
       </h5>
-      <div className="form_tab row g-0" style={{height: '700px'}}>
-        <div className="col-5 d-none d-md-none d-lg-block d-xl-block">
+      <div className="form_tab row g-0" style={{ minHeight: '700px', display: 'flex', flexWrap: 'wrap' }}>
+        <div className="col-lg-5 d-none d-lg-block text-center">
           <img
             src="/imgs/form.png"
-            style={{ height: "75%", width: "80%", objectFit: "contain", marginTop:"10px"}}
-            alt=""
+            style={{ maxWidth: "100%", height: "75%", objectFit: "contain", marginTop: "10px" }}
+            alt="Contact Form"
           />
         </div>
-        <div className="col-md-12 col-12" style={{height:"700px"}}>
+        <div className="col-lg-7 col-md-12 col-12">
           <form onSubmit={handleSubmit}>
-            <Input
-              label={"Your Name"}
-              id={"student_name"}
-              handleInput={handleInputChange}
-              value={formData.student_name}
-            />
-            <Input
-              label={"Contact Number"}
-              id={"contact_number"}
-              handleInput={handleInputChange}
-              value={formData.contact_number}
-            />
-            <Input
-              label={"Email"}
-              id={"email"}
-              handleInput={handleInputChange}
-              value={formData.email}
-            />
-            <Input
-              label={"Child Grade"}
-              id={"child_grade"}
-              handleInput={handleInputChange}
-              value={formData.child_grade}
-            />
-            <Input
-              label={"Prefered Subjects"}
-              id={"prefered_subjects"}
-              handleInput={handleInputChange}
-              value={formData.prefered_subjects}
-            />
-
+            <Input label="Your Name" id="student_name" handleInput={handleInputChange} value={formData.student_name} />
+            <Input label="Contact Number" id="contact_number" handleInput={handleInputChange} value={formData.contact_number} />
+            <Input label="Email" id="email" handleInput={handleInputChange} value={formData.email} />
+            <Input label="Child Grade" id="child_grade" handleInput={handleInputChange} value={formData.child_grade} />
+            <Input label="Prefered Subjects" id="prefered_subjects" handleInput={handleInputChange} value={formData.prefered_subjects} />
             <div className="d-flex justify-content-center align-items-center">
-              <button onClick={handleSubmit} className="form_button fw-bolder">
-                Book A Demo
-              </button>
+              <button type="submit" className="form_button fw-bolder">Book A Demo</button>
             </div>
           </form>
         </div>
       </div>
-      <div className="faq_section"style={{marginTop:"50px"}} >
+      <div className="faq_section mt-5">
         <Tab title="Frequently asked Questions (FAQ)" is_title={true} />
-        <div className="accordions_tab d-flex flex-row row g-0">
-          {accordion_data.map((acc, idx) => {
-            return (
-              <div className="col-md-6" key={idx}>
-                <Accordion
-                  question={acc.question}
-                  answer={acc.answer}
-                  key={idx}
-                  id={idx}
-                />
-              </div>
-            );
-          })}
+        <div className="accordions_tab d-flex flex-wrap">
+          {accordion_data.map((acc, idx) => (
+            <div className="col-md-6" key={idx}>
+              <Accordion question={acc.question} answer={acc.answer} id={idx} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
