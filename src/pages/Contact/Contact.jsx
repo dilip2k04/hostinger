@@ -173,7 +173,7 @@ export default function Contact() {
       </div>
       <div className="faq_section"style={{marginTop:"50px"}} >
         <Tab title="Frequently asked Questions (FAQ)" is_title={true} />
-        <div className="accordions_tab d-flex  row g-0">
+        <div className="accordions_tab d-flex flex-row row g-0">
           {accordion_data.map((acc, idx) => {
             return (
               <div className="col-md-6" key={idx}>
