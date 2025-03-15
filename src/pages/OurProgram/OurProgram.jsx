@@ -83,12 +83,12 @@ export default function OurProgram({is_main_page}) {
     },
   ];
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
 
-  const handleNavLinkClick = (path, sectionId) => {
-    navigate(`${path}?scrollTo=${sectionId}`);
-  }
+  // const handleNavLinkClick = (path, sectionId) => {
+  //   navigate(`${path}?scrollTo=${sectionId}`);
+  // }
 
   const OurProgramTab1 = () => {
     return (
@@ -98,16 +98,16 @@ export default function OurProgram({is_main_page}) {
         </h5>
 
         <div className="ourprogram_tab row g-0">
-          <div className="col-md-7" id="ourprogram_img_Tab">
+          <div className="col-lg-7" id="ourprogram_img_Tab">
             <img
               className="ourprogram_img"
               src="/imgs/our program 1.jpg"
               alt="image"
             />
           </div>
-          <div className="col-md-5 p-2 d-flex justify-content-center align-items-center flex-column">
+          <div className="col-lg-5 p-2 d-flex justify-content-center align-items-center flex-column">
             {" "}
-            <h4 className="ourprogram_content">
+            <h4 className="ourprogram_content w-100">
               We offer one-on-one tutoring sessions tailored to each student's
               unique learning style and pace, ensuring effective understanding
               and retention of concepts.

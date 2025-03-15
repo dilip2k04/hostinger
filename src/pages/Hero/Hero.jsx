@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <div className="hero_section" id="hero_section" >
       <div className="row g-0" id="HeroPage" style={{height: '100%'}}>
-        <div className="col-lg-6 order-2 order-md-1 d-flex flex-column justify-md-content-center justify-content-center" >
+        <div className="col-lg-6 order-2 order-xl-1 d-flex flex-column justify-md-content-center justify-content-center" >
           {" "}
           <div className="hero_content">
             <h1>
@@ -50,7 +50,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-lg-6 order-1 order-xl-2 d-flex flex-column justify-content-center align-items-center">
         <div className="d-flex justify-content-center align-items-center">
       <Carousel controls={false} indicators={false} interval={2000} className="carousel slide carousel-fade" style={{ borderRadius: '50%',transition: '2s ease'}}>
         <Carousel.Item className="d-flex justify-content-center align-items-center">
