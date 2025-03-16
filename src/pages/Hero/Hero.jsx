@@ -42,7 +42,7 @@ export default function Hero() {
               <Link
                 className="explore_us d-flex justify-content-center align-items-center"
                 id="button"
-                to='/our-program'
+                to='/our-programs'
               >
                 Explore Us
               

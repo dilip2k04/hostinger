@@ -13,7 +13,7 @@ export default function Accordion({ question, answer, id }) {
       <div className="accordion-item">
         <h2 className="accordion-header">
           <button
-            className={`accordion-button ${isOpen ? "" : "collapsed"}`} // Bootstrap requires 'collapsed' when closed
+            className={accordion-button ${isOpen ? "" : "collapsed"}} // Bootstrap requires 'collapsed' when closed
             style={{ border: "1px solid black" }}
             type="button"
             onClick={toggleAccordion} // Handle manually
@@ -25,7 +25,7 @@ export default function Accordion({ question, answer, id }) {
         </h2>
         <div
           id={id}
-          className={`accordion-collapse collapse ${isOpen ? "show" : ""}`} // Apply 'show' class manually
+          className={accordion-collapse collapse ${isOpen ? "show" : ""}} // Apply 'show' class manually
         >
           <div className="accordion-body">{answer}</div>
         </div>

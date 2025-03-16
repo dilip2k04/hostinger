@@ -1,38 +1,38 @@
 .accordion-button{
-    border: 1px solid #041D60 !important;
-    border-radius: 10px;
-    color:#041D60;
-    font-weight: 500;
-    height: 100px;
-    font-size: 24px;
-    padding: 0 20px;
+  border: 1px solid #041D60 !important;
+  border-radius: 10px;
+  color:#041D60;
+  font-weight: 500;
+  height: 100px;
+  font-size: 24px;
+  padding: 0 20px;
 }
 
 .accordion-body{
-  font-size: 20px;
-   transition: all 3s ease-in-out;
+font-size: 20px;
+ transition: all 3s ease-in-out;
 }
 
 .button_text{
-    color:#041D60
+  color:#041D60
 }
 
 /* Remove active background and shadow */
 .accordion-button:focus,
 .accordion-button:active {
-  box-shadow: none !important;
-  background-color: transparent !important;
+box-shadow: none !important;
+background-color: transparent !important;
 }
 
 /* Remove the default background color of the button */
 .accordion-button {
-  background-color: transparent !important;
-  color: inherit; /* Keeps the text color same */
+background-color: transparent !important;
+color: inherit; /* Keeps the text color same */
 }
 
 /* Ensure the collapsed button doesn't change styles */
 .accordion-button:not(.collapsed) {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  color: inherit;
+background-color: transparent !important;
+box-shadow: none !important;
+color: inherit;
 }
