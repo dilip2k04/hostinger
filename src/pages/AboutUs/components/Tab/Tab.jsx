@@ -51,39 +51,40 @@ export default function Tab({
             <div className="right_line"></div>
           </div>
         </div>
-        <div className="tab_contents row g-0 d-flex">
-          {!is_content ? (
-            right_pic ? (
-              <>
-                <div className="col-md-7 order-2 order-md-1 d-flex justify-content-center align-items-center flex-column p-3">
-                  <div className="content">
-                    <h3>{content}</h3>
-                  </div>
-                </div>
-                <div className="col-md-5 order-1 order-md-2 d-flex justify-content-center align-items-center">
-                  <img src={img} className="tab_img rounded" alt=""  />
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="col-md-5 order-1 order-md-1 d-flex justify-content-center align-items-center">
-                  <img src={img} className="tab_img rounded" alt="" />
-                </div>
-                <div className="col-md-7 order-2 order-md-2 d-flex justify-content-center align-items-center flex-column p-3">
-                  <div className="content">
-                    <h3>{content}</h3>
-                  </div>
-                </div>
-              </>
-            )
-          ) : (
-            <div className="col-12 p-3 d-flex justify-content-center align-items-center  ">
-              <div className=" tab_content_paragraph">
-                {content}
+        <div className="tab_contents row g-0 d-flex align-items-center">
+      {!is_content ? (
+        right_pic ? (
+          <>
+            {/* Left: Text | Right: Image */}
+            <div className="col-md-7 order-2 order-md-1 d-flex justify-content-center align-items-center flex-column p-4">
+              <div className="content text-center">
+                <h3>{content}</h3>
               </div>
             </div>
-          )}
+            <div className="col-md-5 order-1 order-md-2 d-flex justify-content-center align-items-center">
+              <img src={img} className="tab_img rounded img-fluid" alt="tab" />
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Left: Image | Right: Text */}
+            <div className="col-md-5 order-1 order-md-1 d-flex justify-content-center align-items-center">
+              <img src={img} className="tab_img rounded img-fluid" alt="tab" />
+            </div>
+            <div className="col-md-7 order-2 order-md-2 d-flex justify-content-center align-items-center flex-column p-4">
+              <div className="content text-center">
+                <h3>{content}</h3>
+              </div>
+            </div>
+          </>
+        )
+      ) : (
+        // Full-Width Content
+        <div className="col-12 p-4 d-flex justify-content-center align-items-center text-center">
+          <div className="tab_content_paragraph">{content}</div>
         </div>
+      )}
+    </div>
       </div>
     );
   }

@@ -49,8 +49,9 @@
         font-size: 26px;
     }
     .card_img {
-        height: 180px;
-        width: 180px;
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
     }
 }
 
@@ -77,23 +78,31 @@
 /* Medium screens (Tablets, 768px - 1199px) */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .broad_card {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center; /* Ensure text is also centered */
         width: 75%;
         padding: 20px;
         max-width: 800px;
-        display: flex;
-        flex-direction: column-reverse; /* Ensures image appears first */
     }
     .broad_title {
-        font-size: 32px;
+        font-size: 24px;
+
     }
     .broad_content {
-        font-size: 22px;
+        font-size: 20px;
     }
     .card_img {
-        height: 140px;
-        width: 140px;
+        height: 80px;
+        width: 80px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
     }
 }
+
 
 /* Extra small screens (up to 480px) */
 @media screen and (max-width: 480px) {

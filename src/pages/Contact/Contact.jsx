@@ -126,7 +126,7 @@ export default function Contact() {
         <div className="col-lg-5 d-none d-lg-block text-center">
           <img
             src="/imgs/form.png"
-            style={{ maxWidth: "100%", height: "75%", objectFit: "contain", marginTop: "10px" }}
+            style={{ maxWidth: "100%", height: "82.5%", objectFit: "contain", marginTop: "10px" }}
             alt="Contact Form"
           />
         </div>
