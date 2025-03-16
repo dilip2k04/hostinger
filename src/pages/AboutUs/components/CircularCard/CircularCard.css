@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 400px; 
+    min-height: 400px; /* Default height */
     width: 100%;
     text-align: center;
     padding: 10px 0px;
@@ -13,38 +13,34 @@
     font-size: 24px;
     font-weight: 600;
     text-align: center;
-    height: 60px; 
+    height: 60px; /* Fixed height for the title */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(30deg,#F27A0A, #041D60);
+    background: linear-gradient(30deg, #F27A0A, #041D60);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip:"text";
+    background-clip: text;
 }
 
 .circular_card {
     border: 0;
-    height: 280px; 
-    width: 280px;
+    height: 280px; /* Default size */
+    width: 280px; /* Default size */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    background-color: transparent;
 }
 
 .circular_card .card-body {
     height: 100%;
     width: 100%;
     display: flex;
-    z-index: 0;
     justify-content: center;
     align-items: center;
-}
-
-.circular_card{
-    background-color: transparent;
 }
 
 .circular_card_img {
@@ -54,197 +50,121 @@
     border-radius: 50%;
 }
 
-.circular_card_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    
-}
-
 .circular_card_container p {
     padding-top: 20px;
     font-size: 16px;
     text-align: center;
     width: 90%;
     margin-top: -10px;
-    height: 120px; 
+    height: 120px; /* Fixed height for the content */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(30deg,#F27A0A, #041D60);
+    background: linear-gradient(30deg, #F27A0A, #041D60);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip:"text";
+    background-clip: text;
     z-index: 10;
 }
 
-@media (max-width: 344px) {
+/* ======================= MEDIA QUERIES ======================== */
+
+/* Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
     .circular_card_container {
-        min-height: 250px;
+        min-height: 450px; /* Increase height for larger screens */
     }
 
     .circular_card {
-        height: 180px;
+        height: 320px; /* Increase size for larger screens */
+        width: 320px;
+    }
+
+    .circular_card_container h3 {
+        font-size: 28px; /* Larger font size */
+    }
+
+    .circular_card_container p {
+        font-size: 18px; /* Larger font size */
+    }
+}
+
+/* Medium Screens (Tablets, Small Laptops) */
+@media (max-width: 1024px) {
+    .circular_card_container {
+        min-height: 380px; /* Adjust height for medium screens */
+    }
+
+    .circular_card {
+        height: 240px; /* Adjust size for medium screens */
+        width: 240px;
+    }
+
+    .circular_card_container h3 {
+        font-size: 22px; /* Adjust font size */
+    }
+
+    .circular_card_container p {
+        font-size: 15px; /* Adjust font size */
+    }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    .circular_card_container {
+        min-height: 350px; /* Adjust height for smaller screens */
+    }
+
+    .circular_card {
+        height: 200px; /* Adjust size for smaller screens */
+        width: 200px;
+    }
+
+    .circular_card_container h3 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .circular_card_container p {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .circular_card_container {
+        min-height: 300px; /* Adjust height for small phones */
+    }
+
+    .circular_card {
+        height: 180px; /* Adjust size for small phones */
         width: 180px;
     }
 
     .circular_card_container h3 {
-        font-size: 18px;
-        height: 70px;
+        font-size: 18px; /* Adjust font size */
     }
 
     .circular_card_container p {
-        font-size: 12px;
-        height: 155px;
+        font-size: 13px; /* Adjust font size */
     }
 }
 
-@media (max-width: 576px) {
+/* Extra Small Phones */
+@media (max-width: 344px) {
     .circular_card_container {
-        min-height: 280px;
+        min-height: 250px; /* Adjust height for extra small phones */
     }
 
     .circular_card {
-        height: 200px;
-        width: 200px;
-    }
-
-    .circular_card_container h3 {
-        font-size: 20px;
-    }
-
-    .circular_card_container p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .circular_card_container {
-        min-height: 300px;
-    }
-    .circular_card_container h3 {
-        font-size: 30px;
-        margin-bottom: 0;
-    }
-    .circular_card_container p {
-        font-size: 22px;
-        padding-top: 0;
-    }
-    .card-body{
-        padding: 0;
-    }
-}
-@media screen and (min-width: 820px) {
-    .circular_card_container {
-        min-height: 300px;
-    }
-    .circular_card_container h3 {
-        font-size: 30px;
-        margin-bottom: 0;
-    }
-    .circular_card_container p {
-        font-size: 22px;
-        padding-top: 0;
-    }
-    .card-body{
-        padding: 0;
-    }
-}
-@media (min-width: 1024px) {
-    .circular_card_container {
-        min-height: 350px;
-    }
-
-    .circular_card {
-        height: 250px;
-        width: 250px;
-    }
-
-    .circular_card_container h3 {
-        font-size: 36px;
-    }
-
-    .circular_card_container p {
-        font-size: 26px;
-    }
-}
-
-/* Laptops (Up to 1200px) */
-@media (min-width: 1200px) {
-    .circular_card {
-        height: 270px;
-        width: 270px;
-    }
-    .circular_card_container{
-        height: fit-content;
-        justify-content: space-between;
-    }
-    .circular_card_container h3 {
-        font-size: 26px;
-        height: max-content;
-        width: 200px;
-    }
-
-    .circular_card_img{
-        height: 150px;
+        height: 150px; /* Adjust size for extra small phones */
         width: 150px;
     }
-    #card_content {
-        font-size: 16px;
-        
-    }
 
-}
-
-@media (min-width: 1280px) {
-    .circular_card {
-        height: 270px;
-        width: 270px;
-    }
-    .circular_card_container{
-        height: fit-content;
-        justify-content: space-between;
-    }
     .circular_card_container h3 {
-        font-size: 26px;
-        height: max-content;
-        width: 200px;
+        font-size: 16px; /* Adjust font size */
     }
 
-    .circular_card_img{
-        height: 150px;
-        width: 150px;
+    .circular_card_container p {
+        font-size: 12px; /* Adjust font size */
     }
-    #card_content {
-        font-size: 16px;
-        
-    }
-
-}
-@media (min-width: 1264px) {
-    .circular_card {
-        height: 270px;
-        width: 270px;
-    }
-    .circular_card_container{
-        height: fit-content;
-        justify-content: space-between;
-    }
-    .circular_card_container h3 {
-        font-size: 26px;
-        height: max-content;
-        width: 200px;
-    }
-
-    .circular_card_img{
-        height: 150px;
-        width: 150px;
-    }
-    #card_content {
-        font-size: 16px;
-        
-    }
-
 }

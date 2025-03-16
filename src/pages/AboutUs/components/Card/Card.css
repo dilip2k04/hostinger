@@ -44,6 +44,27 @@
 
 /* ======================= MEDIA QUERIES ======================== */
 
+@media (min-width: 1200px) {
+    .about_us_card {
+        width: 70%; /* Adjust width for larger screens */
+        max-width: 500px; /* Increase max-width for better readability */
+        margin-left: 40px; /* Adjust margin for larger screens */
+    }
+
+    .about_us_card .card-body-1 {
+        height: 300px; /* Increase height for better content spacing */
+        padding: 25px; /* Add more padding for larger screens */
+    }
+
+    .card_content h3 {
+        font-size: 28px; /* Increase font size for headings */
+    }
+
+    .card_paragraph h6 {
+        font-size: 20px; /* Increase font size for paragraphs */
+    }
+}
+
 /* Large Screens (Desktops, Laptops) */
 @media (max-width: 1440px) {
     .about_us_card {
@@ -59,9 +80,29 @@
         font-size: 18px;
     }
 }
+@media (min-width: 1024px) and (max-width: 1999px) {
+    .about_us_card {
+        width: 80%; /* Slightly wider than medium screens */
+        max-width: 450px; /* Adjusted max-width */
+        margin-left: 30px; /* Consistent margin */
+    }
+
+    .about_us_card .card-body-1 {
+        height: 280px; /* Slightly taller than medium screens */
+        padding: 20px; /* More padding for better spacing */
+    }
+
+    .card_content h3 {
+        font-size: 20px; /* Slightly larger font size */
+    }
+
+    .card_paragraph h6 {
+        font-size: 14px; /* Slightly larger font size */
+    }
+}
 
 /* Medium Screens (Tablets, Small Laptops) */
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
     .about_us_card {
         width: 90%;
         max-width: 420px;
@@ -70,7 +111,7 @@
     }
 
     .about_us_card .card-body-1 {
-        height: 300px;
+        height: 320px;
         padding: 18px;
     }
 

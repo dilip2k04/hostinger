@@ -63,3 +63,9 @@
     color: #041D60;
     border: 2px solid #041D60;
 }
+
+@media (min-width:360px) {
+    .form_tab{
+        margin-bottom: -40px;
+    }
+}

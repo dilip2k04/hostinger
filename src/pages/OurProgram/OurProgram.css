@@ -5,10 +5,6 @@
   --hover-border: 2px solid var(--primary-color);
   --transition: all 0.3s ease-in-out;
 }
-.card-img{
-  height: 450px;
-  width: auto;
-}
 
 /* Base Styles */
 .ourprogram {
@@ -63,24 +59,11 @@
   font-size: 1.5rem;
 }
 
-.grade_card {
-  border: 0;
-  transition: var(--transition);
-}
-
-.grade_card:hover .card-img {
-  filter: brightness(50%);
-}
-
-.overlay-text {
-  opacity: 0;
-  line-height: 40px;
-  transition: var(--transition);
-  font-size: 1rem;
-}
-
-.grade_card:hover .overlay-text {
-  opacity: 1;
+.grade_img {
+  width: 50%;
+  border-radius: 20px;
+  object-fit: contain;
+  height: auto;
 }
 
 .all_sub {
@@ -121,25 +104,27 @@
 
 /* Media Queries for All Devices */
 
-/* Mobile Devices (up to 576px) */
-@media (max-width: 576px) {
+/* Extra Small Devices (up to 359px) */
+@media screen and (max-width: 359px) {
   .ourprogram {
-    margin-top: 25px;
+    margin-top: 20px;
+    padding: 0 10px;
   }
 
   .ourprogram_title {
     font-size: 1.5rem;
-    margin-left: 20px;
+    margin-left: 10px;
+    text-align: center;
   }
 
   .ourprogram_img {
-    padding: 0 15px 30px 15px;
+    padding: 0 10px 30px 10px;
     border-radius: 0 !important;
   }
 
   .ourprogram_content {
     padding: 15px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.6;
   }
 
@@ -153,45 +138,55 @@
     font-size: 1.2rem;
   }
 
-  .overlay-text {
-    font-size: 0.8rem;
-    line-height: 1.6;
+  .grade_img {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .all_sub {
+    margin-top: -10px;
+    margin-bottom: -15px;
   }
 
   .testimonial-container {
     height: auto;
+    padding: 0 10px;
   }
 
   .testimonial-wrapper {
     animation: scrollUp 60s linear infinite;
   }
+
+  .card-img {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 250px; /* Limit maximum width */
+  }
 }
 
-/* Tablets (577px to 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
+/* Small Devices (360px to 575px) */
+@media screen and (min-width: 360px) and (max-width: 575px) {
   .ourprogram {
-    margin-top: 35px;
+    margin-top: 25px;
   }
 
   .ourprogram_title {
-    font-size: 1.8rem;
-    margin-left: 30px;
+    font-size: 1.6rem;
+    margin-left: 15px;
   }
 
   .ourprogram_img {
-    padding: 0 30px 40px 30px;
-    border-radius: 0 120px 0 120px;
+    padding: 0 15px 30px 15px;
+    border-radius: 0 !important;
   }
 
   .ourprogram_content {
     padding: 20px;
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
   .ourprogram_button {
-    padding: 15px 40px;
-    font-size: 1.1rem;
+    padding: 12px 25px;
+    font-size: 1rem;
     margin-top: 20px;
   }
 
@@ -199,9 +194,8 @@
     font-size: 1.3rem;
   }
 
-  .overlay-text {
-    font-size: 0.9rem;
-    line-height: 1.6;
+  .grade_img {
+    width: 100%; /* Full width for smaller screens */
   }
 
   .testimonial-container {
@@ -213,14 +207,120 @@
   }
 }
 
-/* Small Desktops (769px to 992px) */
-@media (min-width: 768px) and (max-width: 992px) {
+/* Small Tablets (576px to 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .ourprogram {
     margin-top: 30px;
   }
-  .ourprogram_tab{
+
+  .ourprogram_title {
+    font-size: 1.8rem;
+    margin-left: 20px;
+  }
+
+  .ourprogram_img {
+    padding: 0 20px 40px 20px;
+    border-radius: 0 120px 0 120px;
+  }
+
+  .ourprogram_content {
+    padding: 25px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .ourprogram_button {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    margin-top: 25px;
+  }
+
+  .grade_title {
+    font-size: 1.4rem;
+  }
+
+  .grade_img {
+    width: 80%; /* Adjust width for small tablets */
+  }
+
+  .testimonial-container {
+    height: auto;
+  }
+
+  .testimonial-wrapper {
+    animation: scrollUp 40s linear infinite;
+  }
+}
+
+/* Tablets (768px to 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ourprogram {
+    margin-top: 30px;
+  }
+
+  .ourprogram_title {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    text-align: center; /* Center-align the title */
+  }
+
+  .ourprogram_tab {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stack image, text, and button vertically */
+    align-items: center; /* Center-align content horizontally */
+  }
+
+  .ourprogram_img {
+    width: 100%; /* Full screen width */
+    height: auto; /* Maintain aspect ratio */
+    padding: 0; /* Remove padding */
+    border-radius: 0; /* Remove rounded corners */
+    margin-bottom: 2rem; /* Add space below the image */
+  }
+
+  .ourprogram_content {
+    width: 100%; /* Full screen width */
+    padding: 0 20px; /* Add horizontal padding */
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: center; /* Center-align text */
+    margin-bottom: 1.5rem; /* Add space below the text */
+  }
+
+  .ourprogram_button {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    margin-top: 0; /* Reset margin-top */
+    margin-bottom: 2rem; /* Add space below the button */
+  }
+  .all_sub{
+    margin-top: 40px;
+  }
+
+  .grade_title {
+    font-size: 1.4rem;
+  }
+
+  .grade_img {
+    width: 80%; /* Adjust width for small tablets */
+  }
+
+  .testimonial-container {
+    height: auto;
+  }
+
+  .testimonial-wrapper {
+    animation: scrollUp 40s linear infinite;
+  }
+  form{
+    margin-bottom: 40px;
+  }
+}
+
+/* Small Desktops (992px to 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ourprogram {
+    margin-top: 40px;
   }
 
   .ourprogram_title {
@@ -235,18 +335,8 @@
 
   .ourprogram_content {
     padding: 25px;
-    font-size: 13px;
-    line-height: 1.5;
-    width: fit-content;
-    margin-bottom: 0px;
-  }
-  #Courses{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .card-img{
-    height: 300px;
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
 
   .ourprogram_button {
@@ -259,24 +349,23 @@
     font-size: 1.4rem;
   }
 
-  .overlay-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
+  .grade_img {
+    width: 60%; /* Adjust width for small desktops */
   }
 
   .testimonial-container {
-    height: 500px;
+    height: auto;
   }
 
   .testimonial-wrapper {
-    animation: scrollUp 40s linear infinite;
+    animation: scrollUp 30s linear infinite;
   }
 }
 
-/* Large Desktops (993px and above) */
-@media (min-width: 993px) {
+/* Large Desktops (1200px and above) */
+@media screen and (min-width: 1200px) {
   .ourprogram {
-    margin-top: 45px;
+    margin-top: 70px;
   }
 
   .ourprogram_title {
@@ -305,9 +394,8 @@
     font-size: 1.5rem;
   }
 
-  .overlay-text {
-    font-size: 1rem;
-    line-height: 1.6;
+  .grade_img {
+    width: 50%; /* Default width for large desktops */
   }
 
   .testimonial-container {
@@ -315,6 +403,6 @@
   }
 
   .testimonial-wrapper {
-    animation: scrollUp 30s linear infinite;
+    animation: scrollUp 20s linear infinite;
   }
 }

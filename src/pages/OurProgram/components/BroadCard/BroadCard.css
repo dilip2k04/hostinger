@@ -2,7 +2,7 @@
     margin: 20px auto;
     width: 80%;
     max-width: 1000px; /* Prevents too much stretching on large screens */
-    height: auto;
+    height: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
