@@ -123,42 +123,33 @@ export default function OurProgram({is_main_page}) {
         </div>
         <Tab title="Grade Specific Online Tuition" is_title={true} />
 
-        <div className="row g-0 mb-4" id="Courses">
-          <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1000">
-            <h3 className="grade_title">Grade 3 - 5</h3>
-            <div className="card text-bg-dark grade_card">
-              <img src="/imgs/gradec2.png" className="card-img" alt="..." />
-              <div className="card-img-overlay overlay-text">
-                <p className="card-text p-3 pt-5 fs-5">
-                  Strong focus on foundational skills in Mathematics, Science,
-                  and English. Activities that stimulate curiosity and
-                  independent problem-solving
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1500">
-            <h3 className="grade_title">Grade 6 - 9</h3>
-            <div className="card text-bg-dark grade_card">
-              <img src="/imgs/gradec1.png" className="card-img" alt="..." />
-              <div className="card-img-overlay overlay-text">
-                <p className="card-text p-3 pt-5 fs-5">
-                  Advanced concepts in core subjects to prepare students for
-                  academic challenges. Comprehensive guidance to build critical
-                  thinking and analytical skills.
-                </p>
-              </div>
-            </div>
-            {/* <div className="position-relative">
-         <img
-            src="/imgs/gradec1.png"
-            className="grade_img shadow-lg"
-            alt="image"
-          />
-          <p className="position-absolute top-50 start-50">Hii bro</p>
-         </div> */}
-          </div>
-        </div>
+        <div className="row g-0 mb-4 d-md-flex" id="Courses">
+  <div className="col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1000">
+    <h3 className="grade_title">Grade 3 - 5</h3>
+    <div className="card text-bg-dark grade_card">
+      <img src="/imgs/gradec2.png" className="card-img" alt="..." />
+      <div className="card-img-overlay overlay-text">
+        <p className="card-text p-3 pt-5 fs-5">
+          Strong focus on foundational skills in Mathematics, Science, and English. 
+          Activities that stimulate curiosity and independent problem-solving.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div className="col-md-6 p-2 d-flex flex-column justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1500">
+    <h3 className="grade_title">Grade 6 - 9</h3>
+    <div className="card text-bg-dark grade_card">
+      <img src="/imgs/gradec1.png" className="card-img" alt="..." />
+      <div className="card-img-overlay overlay-text">
+        <p className="card-text p-3 pt-5 fs-5">
+          Advanced concepts in core subjects to prepare students for academic challenges. 
+          Comprehensive guidance to build critical thinking and analytical skills.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
         <Tab title="Subjects We Cover" is_title={true} />
 
         <div className="all_sub p-5 pt-0 row d-flex g-0">

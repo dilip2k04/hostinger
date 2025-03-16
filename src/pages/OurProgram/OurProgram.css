@@ -189,3 +189,10 @@
 .grade_card:hover .overlay-text {
   opacity: 1;
 }
+@media screen and (min-width: 768px) {
+  #Courses{
+    display: flex;
+    flex-direction: row;
+    
+  }
+}
