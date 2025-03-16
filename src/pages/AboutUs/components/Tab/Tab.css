@@ -303,8 +303,10 @@
     }
 
     .title_tag h2 {
-        font-size: 18px;
+        font-size: 14.5px;
+        width: fit-content;
     }
+    
 }
 
 /* Very Small Devices (Mini Phones, Older Models) */
@@ -330,5 +332,6 @@
 
     .title_tag h2 {
         font-size: 16px;
+        width: fit-content;
     }
 }

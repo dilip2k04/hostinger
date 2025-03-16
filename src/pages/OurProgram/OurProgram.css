@@ -1,158 +1,113 @@
-.ourprogram {
-  /* padding-top: 10px; */
-  margin-top: 45px;
+:root {
+  --primary-color: #041D60;
+  --secondary-color: #F27A0A;
+  --white: #ffffff;
+  --hover-border: 2px solid var(--primary-color);
+  --transition: all 0.3s ease-in-out;
+}
+.card-img{
+  height: 450px;
+  width: auto;
+}
 
+/* Base Styles */
+.ourprogram {
+  margin-top: 45px;
+  padding: 0 15px;
 }
 
 .ourprogram_title {
   margin-left: 40px;
+  color: var(--secondary-color);
+  font-size: 2rem;
 }
-.ourprogram_tab{
+
+.ourprogram_tab {
   margin-bottom: -5px;
-}
-
-.ourprgmimageandcontent {
-  display: flex;
-  
-}
-
-.teaching_container{
-  margin-bottom: 35px;
 }
 
 .ourprogram_img {
   width: 100%;
   height: auto;
-  object-fit: co;
-  padding:  0px 50px 50px 50px;
-  border: 0 20px 20px 0 !important;
-  border-radius: 0px 165px 0px 165px !important;
-}
-
-.grade_title {
-  color: #041D60;
-  margin-bottom: 15px;
-}
-
-.grade_img {
-  width: 50%;
-  border-radius: 20px;
-  object-fit: contain;
-  height: auto;
-}
-
-.all_sub{
-  margin-top: -15px;
-  margin-bottom: -20px;
+  object-fit: cover;
+  padding: 0 50px 50px 50px;
+  border-radius: 0 165px 0 165px;
 }
 
 .ourprogram_content {
-  padding: 30px 30px 10px 30px;
+  padding: 30px;
   line-height: 40px;
-  /* min-width: 450px;
-  max-width: 330px; */
+  font-size: 1.1rem;
 }
 
 .ourprogram_button {
   padding: 20px 60px;
   border: 0;
   border-radius: 10px;
-  background-color: #041D60;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white);
   margin-top: 30px;
   font-size: 24px;
+  transition: var(--transition);
 }
 
 .ourprogram_button:hover {
-  border: 2px solid #041D60;
-  /* background-color: white; */
-  transition: all 0.2s;
-  color: #041D60 !important;
+  border: var(--hover-border);
+  color: var(--primary-color) !important;
+  background-color: var(--white);
 }
 
-.ourprgmimageandcontent p {
-  margin: 100px;
-  width: 481px;
-  height: 135px;
-  font-size: 34px;
+.grade_title {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
-.ourprgmcontent button {
-  margin-left: 1000px;
-  background-color: #041D60;
-  color: white;
-  border-radius: 20px;
-  padding: 10px;
+.grade_card {
+  border: 0;
+  transition: var(--transition);
 }
 
-.ourprogram_title {
-  color: #F27A0A;
-  margin-left: 100px;
+.grade_card:hover .card-img {
+  filter: brightness(50%);
 }
 
-.grade {
-  display: flex;
-  margin-left: 180px;
-  margin-top: 30px;
-  width: 70%;
-  justify-content: space-between;
+.overlay-text {
+  opacity: 0;
+  line-height: 40px;
+  transition: var(--transition);
+  font-size: 1rem;
 }
 
-
-
-
-@media (max-width: 768px) {
-  .ourprogram{
-    margin-top: 25px;
-  }
-
-  .ourprogram_title {
-    font-size: 32px;
-    margin-left: 30px;
-  }
-  .ourprogram_img{
-    padding-bottom: 10px;
-    border-radius: 0 !important;
-  }
-  .ourprogram_button{
-    padding: 18px 30px;
-    font-size: 18px;
-    margin-top: 0px;
-  }
-  .ourprgmcontent{
-    padding-bottom: 0;
-    text-align: justify !important;
-    min-width: 400px;
-    max-width: 450px;
-  }
-
-  .testimonial-wrapper {
-    animation: scrollUp 160s linear infinite;
-  }
+.grade_card:hover .overlay-text {
+  opacity: 1;
 }
 
-.c1 {
-  color: #041D60;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
+.all_sub {
+  margin-top: -15px;
+  margin-bottom: -20px;
+  padding: 0 15px;
 }
 
-
+.teaching_container {
+  margin-bottom: 35px;
+  padding: 0 15px;
+}
 
 .testimonial-container {
-  height: 500px; 
+  height: 500px;
   width: 100%;
-
   overflow: hidden;
   position: relative;
+  padding: 0 15px;
 }
 
 .testimonial-wrapper {
   height: auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  animation: scrollUp 40s linear infinite;
 }
 
 @keyframes scrollUp {
@@ -164,35 +119,202 @@
   }
 }
 
-.testimonial-wrapper {
-  animation: scrollUp 40s linear infinite;
+/* Media Queries for All Devices */
+
+/* Mobile Devices (up to 576px) */
+@media (max-width: 576px) {
+  .ourprogram {
+    margin-top: 25px;
+  }
+
+  .ourprogram_title {
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+
+  .ourprogram_img {
+    padding: 0 15px 30px 15px;
+    border-radius: 0 !important;
+  }
+
+  .ourprogram_content {
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .ourprogram_button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .grade_title {
+    font-size: 1.2rem;
+  }
+
+  .overlay-text {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-container {
+    height: auto;
+  }
+
+  .testimonial-wrapper {
+    animation: scrollUp 60s linear infinite;
+  }
 }
 
+/* Tablets (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .ourprogram {
+    margin-top: 35px;
+  }
 
-.grade_card:hover .card-img {
-  filter: brightness(50%);
-  transition: filter 0.3s ease-in-out;
+  .ourprogram_title {
+    font-size: 1.8rem;
+    margin-left: 30px;
+  }
+
+  .ourprogram_img {
+    padding: 0 30px 40px 30px;
+    border-radius: 0 120px 0 120px;
+  }
+
+  .ourprogram_content {
+    padding: 20px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .ourprogram_button {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .grade_title {
+    font-size: 1.3rem;
+  }
+
+  .overlay-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-container {
+    height: auto;
+  }
+
+  .testimonial-wrapper {
+    animation: scrollUp 50s linear infinite;
+  }
 }
 
-.grade_card {
-  border: 0px;
-}
+/* Small Desktops (769px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .ourprogram {
+    margin-top: 30px;
+  }
+  .ourprogram_tab{
+    display: flex;
+    flex-direction: row;
+  }
 
-/* Initially hide text overlay */
-.overlay-text {
-  opacity: 0;
-  line-height: 40px;
-  transition: opacity 0.3s ease-in-out;
-}
+  .ourprogram_title {
+    font-size: 2rem;
+    margin-left: 40px;
+  }
 
-/* Show text on hover */
-.grade_card:hover .overlay-text {
-  opacity: 1;
-}
-@media screen and (min-width: 768px) {
+  .ourprogram_img {
+    padding: 0 40px 50px 40px;
+    border-radius: 0 140px 0 140px;
+  }
+
+  .ourprogram_content {
+    padding: 25px;
+    font-size: 13px;
+    line-height: 1.5;
+    width: fit-content;
+    margin-bottom: 0px;
+  }
   #Courses{
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-around;
+  }
+  .card-img{
+    height: 300px;
+  }
+
+  .ourprogram_button {
+    padding: 18px 50px;
+    font-size: 1.2rem;
+    margin-top: 25px;
+  }
+
+  .grade_title {
+    font-size: 1.4rem;
+  }
+
+  .overlay-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-container {
+    height: 500px;
+  }
+
+  .testimonial-wrapper {
+    animation: scrollUp 40s linear infinite;
+  }
+}
+
+/* Large Desktops (993px and above) */
+@media (min-width: 993px) {
+  .ourprogram {
+    margin-top: 45px;
+  }
+
+  .ourprogram_title {
+    font-size: 2.2rem;
+    margin-left: 50px;
+  }
+
+  .ourprogram_img {
+    padding: 0 50px 50px 50px;
+    border-radius: 0 165px 0 165px;
+  }
+
+  .ourprogram_content {
+    padding: 30px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .ourprogram_button {
+    padding: 20px 60px;
+    font-size: 1.3rem;
+    margin-top: 30px;
+  }
+
+  .grade_title {
+    font-size: 1.5rem;
+  }
+
+  .overlay-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-container {
+    height: 500px;
+  }
+
+  .testimonial-wrapper {
+    animation: scrollUp 30s linear infinite;
   }
 }

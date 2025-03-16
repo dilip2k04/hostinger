@@ -9,25 +9,23 @@ export default function Accordion({ question, answer, id }) {
   };
 
   return (
-    <div className="accordion p-3 shadow-none">
-      <div className="accordion-item">
-        <h2 className="accordion-header">
-          <button
-            className={`accordion-button ${isOpen ? "" : "collapsed"}`} // Fixed syntax
-            style={{ border: "1px solid black" }}
-            type="button"
-            onClick={toggleAccordion} // Handle manually
-            aria-expanded={isOpen}
-            aria-controls={id}
-          >
-            <span className="button_text">{question}</span>
-          </button>
-        </h2>
-        <div
-          id={id}
-          className={`accordion-collapse collapse ${isOpen ? "show" : ""}`} // Fixed syntax
-        >
-          <div className="accordion-body">{answer}</div>
+    <div className="accordion-container">
+      <div className="accordion p-3 shadow-none">
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button
+              className={`accordion-button ${isOpen ? "" : "collapsed"}`} 
+              type="button"
+              onClick={toggleAccordion}
+              aria-expanded={isOpen}
+              aria-controls={id}
+            >
+              <span className="button_text">{question}</span>
+            </button>
+          </h2>
+          <div id={id} className={`accordion-collapse collapse ${isOpen ? "show" : ""}`}>
+            <div className="accordion-body">{answer}</div>
+          </div>
         </div>
       </div>
     </div>
