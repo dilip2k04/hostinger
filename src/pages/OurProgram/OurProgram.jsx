@@ -77,7 +77,7 @@ export default function OurProgram({ is_main_page }) {
         </div>
       </div>
       <Tab title="Grade Specific Online Tuition" is_title={true} />
-      <div className="row g-0 mb-4" id="Courses">
+      <div className="row g-0 mb-4 md-flex flex-row" id="Courses">
         {[3, 6].map((grade, idx) => (
           <div key={idx} className="col-12 col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center">
             <h3 className="grade_title">Grade {grade} - {grade + 2}</h3>

@@ -137,7 +137,7 @@ export default function AboutUs({is_main_page}) {
       })}
 
       <div className="whyiq">
-        <Tab title={"Why IQ Bridge ?"} is_title={true} />
+        <Tab title={"Why IQ Bridge "} is_title={true} />
 
         <div className="about_cards ">
           <div className="cards row d-flex justify-content-center g-0">

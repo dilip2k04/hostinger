@@ -27,7 +27,7 @@ export default function Tab({
               </h2>
             </div>
 
-            <div className="col d-flex justify-content-end">
+            <div className="col d-flex justify-content-end ">
               <div className="right_line"></div>
             </div>
           </div>

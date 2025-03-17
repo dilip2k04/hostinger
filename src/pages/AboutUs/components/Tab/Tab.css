@@ -9,7 +9,7 @@
 
 .left_line, .right_line {
     height: 2px;
-    width: 95%;
+    width: 90%;
     background-color: #041D60;
 }
 
@@ -22,6 +22,10 @@
     padding: 0;
     font-size: 34px;
 }
+.title_tag h2 i{
+    font-size: 18px;
+}
+
 
 .tab_contents {
     padding: 0px 30px;

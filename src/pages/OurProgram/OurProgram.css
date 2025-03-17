@@ -322,8 +322,9 @@
   }
 
   .grade_title {
-    font-size: 1.4rem;
+    font-size: 1.0rem;
   }
+  
 
   .grade_img {
     width: 80%; /* Adjust width for small tablets */
