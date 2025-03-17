@@ -26,7 +26,7 @@ export default function Testimonial({ testimonial }) {
           width: "auto",
           maxWidth: "100%",
           height: "100%",
-          maxHeight: 'auto',
+          maxHeight: '500px',
           border: "0px solid black",
           borderRadius: "15px",
           marginRight: "5px",
