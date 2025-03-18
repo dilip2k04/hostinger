@@ -342,3 +342,15 @@
         text-align: center;
     }
 }
+@media (min-width: 340px) and (max-width: 394px) {
+    
+    .i_title{
+       font-size: 15px !important;
+    }
+  }
+@media (min-width: 0px) and (max-width: 340px) {
+    
+    .i_title{
+       font-size: 12px !important;
+    }
+  }

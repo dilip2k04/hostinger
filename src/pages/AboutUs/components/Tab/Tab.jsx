@@ -20,10 +20,10 @@ export default function Tab({
               <div className="left_line"></div>
             </div>
 
-            <div className="col ">
+            <div className="col d-flex justify-content-center">
               {" "}
               <h2 className="tab_title">
-                <i>{title}</i>
+                <i className="i_title">{title}</i>
               </h2>
             </div>
 
