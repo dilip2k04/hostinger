@@ -14,7 +14,8 @@ export default function OurProgram({ is_main_page }) {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const response = await axios.get("https://iq-bridge-backend.onrender.com/get-feedbacks");
+        console.log('fetching testimonials')
+        const response = await axios.get("http://localhost:3000/get-feedbacks");
         setTestimonials(response.data.testimonials);
       } catch (error) {
         console.error("Error fetching testimonials:", error);

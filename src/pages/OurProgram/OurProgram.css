@@ -5,6 +5,7 @@
   --hover-border: 2px solid var(--primary-color);
   --transition: all 0.3s ease-in-out;
 }
+
 .grade_card {
   position: relative;
   overflow: hidden;
@@ -12,8 +13,10 @@
 
 .grade_card .overlay-text {
   opacity: 0;
-  background: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
-  color: white; /* Ensures text is visible */
+  background: rgba(0, 0, 0, 0.6);
+  /* Black overlay with 60% opacity */
+  color: white;
+  /* Ensures text is visible */
   position: absolute;
   top: 0;
   left: 0;
@@ -88,6 +91,7 @@
   border-radius: 20px;
   object-fit: contain;
   height: auto;
+  border: 0px;
 }
 
 .all_sub {
@@ -121,6 +125,7 @@
   from {
     transform: translateY(10%);
   }
+
   to {
     transform: translateY(-100%);
   }
@@ -163,7 +168,8 @@
   }
 
   .grade_img {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%;
+    /* Full width for smaller screens */
   }
 
   .all_sub {
@@ -172,7 +178,7 @@
   }
 
   .testimonial-container {
-    height: auto;
+    height: 500px;
     padding: 0 10px;
   }
 
@@ -181,8 +187,10 @@
   }
 
   .card-img {
-    width: 100%; /* Full width for smaller screens */
-    max-width: 250px; /* Limit maximum width */
+    width: 100%;
+    /* Full width for smaller screens */
+    max-width: 250px;
+    /* Limit maximum width */
   }
 }
 
@@ -219,11 +227,12 @@
   }
 
   .grade_img {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%;
+    /* Full width for smaller screens */
   }
 
   .testimonial-container {
-    height: auto;
+    height: 500px;
   }
 
   .testimonial-wrapper {
@@ -264,15 +273,16 @@
   }
 
   .grade_img {
-    width: 80%; /* Adjust width for small tablets */
+    width: 80%;
+    /* Adjust width for small tablets */
   }
 
   .testimonial-container {
-    height: auto;
+    height: 500px;
   }
 
   .testimonial-wrapper {
-    animation: scrollUp 40s linear infinite;
+    animation: scrollUp 160s linear infinite;
   }
 }
 
@@ -285,59 +295,76 @@
   .ourprogram_title {
     font-size: 1.8rem;
     margin-left: 20px;
-    text-align: center; /* Center-align the title */
+    text-align: center;
+    /* Center-align the title */
   }
 
   .ourprogram_tab {
     display: flex;
-    flex-direction: column; /* Stack image, text, and button vertically */
-    align-items: center; /* Center-align content horizontally */
+    flex-direction: column;
+    /* Stack image, text, and button vertically */
+    align-items: center;
+    /* Center-align content horizontally */
   }
 
   .ourprogram_img {
-    width: 100%; /* Full screen width */
-    height: auto; /* Maintain aspect ratio */
-    padding: 0; /* Remove padding */
-    border-radius: 0; /* Remove rounded corners */
-    margin-bottom: 2rem; /* Add space below the image */
+    width: 100%;
+    /* Full screen width */
+    height: auto;
+    /* Maintain aspect ratio */
+    padding: 0;
+    /* Remove padding */
+    border-radius: 0;
+    /* Remove rounded corners */
+    margin-bottom: 2rem;
+    /* Add space below the image */
   }
 
   .ourprogram_content {
-    width: 100%; /* Full screen width */
-    padding: 0 20px; /* Add horizontal padding */
+    width: 100%;
+    /* Full screen width */
+    padding: 0 20px;
+    /* Add horizontal padding */
     font-size: 1.05rem;
     line-height: 1.6;
-    text-align: center; /* Center-align text */
-    margin-bottom: 1.5rem; /* Add space below the text */
+    text-align: center;
+    /* Center-align text */
+    margin-bottom: 1.5rem;
+    /* Add space below the text */
   }
 
   .ourprogram_button {
     padding: 15px 40px;
     font-size: 1.1rem;
-    margin-top: 0; /* Reset margin-top */
-    margin-bottom: 2rem; /* Add space below the button */
+    margin-top: 0;
+    /* Reset margin-top */
+    margin-bottom: 2rem;
+    /* Add space below the button */
   }
-  .all_sub{
+
+  .all_sub {
     margin-top: 40px;
   }
 
   .grade_title {
     font-size: 1.0rem;
   }
-  
+
 
   .grade_img {
-    width: 80%; /* Adjust width for small tablets */
+    width: 80%;
+    /* Adjust width for small tablets */
   }
 
   .testimonial-container {
-    height: auto;
+    height: 500px;
   }
 
   .testimonial-wrapper {
     animation: scrollUp 40s linear infinite;
   }
-  form{
+
+  form {
     margin-bottom: 40px;
   }
 }
@@ -375,11 +402,12 @@
   }
 
   .grade_img {
-    width: 60%; /* Adjust width for small desktops */
+    width: 60%;
+    /* Adjust width for small desktops */
   }
 
   .testimonial-container {
-    height: auto;
+    height: 500px;
   }
 
   .testimonial-wrapper {
@@ -420,7 +448,8 @@
   }
 
   .grade_img {
-    width: 50%; /* Default width for large desktops */
+    width: 50%;
+    /* Default width for large desktops */
   }
 
   .testimonial-container {

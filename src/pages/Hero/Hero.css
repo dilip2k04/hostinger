@@ -26,15 +26,15 @@
 }
 
 .hero_content h1{
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 50px;
     color: #F27A0A;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .hero_content h4{
     font-size: 36px;
-    font-weight:500;
+    font-weight:450;
     color: #041D60;
 }
 
@@ -76,6 +76,7 @@
 .explore_us{
     background-color:#041D60;
     color: white;
+    margin-right: 12px;
     display: flex;
     height: 80px;
     width: calc(100% - 70%);

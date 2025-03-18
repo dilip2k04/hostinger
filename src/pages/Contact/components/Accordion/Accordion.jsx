@@ -11,7 +11,7 @@ export default function Accordion({ question, answer, id }) {
   return (
     <div className="accordion-container">
       <div className="accordion p-3 shadow-none">
-        <div className="accordion-item">
+        <div className="accordion-item ">
           <h2 className="accordion-header">
             <button
               className={`accordion-button ${isOpen ? "" : "collapsed"}`} 
