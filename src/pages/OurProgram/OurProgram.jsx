@@ -10,15 +10,21 @@ import AboutUs from "../AboutUs/AboutUs";
 
 export default function OurProgram({ is_main_page }) {
   const [testimonials, setTestimonials] = useState([]);
+  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     const fetchTestimonials = async () => {
+      setLoading(true);
+
       try {
         console.log('fetching testimonials')
         const response = await axios.get("https://iq-bridge-backend-i5tu.onrender.com/get-feedbacks");
         setTestimonials(response.data.testimonials);
       } catch (error) {
         console.error("Error fetching testimonials:", error);
+      }finally{
+        setLoading(false)
       }
     };
     fetchTestimonials();
@@ -117,20 +123,31 @@ export default function OurProgram({ is_main_page }) {
     </>
   );
 
-  const renderTestimonials = () => (
-    <>
-      <Tab title="Testimonials" is_title={true} />
-      <div className="testimonial-container">
-        <div className="testimonial-wrapper row g-2 d-flex flex-row">
-          {testimonials.map((testimonial, idx) => (
-            <div className="col-12 col-md-4 testimonial-item" key={idx}>
-              <Testimonial testimonial={testimonial} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
+const renderTestimonials = () => (
+  <>
+    <Tab title="Testimonials" is_title={true} />
+    <div className="testimonial-container">
+      {loading ? (
+       <div className="d-flex justify-content-center align-items-center w-100 h-100">
+       <div className="spinner-border text-primary" role="status">
+         <span className="visually-hidden">Loading...</span>
+       </div>
+     </div>
+      ) : (
+        testimonials.length ? (
+          testimonials.map((testimonial, idx) => (
+            <Testimonial key={idx} testimonial={testimonial} testing={false} />
+          ))
+        ) : (
+          <div className="d-flex justify-content-center align-items-center w-100 h-100">
+            <span><strong style={{color: 'red'}}>No Testimonials Available</strong></span>
+          </div>
+        )
+      )}
+    </div>
+  </>
+);
+
 
   if (is_main_page) {
     return (
