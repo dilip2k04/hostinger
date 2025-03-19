@@ -176,6 +176,11 @@
     margin-top: -10px;
     margin-bottom: -15px;
   }
+  .grade_card .overlay-text {
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 8px;
+  }
 
   .testimonial-container {
     height: 500px;
@@ -192,6 +197,7 @@
     max-width: 250px;
     /* Limit maximum width */
   }
+
 }
 
 /* Small Devices (360px to 575px) */
@@ -237,6 +243,11 @@
 
   .testimonial-wrapper {
     animation: scrollUp 50s linear infinite;
+  }
+  .grade_card .overlay-text {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
   }
 }
 
@@ -321,16 +332,10 @@
   }
 
   .ourprogram_content {
-    width: 100%;
-    /* Full screen width */
-    padding: 0 20px;
-    /* Add horizontal padding */
-    font-size: 1.05rem;
-    line-height: 1.6;
-    text-align: center;
-    /* Center-align text */
-    margin-bottom: 1.5rem;
-    /* Add space below the text */
+    font-size: 1.2rem; /* Slightly larger font for tablets */
+    line-height: 38px; /* Adjusted for proper spacing */
+    text-align: center; /* Center aligns content */
+    width: 550px;
   }
 
   .ourprogram_button {

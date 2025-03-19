@@ -80,3 +80,19 @@
         margin-bottom: 10px;
     }
 }
+
+@media (max-width: 480px) { /* Small Phones */
+    .para {
+        width: 95%; /* Almost full width for small screens */
+        font-size: 0.95rem; /* Reduce font size slightly */
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 360px) { /* Very Small Phones */
+    .para {
+        width: 98%; /* Make use of available space */
+        font-size: 0.9rem; /* Slightly smaller text */
+        line-height: 1.4;
+    }
+}
