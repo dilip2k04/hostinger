@@ -19,7 +19,7 @@ export default function OurProgram({ is_main_page }) {
       try {
         console.log("fetching testimonials");
         ///
-        const response = await axios.get("http://localhost:3000/get-feedbacks");
+        const response = await axios.get("https://iq-bridge-backend-i5tu.onrender.com/get-feedbacks");
         setTestimonials(response.data.testimonials);
         console.log("fetched testimonials");
       } catch (error) {
