@@ -78,7 +78,7 @@
 }
 
 .testimonial-container {
-  height: fit-content;
+  height: 500px !important;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -86,7 +86,6 @@
 }
 
 .testimonial-wrapper {
-
   animation: scrollUp 40s linear infinite;
 }
 

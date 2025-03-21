@@ -19,7 +19,7 @@ export default function OurProgram({ is_main_page }) {
       try {
         console.log("fetching testimonials");
         ///
-        const response = await axios.get("https://iq-bridge-backend-i5tu.onrender.com/get-feedbacks");
+        const response = await axios.get("http://localhost:3000/get-feedbacks");
         setTestimonials(response.data.testimonials);
         console.log("fetched testimonials");
       } catch (error) {
@@ -171,9 +171,9 @@ export default function OurProgram({ is_main_page }) {
             </div>
           </div>
         ) : testimonials.length ? (
-          <div className="testimonial-wrapper row g-0">
+          <div className="testimonial-wrapper row g-0 d-flex flex-row">
             {testimonials.map((testimonial, idx) => (
-              <div className="col-lg-4 p-1 " key={idx}>
+              <div className="col-lg-4 col-md-6 p-1 " key={idx}>
                 <Testimonial testimonial={testimonial} testing={false} />
               </div>
             ))}

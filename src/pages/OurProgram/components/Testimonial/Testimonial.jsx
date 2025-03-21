@@ -21,7 +21,7 @@ export default function Testimonial({ testimonial }) {
   if(!testing){
     return (
       <div
-        className="card testimonial_card p-3 pb-0 mt-3"
+        className="card testimonial_card p-3 pb-0 mt-3 "
         style={{
           width: "auto",
           maxWidth: "100%",
