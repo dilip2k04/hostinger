@@ -373,7 +373,14 @@
     }
   }
 
-  @media (min-width: 394px) and (max-width: 794px) {
+  @media (min-width: 394px) and (max-width: 594px) {
+    
+    .i_title {
+        font-size: 15px !important;
+        max-height: 2.4em;
+    }
+  }
+  @media (min-width: 595px) and (max-width: 794px) {
     
     .i_title {
         font-size: 15px !important;
