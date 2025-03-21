@@ -12,20 +12,20 @@ export default function OurProgram({ is_main_page }) {
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
 
-
   useEffect(() => {
     const fetchTestimonials = async () => {
       setLoading(true);
 
       try {
-        console.log('fetching testimonials')
+        console.log("fetching testimonials");
+        ///
         const response = await axios.get("https://iq-bridge-backend-i5tu.onrender.com/get-feedbacks");
         setTestimonials(response.data.testimonials);
-        console.log('fetched testimonials')
+        console.log("fetched testimonials");
       } catch (error) {
         console.error("Error fetching testimonials:", error);
-      }finally{
-        setLoading(false)
+      } finally {
+        setLoading(false);
       }
     };
     fetchTestimonials();
@@ -44,41 +44,56 @@ export default function OurProgram({ is_main_page }) {
     {
       title: "Interactive Sessions",
       img: "/imgs/teaching1.png",
-      content: "Interactive live classes using multimedia tools that promote active participation",
+      content:
+        "Interactive live classes using multimedia tools that promote active participation",
       is_right_pic: false,
     },
     {
       title: "Quizzes",
       img: "/imgs/teaching2.png",
-      content: "Quizzes to encourage independent thought and self-directed learning",
+      content:
+        "Quizzes to encourage independent thought and self-directed learning",
       is_right_pic: true,
     },
     {
       title: "Regular Assessments",
       img: "/imgs/teaching5.png",
-      content: "Regular assessments to monitor progress and identify areas for improvement",
+      content:
+        "Regular assessments to monitor progress and identify areas for improvement",
       is_right_pic: false,
     },
     {
       title: "Personalized Attention",
       img: "/imgs/teaching4.png",
-      content: "Personalized attention to meet the unique needs of each student",
+      content:
+        "Personalized attention to meet the unique needs of each student",
       is_right_pic: true,
     },
   ];
 
   const renderProgramSection = () => (
     <div className="ourprogram" id="our_program_section">
-      <h5 className="ourprogram_title"><i>Our Programs</i></h5>
+      <h5 className="ourprogram_title">
+        <i>Our Programs</i>
+      </h5>
       <div className="ourprogram_tab row g-0">
         <div className="col-12 col-md-7" id="ourprogram_img_Tab">
-          <img className="ourprogram_img" src="/imgs/our program 1.jpg" alt="Our Programs" />
+          <img
+            className="ourprogram_img"
+            src="/imgs/our program 1.jpg"
+            alt="Our Programs"
+          />
         </div>
         <div className="col-12 col-md-5 p-2 d-flex justify-content-center align-items-center flex-column">
           <h4 className="ourprogram_content">
-            We offer one-on-one tutoring sessions tailored to each student's unique learning style and pace, ensuring effective understanding and retention of concepts.
+            We offer one-on-one tutoring sessions tailored to each student's
+            unique learning style and pace, ensuring effective understanding and
+            retention of concepts.
           </h4>
-          <Link className="ourprogram_button btn hover-border-primary" to="/contact-us">
+          <Link
+            className="ourprogram_button btn hover-border-primary"
+            to="/contact-us"
+          >
             Book a Demo
           </Link>
           <hr />
@@ -87,10 +102,19 @@ export default function OurProgram({ is_main_page }) {
       <Tab title="Grade Specific Online Tuition" is_title={true} />
       <div className="row g-0 mb-4 md-flex flex-row" id="Courses">
         {[3, 6].map((grade, idx) => (
-          <div key={idx} className="col-12 col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center">
-            <h3 className="grade_title">Grade {grade} - {grade + 2}</h3>
+          <div
+            key={idx}
+            className="col-12 col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center"
+          >
+            <h3 className="grade_title">
+              Grade {grade} - {grade + 2}
+            </h3>
             <div className="card text-bg-dark grade_card">
-              <img src={`/imgs/gradec${idx + 1}.png`} className="card-img" alt={`Grade ${grade} - ${grade + 2}`} />
+              <img
+                src={`/imgs/gradec${idx + 1}.png`}
+                className="card-img"
+                alt={`Grade ${grade} - ${grade + 2}`}
+              />
               <div className="card-img-overlay overlay-text">
                 <p className="card-text p-3 pt-5 fs-5">
                   {grade === 3
@@ -105,7 +129,10 @@ export default function OurProgram({ is_main_page }) {
       <Tab title="Subjects We Cover" is_title={true} />
       <div className="all_sub p-5 pt-0 row d-flex g-0 align-items-center justify-content-center">
         {subjectData.map((sub, idx) => (
-          <div key={idx} className="col-6 col-md-4 d-flex justify-content-center align-items-center">
+          <div
+            key={idx}
+            className="col-6 col-md-4 d-flex justify-content-center align-items-center"
+          >
             <Card title={sub.title} img={sub.img} link={sub.link} />
           </div>
         ))}
@@ -116,39 +143,53 @@ export default function OurProgram({ is_main_page }) {
   const renderTeachingMethodology = () => (
     <>
       <Tab title="Teaching Methodology" is_title={true} />
-      <div className="teaching_container w-100 d-flex flex-column justify-content-center align-items-center" id="Teaching">
+      <div
+        className="teaching_container w-100 d-flex flex-column justify-content-center align-items-center"
+        id="Teaching"
+      >
         {teachingData.map((d, idx) => (
-          <BroadCard key={idx} title={d.title} content={d.content} img={d.img} is_right_pic={d.is_right_pic} />
+          <BroadCard
+            key={idx}
+            title={d.title}
+            content={d.content}
+            img={d.img}
+            is_right_pic={d.is_right_pic}
+          />
         ))}
       </div>
     </>
   );
 
-const renderTestimonials = () => (
-  <>
-    <Tab title="Testimonials" is_title={true} />
-    <div className="testimonial-container">
-      {loading ? (
-       <div className="d-flex justify-content-center align-items-center w-100 h-100">
-       <div className="spinner-border text-primary" role="status">
-         <span className="visually-hidden">Loading...</span>
-       </div>
-     </div>
-      ) : (
-        testimonials.length ? (
-          testimonials.map((testimonial, idx) => (
-            <Testimonial key={idx} testimonial={testimonial} testing={false} />
-          ))
+  const renderTestimonials = () => (
+    <>
+      <Tab title="Testimonials" is_title={true} />
+      <div className="testimonial-container">
+        {loading ? (
+          <div className="d-flex justify-content-center align-items-center w-100 h-100">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        ) : testimonials.length ? (
+          <div className="testimonial-wrapper row g-0">
+            {testimonials.map((testimonial, idx) => (
+              <div className="col-lg-4 p-1 " key={idx}>
+                <Testimonial testimonial={testimonial} testing={false} />
+              </div>
+            ))}
+          </div>
         ) : (
           <div className="d-flex justify-content-center align-items-center w-100 h-100">
-            <span><strong style={{color: 'red'}}>No Testimonials Available</strong></span>
+            <span>
+              <strong style={{ color: "red" }}>
+                No Testimonials Available
+              </strong>
+            </span>
           </div>
-        )
-      )}
-    </div>
-  </>
-);
-
+        )}
+      </div>
+    </>
+  );
 
   if (is_main_page) {
     return (

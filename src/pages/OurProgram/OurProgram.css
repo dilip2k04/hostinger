@@ -78,7 +78,7 @@
 }
 
 .testimonial-container {
-  height: 500px;
+  height: fit-content;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -86,10 +86,7 @@
 }
 
 .testimonial-wrapper {
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
   animation: scrollUp 40s linear infinite;
 }
 
@@ -148,7 +145,6 @@
   }
 
   .testimonial-container {
-    height: auto;
     padding: 0 10px;
   }
 
@@ -198,9 +194,7 @@
     width: 100%; /* Full width for smaller screens */
   }
 
-  .testimonial-container {
-    height: auto;
-  }
+
 
   .testimonial-wrapper {
     animation: scrollUp 50s linear infinite;
@@ -243,9 +237,7 @@
     width: 80%; /* Adjust width for small tablets */
   }
 
-  .testimonial-container {
-    height: auto;
-  }
+
 
   .testimonial-wrapper {
     animation: scrollUp 40s linear infinite;
@@ -305,9 +297,7 @@
     width: 80%; /* Adjust width for small tablets */
   }
 
-  .testimonial-container {
-    height: auto;
-  }
+
 
   .testimonial-wrapper {
     animation: scrollUp 40s linear infinite;
@@ -353,9 +343,7 @@
     width: 60%; /* Adjust width for small desktops */
   }
 
-  .testimonial-container {
-    height: auto;
-  }
+
 
   .testimonial-wrapper {
     animation: scrollUp 30s linear infinite;
