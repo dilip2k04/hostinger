@@ -119,7 +119,7 @@ export default function Contact() {
 
   return (
     <div className="contact_container" id="contact_section">
-      <h5 className="contact_title ">
+      <h5 className="contact_title">
         <i>Contact Us</i>
       </h5>
       <div className="form_tab row g-0" style={{ minHeight: '700px', display: 'flex', flexWrap: 'wrap' }}>
