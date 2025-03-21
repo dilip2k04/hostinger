@@ -21,6 +21,7 @@ export default function OurProgram({ is_main_page }) {
         console.log('fetching testimonials')
         const response = await axios.get("https://iq-bridge-backend-i5tu.onrender.com/get-feedbacks");
         setTestimonials(response.data.testimonials);
+        console.log('fetched testimonials')
       } catch (error) {
         console.error("Error fetching testimonials:", error);
       }finally{
