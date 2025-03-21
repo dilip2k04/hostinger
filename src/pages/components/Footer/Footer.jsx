@@ -32,9 +32,10 @@ export default function Footer() {
 
       <div className="Support">
         <h6>Support</h6>
-        <div className="d-flex">
-            <a className="" href="#">Privacy Policy</a><a href="#" className="">Terms & Conditions</a>
-            </div>
+        <div>
+            <a className="" href="#">Privacy Policy</a>
+            <a href="#" className="">Terms & Conditions</a>
+        </div>
       </div>
 
       <div className="Follow_Us">
