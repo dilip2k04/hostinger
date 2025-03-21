@@ -14,7 +14,7 @@ export default function Footer() {
 
 
   return (
-    <div className='Footer d-flex flex-column flex-md-row justify-content-around gap-5 py-5'>
+    <div className='Footer d-flex flex-column flex-lg-row ps-3 p-lg-0 justify-content-around gap-5 py-5'>
       {/* <div className="About_Us">
         <h6>About Us</h6>
         <a href='#our_process'>How it Works</a>
