@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.card-text{
+  font-size: 20px !important;
+}
+
 .grade_card .overlay-text {
   opacity: 0;
   background: rgba(0, 0, 0, 0.6);
@@ -24,7 +28,7 @@
   height: 100%;
   display: flex;
   font-size: large;
-  line-height: 300%;
+  line-height: 400%;
   justify-content: center;
   transition: opacity 0.3s ease-in-out;
 }
@@ -269,7 +273,7 @@
 
   .ourprogram_content {
     padding: 25px;
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     line-height: 1.6;
   }
 
