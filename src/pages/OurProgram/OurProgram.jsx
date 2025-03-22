@@ -101,13 +101,13 @@ export default function OurProgram({ is_main_page }) {
       </div>
       <Tab title="Grade Specific Online Tuition" is_title={true} />
       <div className="row g-0 mb-4 md-flex flex-row" id="Courses">
-        {[3, 6].map((grade, idx) => (
+        {[2, 6].map((grade, idx) => (
           <div
             key={idx}
             className="col-12 col-md-6 p-2 mb-3 d-flex flex-column justify-content-center align-items-center"
           >
             <h3 className="grade_title">
-              Grade {grade} - {grade + 2}
+              Grade {grade} - {grade + 3}
             </h3>
             <div className="card text-bg-dark grade_card">
               <img
@@ -117,7 +117,7 @@ export default function OurProgram({ is_main_page }) {
               />
               <div className="card-img-overlay overlay-text">
                 <p className="card-text p-3 pt-5 fs-5">
-                  {grade === 3
+                  {grade === 2
                     ? "Strong focus on foundational skills in Mathematics, Science, and English. Activities that stimulate curiosity and independent problem-solving."
                     : "Advanced concepts in core subjects to prepare students for academic challenges. Comprehensive guidance to build critical thinking and analytical skills."}
                 </p>
