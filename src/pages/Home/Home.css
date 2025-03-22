@@ -4,7 +4,7 @@
 }
 .para {
     text-wrap: pretty;
-    width: 70%;
+    width: 50%;
     margin-bottom: 20px;
     line-height: 40px;
     text-wrap: pretty;
@@ -23,7 +23,7 @@
 .para {
 
     margin-top: -20px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .NavTitle {
