@@ -129,6 +129,16 @@
         font-size: 24px; /* Adjust font size */
     }
 }
+@media (max-width: 480px) {
+
+    .circular_card_container h3 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .circular_card_container p {
+        font-size: 15px; /* Adjust font size */
+    }
+}
 
 /* Small Phones */
 @media (max-width: 480px) {
