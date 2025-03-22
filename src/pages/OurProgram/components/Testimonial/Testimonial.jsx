@@ -83,7 +83,7 @@ export default function Testimonial({ testimonial }) {
      </div>
      <div className="testimonial-content" style={{fontSize: '14px', marginLeft: '40px'}}>
     <div> <StarRating rating={testimonial.rating} /></div>
-    <h6 className="ms-3 mt-2" style={{fontSize: '14px',textAlign:'end'}}>by- {testimonial.name}</h6>
+    <h6 className="ms-3 mt-2" style={{fontSize: '14px'}}>by- {testimonial.name}</h6>
      </div>
       </div>
     </div>
