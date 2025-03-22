@@ -331,9 +331,8 @@
         height: 160px;
     }
     .i_title {
-        font-size: 18px !important;
+        font-size: 14px;
         line-height: 1.2; /* Adjust the spacing between lines */
-        height: fit-content;
         display: -webkit-box;
         -webkit-line-clamp: 2; /* Limit the text to 2 lines */
         -webkit-box-orient: vertical;
@@ -371,7 +370,6 @@
     .i_title {
         font-size: 13px !important;
         max-height: 2.4em;
-        max-width: 2.8em;
     }
   }
 @media (min-width: 0px) and (max-width: 340px) {
@@ -393,8 +391,8 @@
   @media (min-width: 595px) and (max-width: 794px) {
     
     .i_title {
-        font-size: 27px !important;
-        max-height: 2.9em;
+        font-size: 28px !important;
+        max-height: 2.7em;
         margin-bottom: 30px;
     }
   }
