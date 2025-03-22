@@ -73,7 +73,7 @@ export default function Testimonial({ testimonial }) {
                 height: "30px",
                 width: "30px",
                 borderRadius: "0",
-                top:'4px',
+                top:'2px',
                 right:"4px"
               }}
               alt=""
@@ -83,7 +83,7 @@ export default function Testimonial({ testimonial }) {
      </div>
      <div className="testimonial-content" style={{fontSize: '14px', marginLeft: '40px'}}>
     <div> <StarRating rating={testimonial.rating} /></div>
-    <h6 className="ms-3 mt-2" style={{fontSize: '14px',justifyContent:'flex-end'}}>{testimonial.name}</h6>
+    <h6 className="ms-3 mt-2" style={{fontSize: '14px',textAlign:'end'}}>{testimonial.name}</h6>
      </div>
       </div>
     </div>
