@@ -79,7 +79,7 @@ export default function Testimonial({ testimonial }) {
               alt=""
             />
         
-     <div className="h2 mx-3">{testimonial.review}</div>
+     <div className="h5 mx-3">{testimonial.review}</div>
      </div>
      <div className="testimonial-content" style={{fontSize: '14px', marginLeft: '40px'}}>
     <div> <StarRating rating={testimonial.rating} /></div>
