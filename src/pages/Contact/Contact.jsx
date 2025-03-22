@@ -103,7 +103,7 @@ export default function Contact() {
     {
       question: "What are the qualifications of your tutors ?",
       answer:
-        " Our tutors are experienced educators with expertise in the CBSE curriculum and a passion for teaching",
+        " Our tutors are experienced educators with expertise in the CBSE curriculum and a passion for teaching.",
     },
     {
       question: "Is there flexibility in scheduling classes ?",

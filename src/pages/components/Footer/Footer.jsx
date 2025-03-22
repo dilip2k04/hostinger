@@ -25,13 +25,13 @@ export default function Footer() {
       <div className="Explore">
         <h6>Explore</h6>
         <Link to='/'>Home</Link>
-        <Link to='/about-us'>About</Link>
+        <Link to='/about-us'>About Us</Link>
         <Link to='/our-programs'>Our Programs</Link>
         <Link to='/contact-us'>Contact</Link>
       </div>
 
       <div className="Support">
-        <h6>Support</h6>
+        <h6>Privacy and Terms</h6>
         <div>
             <a className="" href="#">Privacy Policy</a>
             <a href="#" className="">Terms & Conditions</a>
