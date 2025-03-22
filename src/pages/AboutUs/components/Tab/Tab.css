@@ -366,12 +366,7 @@
     }
   }
 
-  @media (min-width: 360px) {
-    .i_title {
-        font-size: 13px !important;
-        max-height: 2.4em;
-    }
-  }
+ 
 @media (min-width: 0px) and (max-width: 340px) {
     
     .i_title {
