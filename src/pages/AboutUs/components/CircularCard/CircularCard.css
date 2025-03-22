@@ -81,7 +81,8 @@
     }
 
     .circular_card_container h3 {
-        font-size: 30px; /* Larger font size */
+        font-size: 30px;
+        height: fit-content; /* Larger font size */
     }
 
     .circular_card_container p {
@@ -103,6 +104,7 @@
 
     .circular_card_container h3 {
         font-size: 30px; /* Adjust font size */
+        height: fit-content;
     }
 
     .circular_card_container p {
@@ -113,6 +115,7 @@
 @media (max-width: 600px) {
     .circular_card_container h3 {
         font-size: 20px; /* Adjust font size */
+        height: fit-content;
     }
 }
 /* Small Tablets & Large Phones */
@@ -128,6 +131,7 @@
 
     .circular_card_container h3 {
         font-size: 24px; /* Adjust font size */
+        height: fit-content;
     }
 
     .circular_card_container p {
@@ -138,6 +142,7 @@
 
     .circular_card_container h3 {
         font-size: 20px; /* Adjust font size */
+        height: fit-content;
     }
 
     .circular_card_container p {
