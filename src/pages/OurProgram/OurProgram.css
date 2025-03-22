@@ -43,11 +43,6 @@
   padding: 0 15px;
 }
 
-.ourprogram_title {
-  margin-left: 40px;
-  color: var(--secondary-color);
-  font-size: 2rem;
-}
 .ourprogram_title i {
   margin-left: 10px;
   color: var(--secondary-color);
@@ -150,7 +145,6 @@
   }
 
   .ourprogram_title i {
-    margin-left: 10px;
     color: var(--secondary-color);
     font-size: 1.5rem;
   }
@@ -267,7 +261,6 @@
   }
 
   .ourprogram_title i {
-    margin-left: 10px;
     color: var(--secondary-color);
     font-size: 1.8rem;
   }
@@ -314,7 +307,6 @@
   }
 
   .ourprogram_title i {
-    margin-left: 10px;
     color: var(--secondary-color);
     font-size: 1.8rem;
   }
@@ -390,7 +382,6 @@
   }
 
   .ourprogram_title i {
-    margin-left: 10px;
     color: var(--secondary-color);
     font-size: 2rem;
   }
@@ -437,7 +428,6 @@
   }
 
   .ourprogram_title i {
-    margin-left: 10px;
     color: var(--secondary-color);
     font-size: 2.2rem;
   }
