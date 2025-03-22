@@ -357,6 +357,9 @@
         align-items: center;
         text-align: center;
     }
+    .content{
+        margin-top: 0px;
+    }
 }
 @media (min-width: 340px) and (max-width: 394px) {
     
