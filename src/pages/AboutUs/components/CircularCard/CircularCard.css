@@ -52,11 +52,11 @@
 
 .circular_card_container p {
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     width: 90%;
     margin-top: -10px;
-    height: 120px; /* Fixed height for the content */
+    height: 150px; /* Fixed height for the content */
     display: flex;
     align-items: center;
     justify-content: center;
