@@ -52,7 +52,7 @@
     }
 
     .about_us_card .card-body-1 {
-        height: 300px; /* Increase height for better content spacing */
+        height: 280px; /* Increase height for better content spacing */
         padding: 25px; /* Add more padding for larger screens */
     }
 
@@ -70,6 +70,10 @@
     .about_us_card {
         width: 75%;
         max-width: 500px;
+    }
+    .about_us_card .card-body-1 {
+        height: 280px; /* Increase height for better content spacing */
+        padding: 25px; /* Add more padding for larger screens */
     }
 
     .card_content h3 {

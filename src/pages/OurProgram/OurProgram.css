@@ -48,6 +48,11 @@
   color: var(--secondary-color);
   font-size: 2rem;
 }
+.ourprogram_title i {
+  margin-left: 10px;
+  color: var(--secondary-color);
+  font-size: 3rem;
+}
 
 .ourprogram_tab {
   margin-bottom: -5px;
@@ -144,10 +149,10 @@
     padding: 0 10px;
   }
 
-  .ourprogram_title {
-    font-size: 1.5rem;
+  .ourprogram_title i {
     margin-left: 10px;
-    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
   }
 
   .ourprogram_img {
@@ -210,9 +215,9 @@
     margin-top: 25px;
   }
 
-  .ourprogram_title {
+  .ourprogram_title i {
+    color: var(--secondary-color);
     font-size: 1.6rem;
-    margin-left: 15px;
   }
 
   .ourprogram_img {
@@ -261,9 +266,10 @@
     margin-top: 30px;
   }
 
-  .ourprogram_title {
+  .ourprogram_title i {
+    margin-left: 10px;
+    color: var(--secondary-color);
     font-size: 1.8rem;
-    margin-left: 20px;
   }
 
   .ourprogram_img {
@@ -307,11 +313,10 @@
     margin-top: 30px;
   }
 
-  .ourprogram_title {
+  .ourprogram_title i {
+    margin-left: 10px;
+    color: var(--secondary-color);
     font-size: 1.8rem;
-    margin-left: 20px;
-    text-align: center;
-    /* Center-align the title */
   }
 
   .ourprogram_tab {
@@ -384,9 +389,10 @@
     margin-top: 40px;
   }
 
-  .ourprogram_title {
+  .ourprogram_title i {
+    margin-left: 10px;
+    color: var(--secondary-color);
     font-size: 2rem;
-    margin-left: 40px;
   }
 
   .ourprogram_img {
@@ -430,9 +436,10 @@
     margin-top: 70px;
   }
 
-  .ourprogram_title {
+  .ourprogram_title i {
+    margin-left: 10px;
+    color: var(--secondary-color);
     font-size: 2.2rem;
-    margin-left: 50px;
   }
 
   .ourprogram_img {

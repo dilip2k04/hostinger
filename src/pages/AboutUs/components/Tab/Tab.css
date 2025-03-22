@@ -376,14 +376,15 @@
   @media (min-width: 394px) and (max-width: 594px) {
     
     .i_title {
-        font-size: 15px !important;
+        font-size: 20px !important;
         max-height: 2.4em;
     }
   }
   @media (min-width: 595px) and (max-width: 794px) {
     
     .i_title {
-        font-size: 20px !important;
+        font-size: 25px !important;
         max-height: 2.4em;
+        margin-bottom: 30px;
     }
   }
