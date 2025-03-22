@@ -374,12 +374,21 @@
         max-height: 2.4em;
     }
   }
+
   
 
-  @media (min-width: 394px) and (max-width: 594px) {
+  @media (min-width: 394px) and (max-width: 430px) {
     
     .i_title {
-        font-size: 26px !important;
+        font-size: 18px !important;
+        max-height: 2.5em;
+    }
+  }
+
+  @media (min-width: 431px) and (max-width: 594px) {
+    
+    .i_title {
+        font-size: 25px !important;
         max-height: 2.5em;
     }
   }
