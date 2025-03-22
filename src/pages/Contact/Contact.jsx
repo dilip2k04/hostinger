@@ -144,7 +144,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="faq_section mt-5">
-        <Tab title="Frequently asked Questions (FAQ)" is_title={true} />
+        <Tab title="Frequently Asked Questions (FAQs)" is_title={true} />
         <div className="accordions_tab d-flex flex-wrap justify-content-center align-items-center">
           {accordion_data.map((acc, idx) => (
             <div className="col-md-6 col-12" key={idx}>
