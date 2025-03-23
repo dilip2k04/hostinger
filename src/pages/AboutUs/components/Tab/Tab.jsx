@@ -56,9 +56,9 @@ export default function Tab({
         right_pic ? (
           <>
             {/* Left: Text | Right: Image */}
-            <div className="col-md-7 order-2 order-md-1 d-flex justify-content-center align-items-center flex-column p-4">
-              <div className="content mt-5">
-                <h3>{content}</h3>
+            <div className="col-md-7 order-2 order-md-1 d-flex justify-content-center align-items-center flex-column ">
+              <div className="content mb-1">
+                <h3 className="mb-0">{content}</h3>
               </div>
             </div>
             <div className="col-md-5 order-1 order-md-2 d-flex justify-content-center align-items-center">
@@ -72,8 +72,8 @@ export default function Tab({
               <img src={img} className="tab_img rounded img-fluid" alt="tab" />
             </div>
             <div className="col-md-7 order-2 order-md-2 d-flex justify-content-center align-items-center flex-column p-4">
-              <div className="content mt-5">
-                <h3>{content}</h3>
+              <div className="content mb-1">
+                <h3 className="mb-0">{content}</h3>
               </div>
             </div>
           </>
