@@ -242,6 +242,7 @@
 @media (max-width: 1024px) {
     .circular_card_title_with_space {
         word-spacing: normal; /* Reset word spacing for tablets and smaller devices */
+        
     }
 }
 
