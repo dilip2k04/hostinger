@@ -109,7 +109,7 @@ export default function OurProgram({ is_main_page }) {
             <h3 className="grade_title">
               Grade {grade} - {grade + 3}
             </h3>
-            <div className="card text-bg-dark grade_card">
+            <div className="card text-bg-dark grade_card " data-aos="zoom-in" data-aos-duration="2000">
               <img
                 src={`/imgs/gradec${idx + 1}.png`}
                 className="card-img"
