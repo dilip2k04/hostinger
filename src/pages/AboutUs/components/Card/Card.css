@@ -41,6 +41,10 @@
     font-weight: 500;
     color: #041D60;
 }
+#whycard:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ;
+}
 
 /* ======================= MEDIA QUERIES ======================== */
 
