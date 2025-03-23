@@ -16,7 +16,7 @@ export default function Tab({
       return (
         <div className="tab_container">
           <div className="title_tag d-flex justify-content-center align-items-center row g-0">
-            <div className="col ">
+            <div className="col d-flex justify-content-start">
               <div className="left_line"></div>
             </div>
 
