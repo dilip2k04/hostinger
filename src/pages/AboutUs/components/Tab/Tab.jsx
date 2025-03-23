@@ -38,16 +38,16 @@ export default function Tab({
     return (
       <div className="tab_container">
         <div className="title_tag d-flex justify-content-center align-items-center row g-0 mb-0">
-          <div className="col-md-5 col-3">
+          <div className="col">
             <div className="left_line"></div>
           </div>
-          <div className="col-md-2 col-6">
+          <div className="col ">
             {" "}
             <h2 className="tab_title">
-              <i>{title}</i>
+            <i className="i_title">{title}</i>
             </h2>
           </div>
-          <div className="col-md-5 col-3 d-flex justify-content-end">
+          <div className="col d-flex justify-content-end">
             <div className="right_line"></div>
           </div>
         </div>

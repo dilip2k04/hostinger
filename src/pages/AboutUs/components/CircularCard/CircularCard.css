@@ -8,6 +8,55 @@
     text-align: center;
     padding: 10px 0px;
 }
+.circular_card_title {
+    word-wrap: break-word; /* Ensures text wraps properly */
+    overflow-wrap: break-word; /* Handles word breaking */
+    text-align: center; /* Centers the title */
+    font-size: 24px; /* Adjust font size */
+    font-weight: 600;
+    max-width: 250px; /* Restrict width to force two lines */
+    line-height: 1.3; /* Adjust line spacing */
+    height: 60px; /* Fixed height to accommodate two lines */
+    display: flex;
+    width:auto;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(30deg, #F27A0A, #041D60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.circular_card_title_with_space{
+    word-wrap: break-word; /* Ensures text wraps properly */
+    overflow-wrap: break-word; /* Handles word breaking */
+    text-align: center; /* Centers the title */
+    font-size: 24px; /* Adjust font size */
+    font-weight: 600;
+    max-width: 250px; /* Restrict width to force two lines */
+    line-height: 1.3; /* Adjust line spacing */
+    height: 60px; /* Fixed height to accommodate two lines */
+    display: flex;
+    width:auto;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(30deg, #F27A0A, #041D60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    word-spacing: 100px;
+}
+
+
+/* Adjust for larger screens */
+@media (min-width: 1024px) {
+    .circular_card_title {
+        font-size: 28px;
+        max-width: 300px;
+        height: 8px;
+    }
+}
+
 
 .circular_card_container h3 {
     font-size: 24px;
@@ -187,5 +236,23 @@
 
     .circular_card_container p {
         font-size: 12px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 1024px) {
+    .circular_card_title_with_space {
+        word-spacing: normal; /* Reset word spacing for tablets and smaller devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .circular_card_title_with_space {
+        word-spacing: normal; /* Reset word spacing for small tablets and large phones */
+    }
+}
+
+@media (max-width: 480px) {
+    .circular_card_title_with_space {
+        word-spacing: normal; /* Reset word spacing for small phones */
     }
 }
