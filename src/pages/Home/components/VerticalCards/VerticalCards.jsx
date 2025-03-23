@@ -7,8 +7,8 @@ export default function VerticalCards() {
         { img: "/imgs/cross_card3.png", title: "Personalized study plans", desc: "Personalized Study Plans tailored to each student" },
         { img: "/imgs/cross_card4.png", title: "Certified Mentors", desc: "Experienced and certified CBSE educators" }
       ].map((card, index) => (
-        <div key={index} className="w-100 d-flex flex-column align-items-center" data-aos="zoom-out-down" data-aos-duration="2000">
-          <div className="card cross_card" style={{ width: '80%', maxWidth: '500px', height: 'calc(100% + 60px)', padding: '20px' }} data-aos="zoom-out-down">
+        <div key={index} className="w-100 d-flex flex-column align-items-center">
+          <div className="card cross_card" style={{ width: '80%', maxWidth: '500px', height: 'calc(100% + 60px)', padding: '20px' }}>
             <div className="card-body-2 d-flex justify-content-center align-items-center flex-column text-center">
               <img src={card.img} className="vertical_card_img" alt="" style={{ marginBottom: '10px', maxWidth: '100px', height: '70px' }} />
               <h3 className='mb-3' style={{ color: 'black', fontSize: '1.5rem' }}>{card.title}</h3>
