@@ -56,7 +56,7 @@ export default function Tab({
         right_pic ? (
           <>
             {/* Left: Text | Right: Image */}
-            <div className="col-md-7 order-2 order-md-1 d-flex justify-content-center align-items-center flex-column ">
+            <div className="col-md-7 order-2 order-md-1 p-4 d-flex justify-content-center align-items-center flex-column " id="contentD">
               <div className="content mb-1">
                 <h3 className="mb-0">{content}</h3>
               </div>

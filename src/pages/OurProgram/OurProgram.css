@@ -476,16 +476,16 @@
 /* Small devices (Tablets in portrait mode) */
 @media (min-width: 481px) and (max-width: 768px) {
   .grade_card .overlay-text {
-    font-size: 30px;
-    line-height: 250%;
+    font-size: 27px;
+    line-height: 200%;
   }
 }
 
 /* Medium devices (Tablets in landscape mode, small laptops) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .grade_card .overlay-text {
-    font-size: 25px;
-    line-height: 300%;
+    font-size: 22px;
+    line-height: 250%;
   }
 }
 
@@ -508,8 +508,8 @@
 /* Extra small devices (315px - 360px) */
 @media (min-width: 315px) and (max-width: 360px) {
   .grade_card .overlay-text {
-    font-size: 19px;
-    line-height: 150%;
+    font-size: 12px;
+    line-height: 200%;
     text-wrap: pretty;
   }
 }

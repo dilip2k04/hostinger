@@ -69,7 +69,7 @@
     .para{
         font-size: 16px;
        text-align: center;
-       width: 90%;
+       width: 70%;
        min-width: 90%;
        max-width: 100%;
        margin-bottom: 0;
@@ -83,16 +83,55 @@
 
 @media (max-width: 480px) { /* Small Phones */
     .para {
-        width: 95%; /* Almost full width for small screens */
+        width: 80%; /* Almost full width for small screens */
         font-size: 0.95rem; /* Reduce font size slightly */
         line-height: 1.5;
+    }
+}
+@media (max-width: 320px) { /* Very Small Phones */
+    .para {
+        width: 80%; /* Make use of available space */
+        font-size: 0.9rem; /* Slightly smaller text */
+        line-height: 1.2;
     }
 }
 
 @media (max-width: 360px) { /* Very Small Phones */
     .para {
-        width: 98%; /* Make use of available space */
+        width: 80%; /* Make use of available space */
         font-size: 0.9rem; /* Slightly smaller text */
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 1024px) { /* Very Small Phones */
+    .para {
+        width: 70%; /* Make use of available space */
+        font-size: 1.1rem; /* Slightly smaller text */
         line-height: 1.4;
+    }
+}
+
+@media (max-width: 800px) { /* Very Small Phones */
+    .para {
+        width: 80%; /* Make use of available space */
+        font-size: 1.2rem; /* Slightly smaller text */
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 384px) { /* Very Small Phones */
+    .para {
+        width: 80%; /* Make use of available space */
+        font-size: 0.8rem; /* Slightly smaller text */
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 412px) { /* Very Small Phones */
+    .para {
+        width: 80%; /* Make use of available space */
+        font-size: 0.8rem; /* Slightly smaller text */
+        line-height: 1.2;
     }
 }

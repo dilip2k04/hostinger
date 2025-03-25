@@ -93,6 +93,11 @@
         width: 80%; /* Slightly wider than medium screens */
         max-width: 450px; /* Adjusted max-width */
         margin-left: 30px; /* Consistent margin */
+        height: 90%;
+    }
+
+    .card_img_section img{
+        margin-top: 20px;
     }
 
     .about_us_card .card-body-1 {
