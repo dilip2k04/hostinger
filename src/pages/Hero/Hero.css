@@ -255,3 +255,72 @@
   }
   
   }
+
+  /* iPad Pro (1024px) */
+@media (min-width: 992px) and (max-width: 1024px) {
+  .hero_section{
+    height: auto;
+    margin-left: -20px;
+  }
+  
+  .hero_content h1 {
+      font-size: 50px;
+      min-height: 150px;
+      max-height: 150px;
+      margin-bottom: 20px;
+  }
+  
+  .hero_content h4 {
+      font-size: 28px;
+  }
+  
+  .book_button {
+      padding: 18px 36px;
+      font-size: 18px;
+      margin-right: 20px;
+  }
+  
+  .explore_us {
+      font-size: 18px;
+      padding: 18px 30px;
+  }
+  
+  .image_section .main_image {
+      width: 90%;
+      height: 70%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero_section{
+    height: auto;
+    margin-left: -20px;
+  }
+  
+  .hero_content h1 {
+      font-size: 50px;
+      min-height: 150px;
+      max-height: 150px;
+      margin-bottom: 20px;
+  }
+  
+  .hero_content h4 {
+      font-size: 28px;
+  }
+  
+  .book_button {
+      padding: 18px 36px;
+      font-size: 18px;
+      margin-right: 20px;
+  }
+  
+  .explore_us {
+      font-size: 18px;
+      padding: 18px 30px;
+  }
+  
+  .image_section .main_image {
+      width: 90%;
+      height: 70%;
+  }
+}

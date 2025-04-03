@@ -67,7 +67,7 @@ export default function AboutUs({is_main_page}) {
   const our_process_data = [
     {
       img: "/imgs/circular_card1.jpeg",
-      title: "1. Contact Us",
+      title: "1.Contact Us",
       content:
         "Start by reaching out to us via WhatsApp or through our Contact Us form. We’ll guide you through the next steps",
     },
@@ -165,6 +165,7 @@ export default function AboutUs({is_main_page}) {
                     img={card.img}
                     content={card.content}
                     title={card.title}
+                    idx={idx}
                   />
                   <div className="fs-1 mb-5" style={{ color: "#041D60" }}>
                     {idx < our_process_data.length - 1 ? (

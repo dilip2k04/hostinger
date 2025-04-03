@@ -16,7 +16,7 @@ export default function Tab({
       return (
         <div className="tab_container">
           <div className="title_tag d-flex justify-content-center align-items-center row g-0">
-            <div className="col ">
+            <div className="col d-flex justify-content-start">
               <div className="left_line"></div>
             </div>
 
@@ -38,16 +38,16 @@ export default function Tab({
     return (
       <div className="tab_container">
         <div className="title_tag d-flex justify-content-center align-items-center row g-0 mb-0">
-          <div className="col-md-5 col-3">
+          <div className="col">
             <div className="left_line"></div>
           </div>
-          <div className="col-md-2 col-6">
+          <div className="col ">
             {" "}
             <h2 className="tab_title">
-              <i>{title}</i>
+            <i className="i_title">{title}</i>
             </h2>
           </div>
-          <div className="col-md-5 col-3 d-flex justify-content-end">
+          <div className="col d-flex justify-content-end">
             <div className="right_line"></div>
           </div>
         </div>
@@ -56,9 +56,9 @@ export default function Tab({
         right_pic ? (
           <>
             {/* Left: Text | Right: Image */}
-            <div className="col-md-7 order-2 order-md-1 d-flex justify-content-center align-items-center flex-column p-4">
-              <div className="content mt-5">
-                <h3>{content}</h3>
+            <div className="col-md-7 order-2 order-md-1 p-4 d-flex justify-content-center align-items-center flex-column " id="contentD">
+              <div className="content mb-1">
+                <h3 className="mb-0">{content}</h3>
               </div>
             </div>
             <div className="col-md-5 order-1 order-md-2 d-flex justify-content-center align-items-center">
@@ -72,8 +72,8 @@ export default function Tab({
               <img src={img} className="tab_img rounded img-fluid" alt="tab" />
             </div>
             <div className="col-md-7 order-2 order-md-2 d-flex justify-content-center align-items-center flex-column p-4">
-              <div className="content mt-5">
-                <h3>{content}</h3>
+              <div className="content mb-1">
+                <h3 className="mb-0">{content}</h3>
               </div>
             </div>
           </>

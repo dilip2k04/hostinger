@@ -466,3 +466,66 @@
     animation: scrollUp 20s linear infinite;
   }
 }
+@media (max-width: 480px) {
+  .grade_card .overlay-text {
+    font-size: 12px;
+    line-height: 200%;
+  }
+}
+
+/* Small devices (Tablets in portrait mode) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .grade_card .overlay-text {
+    font-size: 27px;
+    line-height: 200%;
+  }
+}
+
+/* Medium devices (Tablets in landscape mode, small laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grade_card .overlay-text {
+    font-size: 22px;
+    line-height: 250%;
+  }
+}
+
+/* Large devices (Laptops, desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .grade_card .overlay-text {
+    font-size: 25px;
+    line-height: 350%;
+  }
+}
+
+/* Extra large devices (Big desktops, 4K screens) */
+@media (min-width: 1441px) {
+  .grade_card .overlay-text {
+    font-size: 20px;
+    line-height: 400%;
+  }
+}
+
+/* Extra small devices (315px - 360px) */
+@media (min-width: 315px) and (max-width: 360px) {
+  .grade_card .overlay-text {
+    font-size: 12px;
+    line-height: 200%;
+    text-wrap: pretty;
+  }
+}
+
+/* Small phones (361px - 400px) */
+@media (min-width: 361px) and (max-width: 400px) {
+  .grade_card .overlay-text {
+    font-size: 25px;
+    line-height: 170%;
+  }
+}
+
+/* Larger small phones (401px - 480px) */
+@media (min-width: 401px) and (max-width: 480px) {
+  .grade_card .overlay-text {
+    font-size: 28px;
+    line-height: 200%;
+  }
+}

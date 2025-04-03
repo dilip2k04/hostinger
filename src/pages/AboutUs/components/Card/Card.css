@@ -41,6 +41,10 @@
     font-weight: 500;
     color: #041D60;
 }
+#whycard:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ;
+}
 
 
 /* ======================= MEDIA QUERIES ======================== */
@@ -90,6 +94,11 @@
         width: 80%; /* Slightly wider than medium screens */
         max-width: 450px; /* Adjusted max-width */
         margin-left: 30px; /* Consistent margin */
+        height: 90%;
+    }
+
+    .card_img_section img{
+        margin-top: 20px;
     }
 
     .about_us_card .card-body-1 {
@@ -222,5 +231,49 @@
 
     .card_paragraph h6 {
         font-size: 10px;
+    }
+}
+/* Extra Extra Small Devices (less than 300px) */
+@media (max-width: 299px) {
+    .about_us_card {
+        width: 98%;
+        max-width: 250px;
+        padding: 5px;
+        border-radius: 18px;
+    }
+
+    .about_us_card .card-body-1 {
+        height: 170px;
+        padding: 6px;
+    }
+
+    .card_content h3 {
+        font-size: 12px;
+    }
+
+    .card_paragraph h6 {
+        font-size: 9px;
+    }
+}
+/* Ultra Small Devices (less than 240px) */
+@media (max-width: 239px) {
+    .about_us_card {
+        width: 98%;
+        max-width: 220px;
+        padding: 4px;
+        border-radius: 15px;
+    }
+
+    .about_us_card .card-body-1 {
+        height: 150px;
+        padding: 5px;
+    }
+
+    .card_content h3 {
+        font-size: 10px;
+    }
+
+    .card_paragraph h6 {
+        font-size: 8px;
     }
 }
