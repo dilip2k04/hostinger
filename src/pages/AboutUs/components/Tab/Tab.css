@@ -7,7 +7,8 @@
     align-items: center;
 }
 
-.left_line, .right_line {
+.left_line,
+.right_line {
     height: 2px;
     width: 90%;
     background-color: #041D60;
@@ -15,16 +16,34 @@
 
 .title_tag h2 {
     text-align: center;
-    background: linear-gradient(30deg,#F27A0A, #041D60);
+    background: linear-gradient(30deg, #F27A0A, #041D60);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
     padding: 0;
     font-size: 34px;
 }
-.title_tag h2 i{
+
+.title_tag h2 i {
     font-size: 30px;
 }
+
+.tab_title {
+    display: inline-block;
+    max-width: 100%; 
+    min-width: 200px; 
+    font-style: italic;
+    white-space: normal; 
+    overflow: hidden;
+    line-height: 1.4; 
+    max-height: calc(1.4em * 2); 
+    word-break: break-word; 
+    padding: 5px; 
+    font-size: 24px !important;
+  }
+  
+
+
 
 
 .tab_contents {
@@ -290,6 +309,7 @@
     .tab_contents {
         padding: 5px;
     }
+
     .i_title {
         font-size: 14px;
         line-height: 1.2;
@@ -317,7 +337,7 @@
         width: fit-content;
         margin-left: 10px;
     }
-    
+
 }
 
 /* Very Small Devices (Mini Phones, Older Models) */
@@ -330,15 +350,19 @@
         width: 100%;
         height: 160px;
     }
+
     .i_title {
         font-size: 18px !important;
-        line-height: 1.2; /* Adjust the spacing between lines */
+        line-height: 1.2;
+        /* Adjust the spacing between lines */
         display: -webkit-box;
-        -webkit-line-clamp: 2; /* Limit the text to 2 lines */
+        -webkit-line-clamp: 2;
+        /* Limit the text to 2 lines */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-height: 2.4em; /* Ensures two lines based on line-height */
+        max-height: 2.4em;
+        /* Ensures two lines based on line-height */
     }
 
     .tab_contents h3 {
@@ -357,19 +381,21 @@
         align-items: center;
         text-align: center;
     }
-    .content{
+
+    .content {
         margin-top: 0px;
     }
 }
+
 @media (min-width: 340px) and (max-width: 394px) {
-    
+
     .i_title {
-        font-size: 13px !important;
+        font-size: 18px !important;
         max-height: 2.4em;
     }
-  }
+}
 
- 
+
 /* @media (min-width: 0px) and (max-width: 340px) {
     
     .i_title {
@@ -379,62 +405,64 @@
   }*/
 
 
-  @media (min-width: 394px) and (max-width: 431px) {
-    
+@media (min-width: 394px) and (max-width: 431px) {
+
     .i_title {
         font-size: 17px !important;
         max-height: 2.5em;
     }
-  }
+}
 
-  @media (min-width: 431px) and (max-width: 594px) {
-    
+@media (min-width: 431px) and (max-width: 594px) {
+
     .i_title {
         font-size: 20px !important;
         max-height: 2.5em;
     }
-  }
-  @media (min-width: 595px) and (max-width: 794px) {
-    
+}
+
+@media (min-width: 595px) and (max-width: 794px) {
+
     .i_title {
         font-size: 28px !important;
         max-height: 2.7em;
         margin-bottom: 30px;
     }
-  }
-  
-  @media (max-width: 340px) {
-    
+}
+
+@media (max-width: 340px) {
+
     .i_title {
         font-size: 14px !important;
         max-height: 2.5em;
     }
-  } 
+}
 
-  @media (min-width: 430px) and (max-width: 463px){
-    
+@media (min-width: 430px) and (max-width: 463px) {
+
     .i_title {
         font-size: 18px !important;
         max-height: 2.5em;
     }
-  } 
+}
 
-  @media (min-width: 594px) and (max-width: 617px){
-    
+@media (min-width: 594px) and (max-width: 617px) {
+
     .i_title {
         font-size: 25px !important;
         max-height: 2.5em;
     }
-  } 
+}
 
-  @media (min-width: 617px) and (max-width: 639px){
-    
+@media (min-width: 617px) and (max-width: 639px) {
+
     .i_title {
         font-size: 22px !important;
         max-height: 2.5em;
     }
-  } 
-@media (min-width:768px) and (max-width:999px){
+}
+
+@media (min-width:768px) and (max-width:999px) {
     .tab_contents {
         padding: 15px;
     }
@@ -442,7 +470,7 @@
     .tab_img {
         width: 100%;
         height: 250px;
-        
+
     }
 
     .tab_contents h3 {

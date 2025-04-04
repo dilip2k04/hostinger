@@ -45,6 +45,12 @@ export default function Contact() {
       }
     }
 
+    if (formData.email && !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email)) {
+      errors.email = "Email is missing or invalid.";
+      checked = false;
+    }
+
+    
     if (isNaN(parseInt(formData.contact_number))) {
       toast.error("Phone number must be a number.");
       checked = false;

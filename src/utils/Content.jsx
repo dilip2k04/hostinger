@@ -150,7 +150,7 @@ export const content = {
         answer:
           " Our online sessions use state-of-the-art technology to deliver interactive, live lessons that engage students and promote active learning.",
       },
-      
+
       {
         question: "How can parents monitor progress ? ",
         answer:
