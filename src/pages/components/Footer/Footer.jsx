@@ -22,8 +22,8 @@ export default function Footer() {
       <div className="Support">
         <h6>Privacy and Terms</h6>
         <div>
-            <a className="" href="#">Privacy Policy</a>
-            <a className="" href="#">Terms & Conditions</a>
+            <a className="" target="_blank" href="/src/pages/Privacy Policy.html">Privacy Policy</a>
+            <a className="" target="_blank" href="/src/pages/Terms and Conditions.html">Terms & Conditions</a>
         </div>
       </div>
 
