@@ -8,10 +8,10 @@ export default function Footer() {
   const {social_media} = content;
 
   return (
-    <div className='Footer d-flex flex-column flex-lg-row ps-3 p-lg-0 justify-content-around gap-5 py-5'>
+    <div className='footer d-flex flex-column flex-lg-row ps-3 p-lg-0 justify-content-around gap-5 py-5'>
 
 
-      <div className="Explore">
+      <div className="explore">
         <h6>Explore</h6>
         <Link to='/'>Home</Link>
         <Link to='/about-us'>About Us</Link>
@@ -19,7 +19,7 @@ export default function Footer() {
         <Link to='/contact-us'>Contact Us</Link>
       </div>
 
-      <div className="Support">
+      <div className="support">
         <h6>Privacy and Terms</h6>
         <div>
         <Link to="/PrivacyPolicy" target="_blank">Privacy Policy</Link>
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="Follow_Us">
+      <div className="follow_us">
         <h6>Follow Us</h6>
         <a href={social_media.facebook} className='ms-0'><p><FaFacebook/><span className='ms-2'>Facebook </span></p>
         </a>
@@ -38,7 +38,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <div className="Contact_Us">
+      <div className="contact_us">
         <h6>Contact Us</h6>
         <p className='d-flex gap-2'><strong><FaEnvelope /> </strong><a href={`mailto:${social_media.email}`} className="m-0">{social_media.email}</a></p>
         <p className='d-flex gap-2'><strong><FaPhone /></strong><a href={`tel:${social_media.phone_number}`} className="m-0">{social_media.phone_number}</a></p>
