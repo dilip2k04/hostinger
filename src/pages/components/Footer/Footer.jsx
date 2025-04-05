@@ -22,14 +22,14 @@ export default function Footer() {
       <div className="Support">
         <h6>Privacy and Terms</h6>
         <div>
-            <a className="" target="_blank" href="/src/pages/Privacy Policy.html">Privacy Policy</a>
-            <a className="" target="_blank" href="/src/pages/Terms and Conditions.html">Terms & Conditions</a>
+        <Link to="/PrivacyPolicy" target="_blank">Privacy Policy</Link>
+        <Link to="/TermsAndConditions" target="_blank">Terms & Conditions</Link>
         </div>
       </div>
 
       <div className="Follow_Us">
         <h6>Follow Us</h6>
-        <a href={social_media.facebook} className='ms-0'>        <p><FaFacebook/><span className='ms-2'>Facebook </span></p>
+        <a href={social_media.facebook} className='ms-0'><p><FaFacebook/><span className='ms-2'>Facebook </span></p>
         </a>
         <a href={social_media.instagram} className='ms-0'><p><FaInstagram/><span className='ms-2'>Instagram</span> </p>
         </a>
