@@ -20,8 +20,6 @@ export default function AppRoutes() {
         <OurProgram is_main_page={true}/>
         {/* <AboutUs is_main_page={true}/> */}
         <Contact />
-        <PrivacyPolicy />
-        <TermsAndConditions />
       </>
     );
   };
