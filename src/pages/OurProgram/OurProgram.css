@@ -253,14 +253,9 @@
   .testimonial-wrapper {
     animation: scrollUp 50s linear infinite;
   }
-  .grade_card .overlay-text {
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 10px;
-  }
   .card-text{
     font-size: 17px;
-    line-height: 1.8;
+    line-height: 1.5;
     padding: 10px;
   }
 }
