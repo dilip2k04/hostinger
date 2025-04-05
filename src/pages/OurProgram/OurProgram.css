@@ -138,6 +138,7 @@
 /* Media Queries for All Devices */
 
 /* Extra Small Devices (up to 359px) */
+
 @media screen and (max-width: 359px) {
   .ourprogram {
     margin-top: 20px;
@@ -200,6 +201,11 @@
     max-width: 250px;
     /* Limit maximum width */
   }
+  .card-text{
+    font-size: 17px !important;
+    line-height: 1.5;
+    padding: 10px;
+  }
 
 }
 
@@ -252,6 +258,11 @@
     line-height: 1.5;
     padding: 10px;
   }
+  .card-text{
+    font-size: 17px;
+    line-height: 1.8;
+    padding: 10px;
+  }
 }
 
 /* Small Tablets (576px to 767px) */
@@ -297,6 +308,11 @@
 
   .testimonial-wrapper {
     animation: scrollUp 160s linear infinite;
+  }
+  .card-text{
+    font-size: 25px !important;
+    line-height: 2.5;
+    padding: 10px;
   }
 }
 
