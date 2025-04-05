@@ -47,7 +47,7 @@ export default function Hero() {
               indicators={false}
               interval={2000}
               className="carousel slide carousel-fade"
-              style={{ borderRadius: "50%", transition: "2s ease" }}
+              style={{ borderRadius: "50%", transition: "2s ease",marginTop:"30px" }}
             >
               {hero_page.images.map((image, idx) => (
                   <Carousel.Item className="d-flex justify-content-center align-items-center" key={idx}>
