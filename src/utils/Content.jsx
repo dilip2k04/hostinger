@@ -1,7 +1,7 @@
 export const content = {
   hero_page: {
     titles: [
-      " Empowering Excellence 2",
+      " Empowering Excellence",
       "Unlock Your Child's Potential",
       "Your Pathway To Academic Success",
     ],
