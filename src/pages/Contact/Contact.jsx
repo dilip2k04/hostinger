@@ -10,9 +10,7 @@ import { content } from "../../utils/Content.jsx";
 export default function Contact() {
 
   const { contact_page } = content;
-
-
-
+  
   const [formData, setFormData] = useState({
     student_name: "",
     contact_number: "",
