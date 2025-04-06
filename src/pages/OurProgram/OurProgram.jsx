@@ -35,7 +35,6 @@ export default function OurProgram({ is_main_page }) {
     fetchTestimonials();
   }, []);
   
-
   const renderProgramSection = () => (
     <div className="ourprogram" id="our_program_section">
       <h5 className="ourprogram_title">
