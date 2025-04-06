@@ -65,10 +65,10 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { checked, errors } = checkTheForm(formData);
-    console.log({ checked, errors });
+   
     if (checked) {
       try {
-        console.log(formData);
+        
         const response = await axios.post(
           "https://iq-bridge-backend.onrender.com/register",
           formData
@@ -85,7 +85,7 @@ export default function Contact() {
         toast.error(e.message);
       }
     } else {
-      console.log(errors);
+     
       Object.values(errors).forEach((err) => toast.error(capitalize(err)));
     }
   };
