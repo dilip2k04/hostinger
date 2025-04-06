@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: iq-bridge
+    name: IQ-bridge
     env: static
     repo: https://github.com/codesbycookie/iq_bridge.git
     branch: main
