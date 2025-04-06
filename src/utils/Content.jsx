@@ -136,6 +136,7 @@ export const content = {
       },
     ],
   },
+
   contact_page: {
     title: "Contact Us",
     description: "Get in touch with us through our social media channels.",

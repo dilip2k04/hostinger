@@ -47,7 +47,7 @@
   margin-left: 40px;
   margin-top: -10px;
   color: var(--secondary-color);
-  font-size: 48px !important;
+  font-size: 3rem;
 }
 
 .ourprogram_tab {
@@ -259,6 +259,7 @@
     line-height: 1.5;
     padding: 10px;
   }
+  
 }
 
 /* Small Tablets (576px to 767px) */
