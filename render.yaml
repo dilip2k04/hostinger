@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: iq-bridge
+    env: static
+    repo: https://github.com/codesbycookie/iq_bridge.git
+    branch: main
+    buildCommand: npm run build
+    staticPublishPath: dist
+    pullRequestPreviewsEnabled: true
