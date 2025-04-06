@@ -132,7 +132,7 @@ export const content = {
         img: "/imgs/circular_car5.jpeg",
         title: "5. Continuous Updates",
         content:
-          "Stays informed with bi-weekly performance reports to track your child’s progress and development",
+          "Stay informed with bi-weekly performance reports to track your child’s progress and development",
       },
     ],
   },
