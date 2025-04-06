@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./AboutUs.css";
 import Card from "./components/Card/Card";
 import Tab from "./components/Tab/Tab";

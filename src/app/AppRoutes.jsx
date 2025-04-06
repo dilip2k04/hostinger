@@ -1,5 +1,4 @@
-import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "../pages/components/Navbar/Navbar";
 import Hero from "../pages/Hero/Hero";
 import AboutUs from "../pages/AboutUs/AboutUs";
@@ -8,8 +7,8 @@ import Contact from "../pages/Contact/Contact";
 import Footer from "../pages/components/Footer/Footer";
 import Home from "../pages/Home/Home";
 import ScrollToTop from "../pages/components/ScrollToTop/ScrollToTop";
-import PrivacyPolicy from "../pages/TCandPP/Privacy Policy";
-import TermsAndConditions from "../pages/TCandPP/Terms and Conditions";
+import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
+import TC from "../pages/TC/TC";
 
 export default function AppRoutes() {
   const MainPageComponent = () => {
@@ -17,7 +16,7 @@ export default function AppRoutes() {
       <>
         <Hero />
         <Home />
-        <OurProgram is_main_page={true}/>
+        <OurProgram is_main_page={true} />
         {/* <AboutUs is_main_page={true}/> */}
         <Contact />
       </>
@@ -25,10 +24,10 @@ export default function AppRoutes() {
   };
   return (
     <>
-<ScrollToTop/>
+      <ScrollToTop />
       {/* <Navbar /> */}
       <Navbar />
-<ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainPageComponent />} />
         <Route path="/about-us" element={<AboutUs />} />
@@ -36,10 +35,9 @@ export default function AppRoutes() {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="*" element={<MainPageComponent />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/terms-and-conditions" element={<TC />} />
       </Routes>
       <Footer />
-
     </>
   );
 }

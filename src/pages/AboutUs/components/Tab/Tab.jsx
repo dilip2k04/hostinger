@@ -42,8 +42,8 @@ export default function Tab({
           </div>
           <div className="col ">
             {" "}
-            <h2 className="tab_title">
-            <i className="i_title">{title}</i>
+            <h2 className="tab_title d-flex justify-content-center align-items-center">
+            {title}
             </h2>
           </div>
           <div className="col d-flex justify-content-end">

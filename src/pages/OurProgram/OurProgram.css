@@ -39,14 +39,15 @@
 
 /* Base Styles */
 .ourprogram {
-  margin-top: 45px;
+  margin-top: 15px;
   padding: 0 15px;
 }
 
 .ourprogram_title i {
   margin-left: 40px;
+  margin-top: -10px;
   color: var(--secondary-color);
-  font-size: 3rem;
+  font-size: 48px !important;
 }
 
 .ourprogram_tab {

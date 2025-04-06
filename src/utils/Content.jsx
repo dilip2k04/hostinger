@@ -235,5 +235,5 @@ export const content = {
     linkedin: "#",
     phone_number: "+91-9990467544",
     email: "contact@iqbridge.com",
-  },
+  }
 };
